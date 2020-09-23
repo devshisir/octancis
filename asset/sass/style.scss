@@ -1,0 +1,508 @@
+@import 'import/reset.scss';
+@import 'import/_color.scss';
+/*-- this is for typography --*/
+@import 'import/typography.scss';
+@import 'import/_comn.scss';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+$op: 'Open Sans', sans-serif;
+.pl0{
+    padding-left: 0px !important;
+}
+.pr0{
+    padding-right: 0px !important;
+}
+
+
+
+
+
+
+
+/*------------------------
+main code start here 
+-------------------------*/
+
+
+
+/*-- this is login page style here --*/
+#userLogin{
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(87,41,133);
+    background: linear-gradient(-30deg, rgba(87,41,133,1) 0%, rgba(36,36,95,1) 35%);
+    .loginContainer{
+        min-height: 100vh;
+        .loginMainContainer{
+            padding: 60px 70px;
+            width: 525px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 3px;
+            .logoare{
+
+            }
+            .info{
+                margin-top: 50px;
+                h4{
+                    font-weight: 700;
+                    font-size: 15px;
+                    color: #000000;
+                }
+                p{
+                    margin-top: 5px;
+                    color: #999999;
+                    font-size: 14px;
+                }
+            }
+            .formArea{
+                margin-top: 50px;
+                form{
+                    .inputBox{
+                        margin-bottom: 17px;
+                        .inputFild{
+                            position: relative;
+                            input{
+                                width: 100%;
+                                padding: 12px 30px 14px 45px;
+                                border: 1px solid #e4e4e4;
+                                font-size: 15px;
+                                color: #000;
+                                border-radius: 2px;
+                            }
+                            span{
+                                position: absolute;
+                                top: 50%;
+                                left: 15px;
+                                transform: translateY(-50%);
+                                color: #999999;
+                                font-size: 17px;
+                            }
+                            ::-webkit-input-placeholder { /* Edge */
+                                color: #999999;
+                            }
+          
+                            :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                                color: #999999;
+                            }
+          
+                            ::placeholder {
+                                color: #999999;
+                            }
+                        }
+                    }
+                    .forgotePass{
+                        margin-top: -5px;
+                        a{
+                            display: inline-block;
+                            font-size: 15px;
+                            color: #999999;
+                            &:hover{
+                                color: #572985;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    .loginSubmit{
+                        margin-top: 25px;
+                        button{
+                            width: 100%;
+                            border: none;
+                            background: #6331aa;
+                            color: #fff;
+                            font-weight: 600;
+                            font-size: 15px;
+                            padding: 14px 0px;
+                            outline: none;
+                            transition: 0.4s;
+                            &:hover{
+                                background: #572985;
+                            }
+                        }
+                    }
+                }
+                .dontHaveAccount{
+                    margin-top: 60px;
+                    p{
+                        font-size: 15px;
+                        color: #999999;
+                        a{
+                            font-weight: 600;
+                            color: #6331aa;
+                            margin-left: 3px;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/*----------------------------------
+this is all invoice page style here 
+----------------------------------*/
+#invoiceBody{
+    background: #D5D5D5;
+}
+#invoiceHeader{
+    .invoiceHeaderContainer{
+        padding: 25px 70px 30px 70px;
+        background-image: -moz-linear-gradient( -30deg, rgb(36,36,95) 0%, rgb(87,41,133) 100%);
+        background-image: -webkit-linear-gradient( -30deg, rgb(36,36,95) 0%, rgb(87,41,133) 100%);
+        background-image: -ms-linear-gradient( -30deg, rgb(36,36,95) 0%, rgb(87,41,133) 100%);
+        a{
+            img{
+                height: 40px;
+            }
+        }
+    }
+}
+#invoiceHeader.invoiceHeader2{
+    .invoiceHeaderContainer{
+        background: #252464;
+    }
+}
+
+#invoiceHeader.invoiceHeader3{
+    .invoiceHeaderContainer{
+        background: #EEEEEE;
+    }
+}
+
+#invoiceMainArea{
+    .invoiceMainAreaContainer{
+        padding: 50px 70px;
+        background: #fff;
+        .topInfo{
+            .top{
+                .left{
+                    h4{
+                        font-weight: 700;
+                        font-size: 16px;
+                        color: 000000;
+                        font-family: $op;
+                    }
+                    h5{
+                        font-size: 16px;
+                        color: 000000;
+                        font-family: $op;
+                        margin-top: 3px;
+                        span{
+                            font-weight: 700;
+                            margin-left: 3px;
+                        }
+                    }
+                    h3{
+                        font-size: 16px;
+                        color: 000000;
+                        font-family: $op;
+                        margin-top: 30px;
+                        span{
+                            font-weight: 700;
+                            margin-left: 3px;
+                        }
+                    }
+                }
+                .right{
+                    h4{
+                        font-size: 16px;
+                        color: 000000;
+                        font-family: $op;
+                        margin-top: 25px;
+                        span{
+                            font-weight: 700;
+                            margin-left: 3px;
+                        }
+                    }
+                }
+            }
+            .companyInfo{
+                margin-top: 40px;
+                .logo{
+                    a{
+                        img{
+                            height: 35px;
+                        }
+                    }
+                }
+                ul{
+                    margin-top: 25px;
+                    li{
+                        font-family: $op;
+                        font-size: 16px;
+                        color: #000;
+                    }
+                }
+            }
+        }
+        .quotationtableArea{
+            margin-top: 50px;
+            .topinfoTable{
+                padding-right: 49px;
+                .left{
+                    h3{
+                        font-weight: 700;
+                        font-size: 30px;
+                        color: rgb(99, 49, 170);
+                        font-family: $op;
+                    }
+                }
+                .right{
+                    h4{
+                        font-size: 16px;
+                        color: 000000;
+                        font-family: $op;
+                        margin-top: 3px;
+                        font-weight: 700;
+                        span{
+                            font-weight: 400;
+                            margin-left: 3px;
+                        }
+                    }
+                }
+            }
+            .quotationMainTable{
+                margin-top: 30px;
+                .table-bordered {
+                    border: 1px solid #000;
+                }
+                table{
+                    margin-bottom: 0px;
+                    thead{
+                        border: 1px solid #000;
+                        th{
+                            border: 1px solid #000;
+                            padding: 4px .75rem;
+                            color: #fff;
+                            font-family: $op;
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 19px;
+                        }
+                        background: rgb(87,41,133);
+                        background: linear-gradient(-30deg, rgba(87,41,133,1) 35%, rgba(36,36,95,1) 100%);
+                    }
+                    tbody{
+                        td{
+                            padding: 4px .75rem;
+                            border: 1px solid #000;
+                            .cthead{
+                                border-bottom: 1px solid #000;
+                                padding-bottom: 4px;
+                                font-weight: 700;
+                                font-size: 15px;
+                                color: #000;
+                                i{
+                                    font-size: 12px;
+                                }
+                            }
+                            p{
+                                font-weight: 600;
+                                font-size: 15px;
+                                color: #000;
+                                i{
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                        .serialNumber{
+                            p{
+                                font-weight: 600;
+                                font-size: 14px;
+                                color: #000;
+                                line-height: 18px;
+                            }
+                        }
+                        .peoductName{
+                            p{
+                                font-weight: 600;
+                                font-size: 14px;
+                                color: #000;
+                                line-height: 18px;
+                            }
+                        }
+                    }
+                }
+                .amount1Bottom{
+                    border: 1px solid #000;
+                    border-top: none;
+                    padding: 7px 0px;
+                    padding-right: 48px;
+                    h4{
+                        font-family: $op;
+                        font-weight: 700;
+                        font-size: 15px;
+                        color: #000;
+                        span{
+                            margin-left: 65px;
+                            i{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                .discountAmmount{
+                    border: 1px solid #000;
+                    border-top: none;
+                    padding: 7px 0px;
+                    padding-right: 48px;
+                    h4{
+                        font-family: $op;
+                        font-weight: 400;
+                        font-size: 15px;
+                        color: #000;
+                        span{
+                            margin-left: 65px;
+                            font-weight: 700;
+                            i{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                .gstAmmount{
+                    border: 1px solid #000;
+                    border-top: none;
+                    padding: 7px 0px;
+                    padding-right: 48px;
+                    h4{
+                        font-family: $op;
+                        font-weight: 400;
+                        font-size: 15px;
+                        color: #000;
+                        span{
+                            margin-left: 65px;
+                            font-weight: 700;
+                            i{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                .totalAmmount{
+                    padding: 7px 0px;
+                    padding-right: 48px;
+                    background: #252464;
+                    border: 1px solid #252464;
+                    h4{
+                        font-family: $op;
+                        font-weight: 400;
+                        font-size: 15px;
+                        color: #fff;
+                        font-weight: 700;
+                        span{
+                            margin-left: 65px;
+                            i{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+            .quotationMainTable3{
+                table{
+                    thead{
+                        background: #239546;
+                    }
+                }
+                .totalAmmount2{
+                    background: #1C4E87;
+                }
+            }
+        }
+        .invoieTermsCondition{
+            margin-top: 60px;
+            h4{
+                font-weight: 700;
+                font-family: $op;
+                color: #252464;
+                font-size: 16px;
+            }
+            ol{
+                margin-top: 25px;
+                padding-left: 70px;
+                li{
+                    font-family: $op;
+                    font-size: 15px;
+                    color: #000;
+                    padding-left: 7px;
+                    width: 70%;
+                    margin-bottom: 7px;
+                    line-height: 24px;
+                }
+            }
+        }
+        .invoiceLicessSupport{
+            margin-top: 60px;
+            h4{
+                font-weight: 700;
+                font-family: $op;
+                color: #252464;
+                font-size: 16px;
+            }
+            ol{
+                margin-top: 25px;
+                padding-left: 70px;
+                li{
+                    font-family: $op;
+                    font-size: 15px;
+                    color: #000;
+                    padding-left: 7px;
+                    width: 70%;
+                    margin-bottom: 4px;
+                    line-height: 24px;
+                }
+            }
+        }
+        .companyInfoLinkBottom{
+            margin-top: 60px;
+            a{
+                font-family: $op;
+                font-weight: 700;
+                font-size: 16px;
+                color: #0563c1;
+                text-decoration: underline;
+            }
+        }
+    }
+    .invoiceFooter{
+        padding: 0px 40px;
+        background: #fff;
+        .invoiceFooterContainer{
+            border-top: 1px solid #D6D6D6;
+            padding: 30px 0px;
+            .left.version3{
+                a{
+                    img{
+                        height: 35px;
+                    }
+                }
+            }
+            .right{
+                a{
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: #000;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+  
+
+  
+
+
+
+

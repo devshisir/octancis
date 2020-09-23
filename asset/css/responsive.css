@@ -1,0 +1,339 @@
+/* XL (laptop) Device :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+    
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+   
+}
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1199px) {
+    #userLogin{
+        padding: 50px 0px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .quotationtableArea .quotationMainTable .amount1Bottom {
+        padding-right: 37px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .quotationtableArea .quotationMainTable .amount1Bottom h4 span {
+        margin-left: 59px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .quotationtableArea .quotationMainTable .discountAmmount{
+        padding-right: 37px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .quotationtableArea .quotationMainTable .discountAmmount h4 span{
+        margin-left: 59px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .quotationtableArea .quotationMainTable .gstAmmount{
+        padding-right: 37px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .quotationtableArea .quotationMainTable .gstAmmount h4 span{
+        margin-left: 59px;
+    }
+}
+
+
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    #userLogin{
+        padding: 50px 0px;
+    }
+    #invoiceHeader .invoiceHeaderContainer {
+        padding: 25px 30px 30px 30px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .topInfo .top .left h4 {
+        font-size: 14px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .topInfo .top .left h5{
+        font-size: 14px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .topInfo .top .left h3 {
+        font-size: 13px;
+        margin-top: 20px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .topInfo .top .right h4 {
+        font-size: 14px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .topInfo .companyInfo ul li {
+        font-size: 14px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .quotationtableArea .topinfoTable .left h3 {
+        font-size: 26px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .quotationtableArea .topinfoTable {
+        padding-right: 20px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .quotationtableArea .topinfoTable .right h4 {
+        font-size: 14px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer {
+        padding: 50px 29px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .invoieTermsCondition ol li {
+        font-size: 14px;
+        width: 90%;
+
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .invoiceLicessSupport ol li{
+        font-size: 14px;
+        width: 90%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media (max-width: 767px) {
+}
+
+/*-- Phone Landscape --*/
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    #userLogin{
+        padding: 20px 0px;
+    }
+    #userLogin .loginContainer .loginMainContainer {
+        padding: 38px 50px;
+        width: 100%;
+
+    }
+    #userLogin .loginContainer {
+        justify-content: center;
+        width: 100%;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .quotationtableArea .quotationMainTable {
+        overflow-x: scroll;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .topInfo .top .right h4{
+        text-align: left;
+        margin-top: 11px;
+        font-size: 14px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .invoieTermsCondition ol {
+        margin-top: 25px;
+        padding-left: 35px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .invoieTermsCondition ol li {
+        font-size: 14px;
+        width: 100%;
+        margin-bottom: 5px;
+        line-height: 22px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .invoiceLicessSupport ol{
+        margin-top: 25px;
+        padding-left: 35px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .invoiceLicessSupport ol li{
+        font-size: 14px;
+        width: 100%;
+        margin-bottom: 5px;
+        line-height: 22px;
+    }
+    #invoiceHeader .invoiceHeaderContainer {
+        padding: 18px 33px 18px 33px;;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .topInfo .top .left h4 {
+        font-size: 14px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .topInfo .top .left h5 {
+        font-size: 14px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .topInfo .top .left h3 {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .topInfo .companyInfo ul li {
+        font-size: 14px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .quotationtableArea {
+        margin-top: 34px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .quotationtableArea .topinfoTable .left h3 {
+        font-size: 22px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .quotationtableArea .topinfoTable .right h4 {
+        font-size: 14px;
+        text-align: left;
+        margin-top: 7px;
+        padding-left: 2px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer {
+        padding: 20px 44px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+/* Extra small Device. */
+@media (max-width: 575px) {
+    .mpl0{
+        padding-left: 0px !important;
+    }
+    .mpr0{
+        padding-right: 0px !important;
+    }
+    #userLogin{
+        padding: 20px 0px;
+    }
+    #userLogin .loginContainer .loginMainContainer {
+        padding: 38px 20px;
+        width: 100%;
+
+    }
+    #userLogin .loginContainer {
+        justify-content: center;
+        width: 100%;
+    }
+    #userLogin .loginContainer .loginMainContainer .info {
+        margin-top: 25px;
+    }
+    #userLogin .loginContainer .loginMainContainer .formArea {
+        margin-top: 29px;
+    }
+    #userLogin .loginContainer .loginMainContainer .formArea .dontHaveAccount {
+        margin-top: 29px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer {
+        padding: 50px 20px;
+        background: #fff;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .quotationtableArea .quotationMainTable {
+        overflow-x: scroll;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .topInfo .top .right h4{
+        text-align: left;
+        margin-top: 11px;
+        font-size: 14px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .invoieTermsCondition ol {
+        margin-top: 25px;
+        padding-left: 35px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .invoieTermsCondition ol li {
+        font-size: 14px;
+        width: 100%;
+        margin-bottom: 5px;
+        line-height: 22px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .invoiceLicessSupport ol{
+        margin-top: 25px;
+        padding-left: 35px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .invoiceLicessSupport ol li{
+        font-size: 14px;
+        width: 100%;
+        margin-bottom: 5px;
+        line-height: 22px;
+    }
+    #invoiceHeader .invoiceHeaderContainer {
+        padding: 18px 33px 18px 33px;;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .topInfo .top .left h4 {
+        font-size: 14px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .topInfo .top .left h5 {
+        font-size: 14px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .topInfo .top .left h3 {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .topInfo .companyInfo ul li {
+        font-size: 14px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .quotationtableArea {
+        margin-top: 34px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .quotationtableArea .topinfoTable .left h3 {
+        font-size: 22px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer .quotationtableArea .topinfoTable .right h4 {
+        font-size: 14px;
+        text-align: left;
+        margin-top: 7px;
+        padding-left: 2px;
+    }
+    #invoiceMainArea .invoiceMainAreaContainer {
+        padding: 14px 19px;
+    }
+    #invoiceMainArea .invoiceFooter .invoiceFooterContainer .right{
+        text-align: center !important;
+        margin-top: 5px;
+    }
+    #invoiceMainArea .invoiceFooter .invoiceFooterContainer .left{
+        text-align: center !important;
+    }
+    #invoiceMainArea .invoiceFooter {
+        padding: 0px 16px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
