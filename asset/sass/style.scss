@@ -265,6 +265,13 @@ this is all invoice page style here
                     }
                 }
             }
+            .topinfoTable3{
+                .left{
+                    h3{
+                        color: #1c4e87;
+                    }
+                }
+            }
             .quotationMainTable{
                 margin-top: 30px;
                 .table-bordered {
@@ -400,6 +407,13 @@ this is all invoice page style here
                                 font-size: 12px;
                             }
                         }
+                    }
+                }
+            }
+            .quotationMainTable2{
+                table{
+                    thead{
+                        background: #6331AA;
                     }
                 }
             }
