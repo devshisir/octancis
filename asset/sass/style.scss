@@ -5,41 +5,52 @@
 @import 'import/_comn.scss';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
-$op: 'Open Sans', sans-serif;
-$he: 'Heebo', sans-serif;
-.pl0{
+$op: 'Open Sans',
+sans-serif;
+$he: 'Heebo',
+sans-serif;
+
+.pl0 {
     padding-left: 0px !important;
 }
-.pr0{
+
+.pr0 {
     padding-right: 0px !important;
 }
-.pl6{
+
+.pl6 {
     padding-left: 6px !important;
 }
-.pr6{
+
+.pr6 {
     padding-right: 6px !important;
 }
-.mt-11{
+
+.mt-11 {
     margin-top: 11px !important;
 }
-.show_md{
+
+.show_md {
     display: none;
 }
-.show_mobile{
-        display: none !important;
-    }
+
+.show_mobile {
+    display: none !important;
+}
 
 $mainColor: #1E2859;
 
 
 body::-webkit-scrollbar {
-   display: none;
-   overflow-x: hidden;
+    display: none;
+    overflow-x: hidden;
 }
-.pl10{
+
+.pl10 {
     padding-left: 10px !important;
 }
-.pr10{
+
+.pr10 {
     padding-right: 10px !important;
 }
 
@@ -51,43 +62,51 @@ main code start here
 
 
 /*-- this is login page style here --*/
-#userLogin{
+#userLogin {
     min-height: 100vh;
     width: 100%;
-    background: rgb(87,41,133);
-    background: linear-gradient(-30deg, rgba(87,41,133,1) 0%, rgba(36,36,95,1) 35%);
-    .loginContainer{
+    background: rgb(87, 41, 133);
+    background: linear-gradient(-30deg, rgba(87, 41, 133, 1) 0%, rgba(36, 36, 95, 1) 35%);
+
+    .loginContainer {
         min-height: 100vh;
-        .loginMainContainer{
+
+        .loginMainContainer {
             padding: 60px 70px;
             width: 525px;
             margin: 0 auto;
             background: #fff;
             border-radius: 3px;
-            .logoare{
 
-            }
-            .info{
+            .logoare {}
+
+            .info {
                 margin-top: 50px;
-                h4{
+
+                h4 {
                     font-weight: 700;
                     font-size: 15px;
                     color: #000000;
                 }
-                p{
+
+                p {
                     margin-top: 5px;
                     color: #999999;
                     font-size: 14px;
                 }
             }
-            .formArea{
+
+            .formArea {
                 margin-top: 50px;
-                form{
-                    .inputBox{
+
+                form {
+                    .inputBox {
                         margin-bottom: 17px;
-                        .inputFild{
+
+                        .inputFild {
                             position: relative;
-                            input{
+
+                            input {
                                 width: 100%;
                                 padding: 12px 30px 14px 45px;
                                 border: 1px solid #e4e4e4;
@@ -95,7 +114,8 @@ main code start here
                                 color: #000;
                                 border-radius: 2px;
                             }
-                            span{
+
+                            span {
                                 position: absolute;
                                 top: 50%;
                                 left: 15px;
@@ -103,34 +123,42 @@ main code start here
                                 color: #999999;
                                 font-size: 17px;
                             }
-                            ::-webkit-input-placeholder { /* Edge */
+
+                            ::-webkit-input-placeholder {
+                                /* Edge */
                                 color: #999999;
                             }
-          
-                            :-ms-input-placeholder { /* Internet Explorer 10-11 */
+
+                            :-ms-input-placeholder {
+                                /* Internet Explorer 10-11 */
                                 color: #999999;
                             }
-          
+
                             ::placeholder {
                                 color: #999999;
                             }
                         }
                     }
-                    .forgotePass{
+
+                    .forgotePass {
                         margin-top: -5px;
-                        a{
+
+                        a {
                             display: inline-block;
                             font-size: 15px;
                             color: #999999;
-                            &:hover{
+
+                            &:hover {
                                 color: #572985;
                                 text-decoration: underline;
                             }
                         }
                     }
-                    .loginSubmit{
+
+                    .loginSubmit {
                         margin-top: 25px;
-                        button{
+
+                        button {
                             width: 100%;
                             border: none;
                             background: #6331aa;
@@ -140,22 +168,27 @@ main code start here
                             padding: 14px 0px;
                             outline: none;
                             transition: 0.4s;
-                            &:hover{
+
+                            &:hover {
                                 background: #572985;
                             }
                         }
                     }
                 }
-                .dontHaveAccount{
+
+                .dontHaveAccount {
                     margin-top: 60px;
-                    p{
+
+                    p {
                         font-size: 15px;
                         color: #999999;
-                        a{
+
+                        a {
                             font-weight: 600;
                             color: #6331aa;
                             margin-left: 3px;
-                            &:hover{
+
+                            &:hover {
                                 text-decoration: underline;
                             }
                         }
@@ -171,93 +204,107 @@ main code start here
 /*----------------------------------
 this is all invoice page style here 
 ----------------------------------*/
-#invoiceBody{
+#invoiceBody {
     background: #D5D5D5;
 }
-#invoiceHeader{
-    .invoiceHeaderContainer{
+
+#invoiceHeader {
+    .invoiceHeaderContainer {
         padding: 25px 70px 30px 70px;
-        background-image: -moz-linear-gradient( -30deg, rgb(36,36,95) 0%, rgb(87,41,133) 100%);
-        background-image: -webkit-linear-gradient( -30deg, rgb(36,36,95) 0%, rgb(87,41,133) 100%);
-        background-image: -ms-linear-gradient( -30deg, rgb(36,36,95) 0%, rgb(87,41,133) 100%);
-        a{
-            img{
+        background-image: -moz-linear-gradient(-30deg, rgb(36, 36, 95) 0%, rgb(87, 41, 133) 100%);
+        background-image: -webkit-linear-gradient(-30deg, rgb(36, 36, 95) 0%, rgb(87, 41, 133) 100%);
+        background-image: -ms-linear-gradient(-30deg, rgb(36, 36, 95) 0%, rgb(87, 41, 133) 100%);
+
+        a {
+            img {
                 height: 40px;
             }
         }
     }
 }
-#invoiceHeader.invoiceHeader2{
-    .invoiceHeaderContainer{
+
+#invoiceHeader.invoiceHeader2 {
+    .invoiceHeaderContainer {
         background: #252464;
     }
 }
 
-#invoiceHeader.invoiceHeader3{
-    .invoiceHeaderContainer{
+#invoiceHeader.invoiceHeader3 {
+    .invoiceHeaderContainer {
         background: #EEEEEE;
     }
 }
 
-#invoiceMainArea{
-    .invoiceMainAreaContainer{
+#invoiceMainArea {
+    .invoiceMainAreaContainer {
         padding: 50px 70px;
         background: #fff;
-        .topInfo{
-            .top{
-                .left{
-                    h4{
+
+        .topInfo {
+            .top {
+                .left {
+                    h4 {
                         font-weight: 700;
                         font-size: 16px;
                         color: 000000;
                         font-family: $op;
                     }
-                    h5{
+
+                    h5 {
                         font-size: 16px;
                         color: 000000;
                         font-family: $op;
                         margin-top: 3px;
-                        span{
+
+                        span {
                             font-weight: 700;
                             margin-left: 3px;
                         }
                     }
-                    h3{
+
+                    h3 {
                         font-size: 16px;
                         color: 000000;
                         font-family: $op;
                         margin-top: 30px;
-                        span{
+
+                        span {
                             font-weight: 700;
                             margin-left: 3px;
                         }
                     }
                 }
-                .right{
-                    h4{
+
+                .right {
+                    h4 {
                         font-size: 16px;
                         color: 000000;
                         font-family: $op;
                         margin-top: 25px;
-                        span{
+
+                        span {
                             font-weight: 700;
                             margin-left: 3px;
                         }
                     }
                 }
             }
-            .companyInfo{
+
+            .companyInfo {
                 margin-top: 40px;
-                .logo{
-                    a{
-                        img{
+
+                .logo {
+                    a {
+                        img {
                             height: 35px;
                         }
                     }
                 }
-                ul{
+
+                ul {
                     margin-top: 25px;
-                    li{
+
+                    li {
                         font-family: $op;
                         font-size: 16px;
                         color: #000;
@@ -265,49 +312,60 @@ this is all invoice page style here
                 }
             }
         }
-        .quotationtableArea{
+
+        .quotationtableArea {
             margin-top: 50px;
-            .topinfoTable{
+
+            .topinfoTable {
                 padding-right: 49px;
-                .left{
-                    h3{
+
+                .left {
+                    h3 {
                         font-weight: 700;
                         font-size: 30px;
                         color: rgb(99, 49, 170);
                         font-family: $op;
                     }
                 }
-                .right{
-                    h4{
+
+                .right {
+                    h4 {
                         font-size: 16px;
                         color: 000000;
                         font-family: $op;
                         margin-top: 3px;
                         font-weight: 700;
-                        span{
+
+                        span {
                             font-weight: 400;
                             margin-left: 3px;
                         }
                     }
                 }
             }
-            .topinfoTable3{
-                .left{
-                    h3{
+
+            .topinfoTable3 {
+                .left {
+                    h3 {
                         color: #1c4e87;
                     }
                 }
             }
-            .quotationMainTable{
+
+            .quotationMainTable {
                 margin-top: 30px;
+
                 .table-bordered {
                     border: 1px solid #000;
                 }
-                table{
+
+                table {
                     margin-bottom: 0px;
-                    thead{
+
+                    thead {
                         border: 1px solid #000;
-                        th{
+
+                        th {
                             border: 1px solid #000;
                             padding: 4px .75rem;
                             color: #fff;
@@ -316,42 +374,50 @@ this is all invoice page style here
                             font-size: 14px;
                             line-height: 19px;
                         }
-                        background: rgb(87,41,133);
-                        background: linear-gradient(-30deg, rgba(87,41,133,1) 35%, rgba(36,36,95,1) 100%);
+
+                        background: rgb(87, 41, 133);
+                        background: linear-gradient(-30deg, rgba(87, 41, 133, 1) 35%, rgba(36, 36, 95, 1) 100%);
                     }
-                    tbody{
-                        td{
+
+                    tbody {
+                        td {
                             padding: 4px .75rem;
                             border: 1px solid #000;
-                            .cthead{
+
+                            .cthead {
                                 border-bottom: 1px solid #000;
                                 padding-bottom: 4px;
                                 font-weight: 700;
                                 font-size: 15px;
                                 color: #000;
-                                i{
+
+                                i {
                                     font-size: 12px;
                                 }
                             }
-                            p{
+
+                            p {
                                 font-weight: 600;
                                 font-size: 15px;
                                 color: #000;
-                                i{
+
+                                i {
                                     font-size: 12px;
                                 }
                             }
                         }
-                        .serialNumber{
-                            p{
+
+                        .serialNumber {
+                            p {
                                 font-weight: 600;
                                 font-size: 14px;
                                 color: #000;
                                 line-height: 18px;
                             }
                         }
-                        .peoductName{
-                            p{
+
+                        .peoductName {
+                            p {
                                 font-weight: 600;
                                 font-size: 14px;
                                 color: #000;
@@ -360,112 +426,135 @@ this is all invoice page style here
                         }
                     }
                 }
-                .amount1Bottom{
+
+                .amount1Bottom {
                     border: 1px solid #000;
                     border-top: none;
                     padding: 7px 0px;
                     padding-right: 48px;
-                    h4{
+
+                    h4 {
                         font-family: $op;
                         font-weight: 700;
                         font-size: 15px;
                         color: #000;
-                        span{
+
+                        span {
                             margin-left: 65px;
-                            i{
+
+                            i {
                                 font-size: 12px;
                             }
                         }
                     }
                 }
-                .discountAmmount{
+
+                .discountAmmount {
                     border: 1px solid #000;
                     border-top: none;
                     padding: 7px 0px;
                     padding-right: 48px;
-                    h4{
+
+                    h4 {
                         font-family: $op;
                         font-weight: 400;
                         font-size: 15px;
                         color: #000;
-                        span{
+
+                        span {
                             margin-left: 65px;
                             font-weight: 700;
-                            i{
+
+                            i {
                                 font-size: 12px;
                             }
                         }
                     }
                 }
-                .gstAmmount{
+
+                .gstAmmount {
                     border: 1px solid #000;
                     border-top: none;
                     padding: 7px 0px;
                     padding-right: 48px;
-                    h4{
+
+                    h4 {
                         font-family: $op;
                         font-weight: 400;
                         font-size: 15px;
                         color: #000;
-                        span{
+
+                        span {
                             margin-left: 65px;
                             font-weight: 700;
-                            i{
+
+                            i {
                                 font-size: 12px;
                             }
                         }
                     }
                 }
-                .totalAmmount{
+
+                .totalAmmount {
                     padding: 7px 0px;
                     padding-right: 48px;
                     background: #252464;
                     border: 1px solid #252464;
-                    h4{
+
+                    h4 {
                         font-family: $op;
                         font-weight: 400;
                         font-size: 15px;
                         color: #fff;
                         font-weight: 700;
-                        span{
+
+                        span {
                             margin-left: 65px;
-                            i{
+
+                            i {
                                 font-size: 12px;
                             }
                         }
                     }
                 }
             }
-            .quotationMainTable2{
-                table{
-                    thead{
+
+            .quotationMainTable2 {
+                table {
+                    thead {
                         background: #6331AA;
                     }
                 }
             }
-            .quotationMainTable3{
-                table{
-                    thead{
+
+            .quotationMainTable3 {
+                table {
+                    thead {
                         background: #239546;
                     }
                 }
-                .totalAmmount2{
+
+                .totalAmmount2 {
                     background: #1C4E87;
                 }
             }
         }
-        .invoieTermsCondition{
+
+        .invoieTermsCondition {
             margin-top: 60px;
-            h4{
+
+            h4 {
                 font-weight: 700;
                 font-family: $op;
                 color: #252464;
                 font-size: 16px;
             }
-            ol{
+
+            ol {
                 margin-top: 25px;
                 padding-left: 70px;
-                li{
+
+                li {
                     font-family: $op;
                     font-size: 15px;
                     color: #000;
@@ -476,18 +565,22 @@ this is all invoice page style here
                 }
             }
         }
-        .invoiceLicessSupport{
+
+        .invoiceLicessSupport {
             margin-top: 60px;
-            h4{
+
+            h4 {
                 font-weight: 700;
                 font-family: $op;
                 color: #252464;
                 font-size: 16px;
             }
-            ol{
+
+            ol {
                 margin-top: 25px;
                 padding-left: 70px;
-                li{
+
+                li {
                     font-family: $op;
                     font-size: 15px;
                     color: #000;
@@ -498,9 +591,11 @@ this is all invoice page style here
                 }
             }
         }
-        .companyInfoLinkBottom{
+
+        .companyInfoLinkBottom {
             margin-top: 60px;
-            a{
+
+            a {
                 font-family: $op;
                 font-weight: 700;
                 font-size: 16px;
@@ -509,25 +604,30 @@ this is all invoice page style here
             }
         }
     }
-    .invoiceFooter{
+
+    .invoiceFooter {
         padding: 0px 40px;
         background: #fff;
-        .invoiceFooterContainer{
+
+        .invoiceFooterContainer {
             border-top: 1px solid #D6D6D6;
             padding: 30px 0px;
-            .left.version3{
-                a{
-                    img{
+
+            .left.version3 {
+                a {
+                    img {
                         height: 35px;
                     }
                 }
             }
-            .right{
-                a{
+
+            .right {
+                a {
                     font-size: 15px;
                     font-weight: 600;
                     color: #000;
-                    &:hover{
+
+                    &:hover {
                         text-decoration: underline;
                     }
                 }
@@ -542,22 +642,26 @@ this is all invoice page style here
     padding-right: 25px;
     padding-left: 25px;
 }
-#dashboardHeader{
+
+#dashboardHeader {
     border-bottom: 1px solid #E4E4E4;
     padding: 10px 0px;
-    .headerRightMenu{
-        ul{
-            li{
+
+    .headerRightMenu {
+        ul {
+            li {
                 display: inline-block;
                 margin-left: 15px;
-                a{
+
+                a {
                     font-size: 16px;
                     display: block;
                     padding: 0px 5px;
                 }
+
                 /*-- this is for notifications dropdown --*/
-                #notificationsDropDown{
-                    >button{
+                #notificationsDropDown {
+                    >button {
                         border: none;
                         background-color: #fff;
                         outline: none;
@@ -568,18 +672,22 @@ this is all invoice page style here
                         display: block;
                         padding-bottom: 5px;
                     }
-                    button[aria-expanded="true"]{
+
+                    button[aria-expanded="true"] {
                         background: #E3E6F5;
-                        svg{
-                            path{
+
+                        svg {
+                            path {
                                 fill: $mainColor;
                             }
-                            g{
+
+                            g {
                                 stroke: #E3E6F5;
                             }
                         }
                     }
-                    .dropdown-menu{
+
+                    .dropdown-menu {
                         width: 387px;
                         left: -231px !important;
                         transform: translate3d(-5px, 32px, 0px) !important;
@@ -591,16 +699,18 @@ this is all invoice page style here
                         min-height: 93.8vh;
                         max-height: 93.8vh;
                         overflow-y: scroll;
-                        box-shadow: 0px 6px 10px rgba(0,0,0,0.1);
+                        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
                         animation-duration: 0.4s;
-                        .notificationsTop{
-                            .left{
-                                h3{
+
+                        .notificationsTop {
+                            .left {
+                                h3 {
                                     font-family: $he;
                                     font-weight: 700;
                                     font-size: 16px;
                                     color: $mainColor;
-                                    span{
+
+                                    span {
                                         margin-left: 10px;
                                         font-weight: 400;
                                         font-size: 15px;
@@ -608,12 +718,14 @@ this is all invoice page style here
                                     }
                                 }
                             }
-                            .right{
-                                ul{
-                                    li{
+
+                            .right {
+                                ul {
+                                    li {
                                         display: inline-block;
                                         margin: 0px;
-                                        .clearNoti{
+
+                                        .clearNoti {
                                             border: 1px solid #E5E5E5;
                                             border-radius: 4px;
                                             font-family: $he;
@@ -625,26 +737,31 @@ this is all invoice page style here
                                             transition: 0.4s;
                                             outline: none;
                                             margin-right: 15px;
-                                            svg{
+
+                                            svg {
                                                 margin-right: 4px;
-                                                path{
+
+                                                path {
                                                     transition: 0.4s;
                                                 }
                                             }
-                                            &:hover{
+
+                                            &:hover {
                                                 background: $mainColor;
                                                 border-color: $mainColor;
                                                 color: #fff;
-                                                svg{
-                                                    path{
+
+                                                svg {
+                                                    path {
                                                         fill: #fff;
                                                     }
                                                 }
                                             }
                                         }
                                     }
-                                    .closeNotificationDropDown{
-                                        button{
+
+                                    .closeNotificationDropDown {
+                                        button {
                                             background: transparent;
                                             border: none;
                                             outline: none;
@@ -655,27 +772,32 @@ this is all invoice page style here
                                 }
                             }
                         }
-                        .notificationSMainArea{
+
+                        .notificationSMainArea {
                             margin-top: 20px;
-                            .notificationSItem{
+
+                            .notificationSItem {
                                 border: 1px solid #E4E4E4;
                                 padding: 20px 26px;
                                 position: relative;
                                 margin-bottom: 15px;
-                                h3{
+
+                                h3 {
                                     font-family: $he;
                                     color: #000000;
                                     font-weight: 700;
                                     font-size: 15px;
                                 }
-                                h5{
+
+                                h5 {
                                     font-family: $he;
                                     color: #000000;
                                     font-weight: 500;
                                     font-size: 13px;
                                     margin-top: 13px;
                                 }
-                                p{
+
+                                p {
                                     font-family: $he;
                                     color: #999999;
                                     font-weight: 400;
@@ -683,26 +805,30 @@ this is all invoice page style here
                                     line-height: 15.6px;
                                     margin-top: 9px;
                                 }
-                                a{
+
+                                a {
                                     position: absolute;
                                     top: 15px;
                                     right: 10px;
-                                    svg{
-                                        path{
+
+                                    svg {
+                                        path {
                                             transition: 0.4s;
                                         }
                                     }
-                                    &:hover{
-                                        svg{
-                                            path{
+
+                                    &:hover {
+                                        svg {
+                                            path {
                                                 fill: $mainColor;
                                             }
                                         }
                                     }
                                 }
                             }
-                            .sellAllNotifictionQuote{
-                                a{
+
+                            .sellAllNotifictionQuote {
+                                a {
                                     border: 1px solid #E4E4E4;
                                     font-family: $he;
                                     font-size: 15px;
@@ -712,7 +838,8 @@ this is all invoice page style here
                                     width: 100%;
                                     padding: 12px 0px;
                                     text-align: center;
-                                    &:hover{
+
+                                    &:hover {
                                         background: $mainColor;
                                         color: #fff;
                                         border-color: $mainColor;
@@ -721,51 +848,61 @@ this is all invoice page style here
                             }
                         }
                     }
+
                     .dropdown-menu::-webkit-scrollbar {
                         width: 6px;
                         border-radius: 30px;
                     }
+
                     .dropdown-menu::-moz-scrollbar {
                         width: 6px;
                         border-radius: 30px;
                     }
+
                     .dropdown-menu::-o-scrollbar {
                         width: 6px;
                         border-radius: 30px;
                     }
+
                     .dropdown-menu::-ms-scrollbar {
                         width: 6px;
                         border-radius: 30px;
                     }
-                       
+
                     .dropdown-menu::-webkit-scrollbar-track {
                         box-shadow: none;
                     }
+
                     .dropdown-menu::-moz-scrollbar-track {
                         box-shadow: none;
                     }
+
                     .dropdown-menu::-o-scrollbar-track {
                         box-shadow: none;
                     }
+
                     .dropdown-menu::-ms-scrollbar-track {
                         box-shadow: none;
                     }
-                       
+
                     .dropdown-menu::-webkit-scrollbar-thumb {
                         background-color: #D1D1D1;
                         border-radius: 30px;
                         outline: none;
                     }
+
                     .dropdown-menu::-moz-scrollbar-thumb {
                         background-color: #D1D1D1;
                         border-radius: 30px;
                         outline: none;
                     }
+
                     .dropdown-menu::-o-scrollbar-thumb {
                         background-color: #D1D1D1;
                         border-radius: 30px;
                         outline: none;
                     }
+
                     .dropdown-menu::-ms-scrollbar-thumb {
                         background-color: #D1D1D1;
                         border-radius: 30px;
@@ -776,15 +913,17 @@ this is all invoice page style here
 
 
                 /*-- this is user dropdown area --*/
-                #userDropDow{
+                #userDropDow {
                     margin-left: 10px;
-                    >button{
+
+                    >button {
                         border: none;
                         background-color: #fff;
                         outline: none;
                         position: relative;
                         padding-right: 20px;
-                        &:after{
+
+                        &:after {
                             font-family: "Font Awesome 5 Pro";
                             content: "\f107";
                             position: absolute;
@@ -793,27 +932,32 @@ this is all invoice page style here
                             transform: translateY(-50%);
                         }
                     }
-                    button[aria-expanded="true"]{
-                        &:after{
+
+                    button[aria-expanded="true"] {
+                        &:after {
                             content: "\f106";
                         }
                     }
-                    .dropdown-menu{
+
+                    .dropdown-menu {
                         width: 212px;
                         top: 9px !important;
                         border: none;
-                        box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+                        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
                         border-radius: 0px;
                         padding: 20px 18px;
                         animation-duration: 0.4s;
-                        .infoTop{
-                            h4{
+                        z-index: 99999999999999999;
+                        position: relative;
+                        .infoTop {
+                            h4 {
                                 font-family: $he;
                                 font-size: 15px;
                                 color: #010101;
                                 font-weight: 700;
                             }
-                            p{
+
+                            p {
                                 font-family: $he;
                                 font-weight: 400;
                                 font-size: 14px;
@@ -821,25 +965,30 @@ this is all invoice page style here
                                 margin-top: 5px;
                             }
                         }
-                        .linkArea{
+
+                        .linkArea {
                             margin-top: 15px;
                             border-top: 1px solid #E4E4E4;
-                            ul{
+
+                            ul {
                                 padding: 0px;
                                 padding-top: 10px;
-                                li{
+
+                                li {
                                     margin: 0;
                                     padding: 0;
                                     display: block;
                                     margin-bottom: 10px;
-                                    a{
+
+                                    a {
                                         font-family: $he;
                                         font-size: 15px;
                                         display: block;
                                         color: #000000;
                                         padding: 3px 5px;
                                         position: relative;
-                                        &:after{
+
+                                        &:after {
                                             height: 0px;
                                             width: 2px;
                                             position: absolute;
@@ -851,9 +1000,11 @@ this is all invoice page style here
                                             background: #6331AA;
                                             transition: height 0.4s;
                                         }
-                                        &:hover{
+
+                                        &:hover {
                                             color: #6331AA;
-                                            &:after{
+
+                                            &:after {
                                                 height: 20px;
                                             }
                                         }
@@ -861,9 +1012,11 @@ this is all invoice page style here
                                 }
                             }
                         }
-                        .userLogout{
+
+                        .userLogout {
                             margin-top: 20px;
-                            a{
+
+                            a {
                                 display: block;
                                 border: 1px solid #E4E4E4;
                                 font-family: $he;
@@ -872,7 +1025,8 @@ this is all invoice page style here
                                 color: #1E2859;
                                 text-align: center;
                                 padding: 10px 0px;
-                                &:hover{
+
+                                &:hover {
                                     background: $mainColor;
                                     color: #fff;
                                     border-color: $mainColor;
@@ -886,35 +1040,43 @@ this is all invoice page style here
     }
 }
 
-  
+
 /*-- start menuBar2Top --*/
-#menuBar2Top{
+#menuBar2Top {
     border-bottom: 1px solid #E4E4E4;
-    .menuBar2TopContainer{
+
+    .menuBar2TopContainer {
         position: relative;
-        >ul{
+
+        >ul {
             display: flex;
             justify-content: space-between;
             flex-direction: row;
-            >li{
+
+            >li {
                 width: 169px;
                 text-align: center;
                 position: relative;
-                a{
+
+                a {
                     display: block;
                     padding: 5px 0px 9px 0px;
-                    svg{
-                        path{
+
+                    svg {
+                        path {
                             transition: 0.4s;
                         }
-                        g{
+
+                        g {
                             transition: 0.4s;
                         }
-                        circle{
+
+                        circle {
                             transition: 0.4s;
                         }
                     }
-                    p{
+
+                    p {
                         font-weight: 700;
                         font-family: $he;
                         color: #000000;
@@ -923,46 +1085,55 @@ this is all invoice page style here
                         transition: 0.4s;
                     }
                 }
-                &:hover{
+
+                &:hover {
                     background: #1E2858;
-                    >a{
-                        svg{
-                            path{
+
+                    >a {
+                        svg {
+                            path {
                                 fill: #fff;
                             }
-                            g{
+
+                            g {
                                 fill: #fff;
                             }
-                            circle{
+
+                            circle {
                                 fill: #fff;
                             }
                         }
-                        p{
+
+                        p {
                             color: #fff;
                             font-weight: 600;
                         }
                     }
-                    .hoverMenuContainer{
+
+                    .hoverMenuContainer {
                         top: 101%;
                         opacity: 1;
                         visibility: visible;
                     }
                 }
+
                 /*--  this is for hover menu action --*/
-                .hoverMenuContainer{
+                .hoverMenuContainer {
                     position: absolute;
                     width: 100%;
                     top: 110%;
                     text-align: left;
                     background: #fff;
-                    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+                    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
                     transition: 0.4s;
                     opacity: 0;
                     visibility: hidden;
                     z-index: 999999999999;
-                    li{
+
+                    li {
                         display: block;
-                        a{
+
+                        a {
                             font-family: $he;
                             font-size: 14px;
                             color: #1E2858;
@@ -971,7 +1142,8 @@ this is all invoice page style here
                             padding: 10px 15px;
                             border-bottom: 1px solid #E4E4E4;
                             position: relative;
-                            &:after{
+
+                            &:after {
                                 height: 0px;
                                 width: 2px;
                                 content: "";
@@ -984,7 +1156,8 @@ this is all invoice page style here
                                 background: #6331AA;
                                 transition: 0.4s;
                             }
-                            &:before{
+
+                            &:before {
                                 width: 0;
                                 height: 0;
                                 border-style: solid;
@@ -997,31 +1170,39 @@ this is all invoice page style here
                                 margin: auto;
                                 content: "";
                             }
-                            &:hover{
+
+                            &:hover {
                                 color: #6331AA;
-                                &:after{
+
+                                &:after {
                                     height: 15px;
                                 }
                             }
                         }
-                        .active{
+
+                        .active {
                             background: #fff;
-                            &:after{
+
+                            &:after {
                                 height: 15px;
                             }
                         }
                     }
                 }
             }
-            li.moreSettingsDropDownItem{
+
+            li.moreSettingsDropDownItem {
                 width: auto !important;
-                &:hover{
+
+                &:hover {
                     background: transparent;
                 }
-                .moreSettingsDropDown{
+
+                .moreSettingsDropDown {
                     position: relative;
                     top: 9px;
-                    button.dropdownbtnMain{
+
+                    button.dropdownbtnMain {
                         background: transparent;
                         border: none;
                         outline: none;
@@ -1032,39 +1213,47 @@ this is all invoice page style here
                         color: #777777;
                         transition: 0.4s;
                     }
-                    button.dropdownbtnMain[aria-expanded="true"]{
+
+                    button.dropdownbtnMain[aria-expanded="true"] {
                         background: #F0F0F0;
                     }
-                    .dropdown-menu{
+
+                    .dropdown-menu {
                         width: 212px;
                         padding: 0px;
                         border-radius: 0px;
                         border: none;
-                        box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+                        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
                         top: 11px !important;
-                        ul{
-                            li{
+
+                        ul {
+                            li {
                                 display: block;
                                 border-bottom: 1px solid #E4E4E4;
                                 transition: 0.4s;
-                                a{
+
+                                a {
                                     padding: 9px 0px 15px 0px;
-                                    p{
+
+                                    p {
                                         font-size: 12px;
                                         margin-top: 8px;
                                         color: #000000;
                                     }
                                 }
-                                &:hover{
+
+                                &:hover {
                                     background: #1E2858;
                                     border-color: #1E2858;
-                                    a{
-                                        svg{
-                                            path{
+
+                                    a {
+                                        svg {
+                                            path {
                                                 fill: #fff;
                                             }
                                         }
-                                        p{
+
+                                        p {
                                             color: #fff;
                                         }
                                     }
@@ -1074,15 +1263,18 @@ this is all invoice page style here
                     }
                 }
             }
-            .active{
+
+            .active {
                 background: #1E2858;
-                a{
-                    svg{
-                        path{
+
+                a {
+                    svg {
+                        path {
                             fill: #fff;
                         }
                     }
-                    p{
+
+                    p {
                         color: #fff;
                         font-weight: 600;
                     }
@@ -1091,26 +1283,31 @@ this is all invoice page style here
         }
     }
 }
-  
+
 
 /*-- start topMenuBar3 --*/
-#topMenuBar3{
+#topMenuBar3 {
     padding: 12px 0px;
-    .topMenuBar3Container{
+
+    .topMenuBar3Container {
         padding-left: 23px;
-        ul{
-            li{
+
+        ul {
+            li {
                 display: inline-block;
                 margin-right: 45px;
-                a{
+
+                a {
                     font-weight: 700;
                     font-family: $he;
                     font-size: 13px;
                     color: #000000;
-                    &:hover{
+
+                    &:hover {
                         color: #6331AA;
                     }
-                    img{
+
+                    svg {
                         margin-right: 5px;
                     }
                 }
@@ -1122,27 +1319,33 @@ this is all invoice page style here
 
 
 /*-- =================== this is start dashboard main content area ===================== */
-#mainDashboardContentArea{
+#mainDashboardContentArea {
     padding: 25px 0px;
     background: #1E2859;
     overflow-x: hidden;
-    .dashbordContentContainer{
+
+    .dashbordContentContainer {
+
         /*-- overview box --*/
-        .overviewItemBox{
+        .overviewItemBox {
             padding: 35px 30px 15px 30px;
             background: #FFFFFF;
-            .dashboardOverViewItem{
+
+            .dashboardOverViewItem {
                 margin-bottom: 30px;
-                .left{
-                    span{
+
+                .left {
+                    span {
                         display: block;
                         float: left;
                         margin-right: 15px;
-                        svg{
+
+                        svg {
                             height: 53px;
                         }
                     }
-                    h4{
+
+                    h4 {
                         font-family: $he;
                         font-weight: 600;
                         font-size: 30px;
@@ -1150,27 +1353,32 @@ this is all invoice page style here
                         position: relative;
                         top: 5px;
                     }
-                    h5{
+
+                    h5 {
                         font-family: $he;
                         font-weight: 500;
                         font-size: 15px;
                         color: #6c6c6c;
                     }
                 }
-                .right{
-                    p{
+
+                .right {
+                    p {
                         font-family: $he;
                         font-weight: 700;
                         font-size: 12px;
                         color: #6cc73b;
-                        i{
+
+                        i {
                             margin-right: 4px;
                         }
                     }
-                    .down{
+
+                    .down {
                         color: #f2575d;
                     }
-                    h5{
+
+                    h5 {
                         font-family: $he;
                         font-weight: 600;
                         font-size: 12px;
@@ -1179,30 +1387,36 @@ this is all invoice page style here
                 }
             }
         }
+
         /*-- performace box --*/
-        .performanceBox{
+        .performanceBox {
             padding: 25px 40px;
             background: #FFFFFF;
-            h3{
+
+            h3 {
                 font-family: $he;
                 font-weight: 700;
                 font-size: 14px;
                 color: #010101;
             }
-            .chrtContainer{
+
+            .chrtContainer {
                 margin-top: 60px;
-                #myChart{
+
+                #myChart {
                     height: 259px !important;
                 }
             }
         }
+
         /*-- start orientationBox --*/
-        .orientationBox{
+        .orientationBox {
             padding: 25px 40px;
             background: #FFFFFF;
-            .topTitle{
-                .left{
-                    h3{
+
+            .topTitle {
+                .left {
+                    h3 {
                         font-family: $he;
                         font-weight: 700;
                         font-size: 14px;
@@ -1210,53 +1424,64 @@ this is all invoice page style here
                     }
                 }
             }
-            .chartBox{
+
+            .chartBox {
                 margin-top: 42px;
-                #myChart2{
+
+                #myChart2 {
                     height: 265px !important;
                 }
             }
         }
+
         /*-- start manageMentPerformanceBox --*/
-        .manageMentPerformanceBox{
+        .manageMentPerformanceBox {
             padding: 25px 40px;
             background: #FFFFFF;
-            .topTitle{
-                h3{
+
+            .topTitle {
+                h3 {
                     font-family: $he;
                     font-weight: 700;
                     font-size: 14px;
                     color: #010101;
                 }
             }
-            .chartBox{
+
+            .chartBox {
                 margin-top: 50px;
-                #myChart3{
+
+                #myChart3 {
                     height: 270px !important;
                 }
             }
         }
+
         /*-- start leadbox area --*/
-        .leadBoxArea{
+        .leadBoxArea {
             padding: 40px 25px 27px 25px;
             background: #fff;
-            .topPart{
+
+            .topPart {
                 background: #f4f5f8;
                 padding: 22px;
                 border-radius: 10px;
-                .left{
-                    span{
+
+                .left {
+                    span {
                         display: block;
                         float: left;
                         margin-right: 13px;
                     }
-                    h4{
+
+                    h4 {
                         font-family: $he;
                         font-weight: 700;
                         font-size: 22px;
                         color: #0e70ec;
                     }
-                    h5{
+
+                    h5 {
                         font-family: $he;
                         font-weight: 600;
                         font-size: 14px;
@@ -1264,14 +1489,16 @@ this is all invoice page style here
                         margin-top: 2px;
                     }
                 }
-                .right{
-                    h4{
+
+                .right {
+                    h4 {
                         font-family: $he;
                         font-weight: 700;
                         font-size: 22px;
                         color: #1e2858;
                     }
-                    h5{
+
+                    h5 {
                         font-family: $he;
                         font-weight: 600;
                         font-size: 14px;
@@ -1280,19 +1507,24 @@ this is all invoice page style here
                     }
                 }
             }
-            .mainPart{
+
+            .mainPart {
                 margin-top: 30px;
                 padding: 0px 10px;
-                .item{
+
+                .item {
                     margin-bottom: 20px;
-                    .left{
+
+                    .left {
                         padding-left: 5px;
-                        h4{
+
+                        h4 {
                             font-family: $he;
                             font-weight: 600;
                             font-size: 15px;
                             color: #6c6c6c;
-                            span{
+
+                            span {
                                 font-weight: 700;
                                 font-size: 18px;
                                 color: #1e2858;
@@ -1302,13 +1534,15 @@ this is all invoice page style here
                             }
                         }
                     }
-                    .right{
-                        h4{
+
+                    .right {
+                        h4 {
                             font-family: $he;
                             font-weight: 600;
                             font-size: 15px;
                             color: #6c6c6c;
-                            span{
+
+                            span {
                                 font-weight: 700;
                                 font-size: 18px;
                                 color: #0d6feb;
@@ -1321,51 +1555,62 @@ this is all invoice page style here
                 }
             }
         }
+
         /*-- start hod performance box area --*/
-        .hodPerformanceBox{
+        .hodPerformanceBox {
             padding: 30px 40px;
             background: #fff;
-            .topTtile{
-                h4{
-                     font-family: $he;
-                    font-weight: 700;
-                    font-size: 14px;
-                    color: #010101;
-                }
-            }
-            .chartBox{
-                margin-top: 40px;
-                #myChart4{
-                    height: 262px !important;
-                }
-            }
-        }
-        /*-- start company performance box area --*/
-        .companyPerformanceBox{
-            padding: 30px 40px;
-            background: #fff;
-            .topTitle{
-                h4{
+
+            .topTtile {
+                h4 {
                     font-family: $he;
                     font-weight: 700;
                     font-size: 14px;
                     color: #010101;
                 }
             }
-            .mainContainer{
+
+            .chartBox {
+                margin-top: 40px;
+
+                #myChart4 {
+                    height: 262px !important;
+                }
+            }
+        }
+
+        /*-- start company performance box area --*/
+        .companyPerformanceBox {
+            padding: 30px 40px;
+            background: #fff;
+
+            .topTitle {
+                h4 {
+                    font-family: $he;
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: #010101;
+                }
+            }
+
+            .mainContainer {
                 margin-top: 56px;
-                .performaceMetterBox{
+
+                .performaceMetterBox {
                     padding-bottom: 25px;
-                    p{
+
+                    p {
                         font-family: $he;
                         font-weight: 400;
                         font-size: 13px;
                         color: #6c6c6c;
                     }
-                    .svgMetter{
+
+                    .svgMetter {
                         margin-top: 10px;
                     }
-                    h4{
+
+                    h4 {
                         font-family: $he;
                         font-weight: 400;
                         font-size: 10px;
@@ -1375,24 +1620,28 @@ this is all invoice page style here
                 }
             }
         }
+
         /*-- start customer table box area --*/
-        .customerTableBox{
+        .customerTableBox {
             padding: 20px 30px;
             background: #fff;
-            .customerTableAreaTop{
-                .left{
-                    .info{
-                        h4{
+
+            .customerTableAreaTop {
+                .left {
+                    .info {
+                        h4 {
                             font-family: $he;
                             font-weight: 700;
                             font-size: 14px;
                             color: #010101;
                         }
                     }
-                    .searchBox{
+
+                    .searchBox {
                         position: relative;
                         width: 250px;
-                        input{
+
+                        input {
                             width: 100%;
                             background: #FBFBFB;
                             border: 1px solid #E4E4E4;
@@ -1403,7 +1652,8 @@ this is all invoice page style here
                             font-size: 13px;
                             color: #6c6c6c;
                         }
-                        span{
+
+                        span {
                             position: absolute;
                             left: 10px;
                             top: 50%;
@@ -1411,12 +1661,14 @@ this is all invoice page style here
                         }
                     }
                 }
-                .right{
-                    ul{
-                        li{
+
+                .right {
+                    ul {
+                        li {
                             display: inline-block;
                             margin-left: 10px;
-                            a{
+
+                            a {
                                 background: #fff;
                                 border: 1px solid #E4E4E4;
                                 padding: 10px 25px;
@@ -1425,23 +1677,28 @@ this is all invoice page style here
                                 font-size: 13px;
                                 color: #6c6c6c;
                                 border-radius: 4px;
-                                &:hover{
+
+                                &:hover {
                                     background: #F4F5F8;
                                 }
-                                i{
+
+                                i {
                                     margin-right: 4px;
                                 }
-                                svg{
+
+                                svg {
                                     margin-right: 6px;
                                 }
                             }
                         }
-                        .btn_sp{
-                            a{
+
+                        .btn_sp {
+                            a {
                                 background: #1E2859;
                                 border-color: #1E2859;
                                 color: #fff;
-                                &:hover{
+
+                                &:hover {
                                     background: #121c4e;
                                     border-color: #121c4e;
                                 }
@@ -1450,29 +1707,35 @@ this is all invoice page style here
                     }
                 }
             }
+
             /*-- tble main content table --*/
-            .customerMainTableContent{
+            .customerMainTableContent {
                 border: 1px solid #ddd;
                 margin-top: 14px;
                 padding-bottom: 20px;
-                .table{
+
+                .table {
                     margin-bottom: 0px;
-                    thead{
+
+                    thead {
                         border-bottom: 1px solid #ddd;
                         font-family: $he;
                         font-weight: 600;
                         font-size: 14px;
                         color: #1e2859;
-                        tr{
-                            th{
-                                svg{
+
+                        tr {
+                            th {
+                                svg {
                                     margin-left: 7px;
                                     cursor: pointer;
-                                    path{
+
+                                    path {
                                         transition: 0.4s;
                                     }
-                                    &:hover{
-                                        path{
+
+                                    &:hover {
+                                        path {
                                             fill: #1e2859;
                                         }
                                     }
@@ -1480,26 +1743,32 @@ this is all invoice page style here
                             }
                         }
                     }
-                    tbody{
-                        tr{
+
+                    tbody {
+                        tr {
                             transition: 0.4s;
-                            &:hover{
+
+                            &:hover {
                                 background-color: #F9F9F9;
                             }
-                            td{
+
+                            td {
                                 font-family: $he;
                                 font-weight: 500;
                                 font-size: 13px;
                                 color: #000000;
                                 padding: 7px .75rem;
-                                ul{
-                                    li{
+
+                                ul {
+                                    li {
                                         display: inline-block;
                                         margin-left: 14px;
-                                        a{
+
+                                        a {
                                             color: #bcbcbc;
                                             font-size: 16px;
-                                            &:hover{
+
+                                            &:hover {
                                                 color: #1e2859;
                                             }
                                         }
@@ -1508,6 +1777,7 @@ this is all invoice page style here
                             }
                         }
                     }
+
                     tbody:before {
                         content: '';
                         display: block;
@@ -1515,18 +1785,21 @@ this is all invoice page style here
                     }
                 }
             }
+
             /*-- customer table paginations --*/
-            .customerTablePaginations{
+            .customerTablePaginations {
                 margin-top: 15px;
-                ul{
-                    li{
+
+                ul {
+                    li {
                         display: inline-block;
                         font-family: $he;
                         font-weight: 500;
                         color: 000000;
                         font-size: 13px;
                         margin-left: 6px;
-                        a{
+
+                        a {
                             display: block;
                             height: 34px;
                             width: 34px;
@@ -1539,21 +1812,25 @@ this is all invoice page style here
                             font-size: 14px;
                             border: 1px solid #E4E4E4;
                             border-radius: 4px;
-                            &:hover{
+
+                            &:hover {
                                 background: $mainColor;
                                 color: #fff;
                                 border-color: $mainColor;
-                                i{
+
+                                i {
                                     color: #fff;
                                 }
                             }
-                            i{
+
+                            i {
                                 color: #9DA0A4;
                             }
                         }
                     }
-                    .pageNumber{
-                       input{
+
+                    .pageNumber {
+                        input {
                             height: 34px;
                             width: 38px;
                             border: none;
@@ -1563,7 +1840,7 @@ this is all invoice page style here
                             font-weight: 600;
                             font-family: $he;
                             border-radius: 4px;
-                       }
+                        }
                     }
                 }
             }
@@ -1573,12 +1850,13 @@ this is all invoice page style here
 
 
 /*-- start dashboard footer area --*/
-#dashboardFooter{
+#dashboardFooter {
     background: #1E2859;
     padding: 0px 0px 15px 0px;
     overflow-x: hidden;
-    .footerCopyright{
-        p{
+
+    .footerCopyright {
+        p {
             color: #fff;
             font-family: $he;
             font-weight: 500;
@@ -1589,64 +1867,75 @@ this is all invoice page style here
 
 
 /*-- start mobile menu area --*/
-#mennubar2MobileMenu{
+#mennubar2MobileMenu {
     border-bottom: 1px solid #ddd;
     padding: 10px 0px;
     position: relative;
-    .mobileMenuToggle{
-        button{
+
+    .mobileMenuToggle {
+        button {
             background: #1E2859;
             border: none;
             padding: 10px 14px 7px 14px;
             border-radius: 3px;
             outline: none;
-            span{
+
+            span {
                 display: block;
                 height: 2px;
                 width: 20px;
                 background: #fff;
-                margin-bottom: 5px;  
+                margin-bottom: 5px;
                 transition: 0.4s;
             }
         }
-        button[aria-expanded="true"]{
-            .line2{
+
+        button[aria-expanded="true"] {
+            .line2 {
                 opacity: 0;
                 visibility: hidden;
             }
-            .line1{
+
+            .line1 {
                 transform: rotate(47deg) translateY(5px) translateX(5px);
             }
-            .line3{
+
+            .line3 {
                 transform: rotate(-47deg) translateY(-5px) translateX(5px);
             }
         }
     }
-    .menuMobileContainer{
+
+    .menuMobileContainer {
         width: 100%;
         left: 0;
         position: absolute;
         z-index: 99999999;
         top: 100%;
         overflow-x: hidden;
-        .card{
+
+        .card {
             background: #fff;
             padding: 0px 0px;
             border-radius: 0px;
             border: none;
-            .mobileMenuLink{
+
+            .mobileMenuLink {
                 border-top: 1px solid #ddd;
-                >ul{
-                    li{
+
+                >ul {
+                    li {
                         display: block;
-                        a{
+
+                        a {
                             font-weight: 600;
                             font-size: 14px;
                             padding: 15px 20px;
                             display: block;
                             position: relative;
                             border-bottom: 1px solid #ddd;
-                            svg{
+
+                            svg {
                                 display: block;
                                 float: left;
                                 margin-right: 10px;
@@ -1654,13 +1943,16 @@ this is all invoice page style here
                                 position: relative;
                                 top: 4px;
                             }
-                            p{
+
+                            p {
                                 font-family: $he;
                             }
                         }
-                        a.subCollaspeBtn{
+
+                        a.subCollaspeBtn {
                             position: relative;
-                            &:after{
+
+                            &:after {
                                 font-family: "Font Awesome 5 Pro";
                                 content: "\f067";
                                 color: #fff;
@@ -1679,43 +1971,53 @@ this is all invoice page style here
 
                             }
                         }
-                        a.subCollaspeBtn[aria-expanded="true"]{
-                            &:after{
+
+                        a.subCollaspeBtn[aria-expanded="true"] {
+                            &:after {
                                 content: "\f068";
                             }
                         }
-                        a.subCollaspeBtn[aria-expanded="true"]{
+
+                        a.subCollaspeBtn[aria-expanded="true"] {
                             background: #1C265B;
                             border-color: #1C265B;
-                            &:after{
+
+                            &:after {
                                 background: #FF9066;
                             }
-                            p{
+
+                            p {
                                 color: #fff;
                             }
-                            svg{
-                                path{
+
+                            svg {
+                                path {
                                     fill: #fff;
                                 }
-                                g{
+
+                                g {
                                     fill: #fff;
                                 }
-                                circle{
+
+                                circle {
                                     fill: #fff;
                                 }
                             }
                         }
                     }
                 }
-                .card-body{
-                    .subMenuLinkItem{
+
+                .card-body {
+                    .subMenuLinkItem {
                         padding-left: 0px;
                         background: #fff;
-                        ul{
-                            li{
+
+                        ul {
+                            li {
                                 display: block;
                                 font-family: $he;
-                                a{
+
+                                a {
                                     padding: 10px 20px;
                                     border: none;
                                     color: #323232;
@@ -1723,8 +2025,9 @@ this is all invoice page style here
                                     border-bottom: 1px solid #ddd;
                                     position: relative;
                                 }
-                                a.active{
-                                    &:after{
+
+                                a.active {
+                                    &:after {
                                         height: 15px;
                                         width: 2px;
                                         background: #1C265B;
@@ -1748,20 +2051,25 @@ this is all invoice page style here
 
 
 /*-- start search area modal --*/
-#searchAreaModal{
-    background: rgba(0,0,0,0.7);
-    .modal-dialog{
+#searchAreaModal {
+    background: rgba(0, 0, 0, 0.7);
+
+    .modal-dialog {
         width: 53%;
         max-width: initial;
         margin: 12.75rem auto;
-        .modal-content{
+
+        .modal-content {
             background: transparent;
-            .modal-body{
+
+            .modal-body {
                 padding: 0px;
-                .searchModalContent{
-                    .inputBox{
+
+                .searchModalContent {
+                    .inputBox {
                         position: relative;
-                        input{
+
+                        input {
                             width: 100%;
                             padding: 17px 20px 17px 48px;
                             font-weight: 600;
@@ -1769,7 +2077,8 @@ this is all invoice page style here
                             border: none;
                             border-radius: 4px;
                         }
-                        span{
+
+                        span {
                             position: absolute;
                             top: 50%;
                             left: 20px;
@@ -1789,6 +2098,6 @@ this is all invoice page style here
 
 
 
-.fake{
+.fake {
     height: 400px;
 }

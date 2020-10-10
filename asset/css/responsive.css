@@ -514,7 +514,7 @@
     text-align: center;
 }
 #topMenuBar3 .topMenuBar3Container ul li a {
-    font-size: 10px;
+    font-size: 9px;
 }
 #topMenuBar3 .topMenuBar3Container ul li {
     display: inline-block;
@@ -530,8 +530,8 @@
 #topMenuBar3{
     overflow-x: hidden !important; 
 }
-#topMenuBar3 .topMenuBar3Container ul li a img {
-    margin-right: 0px;
+#topMenuBar3 .topMenuBar3Container ul li a svg {
+    margin-right: -2px;
     height: 13px;
 }
 #mennubar2MobileMenu .menuMobileContainer .card .mobileMenuLink>ul li a.subCollaspeBtn:after{
@@ -552,7 +552,7 @@
     border-radius: 3px;
 }
 #mainDashboardContentArea .dashbordContentContainer .overviewItemBox .dashboardOverViewItem .left span svg {
-    height: 40px;
+    height: 47px;
 }
 #mainDashboardContentArea .dashbordContentContainer .overviewItemBox .dashboardOverViewItem .left span {
     margin-bottom: 19px;
