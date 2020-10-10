@@ -551,8 +551,8 @@
     margin-bottom: 10px;
     border-radius: 3px;
 }
-#mainDashboardContentArea .dashbordContentContainer .overviewItemBox .dashboardOverViewItem .left span img {
-    height: 36px;
+#mainDashboardContentArea .dashbordContentContainer .overviewItemBox .dashboardOverViewItem .left span svg {
+    height: 40px;
 }
 #mainDashboardContentArea .dashbordContentContainer .overviewItemBox .dashboardOverViewItem .left span {
     margin-bottom: 19px;
