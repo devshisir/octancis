@@ -20,7 +20,7 @@
    <script src="asset/js/vendor/modernizr-3.6.0.min.js"></script>
 </head>
 
-<body>
+<body id="dashboardBody">
    <!-- start dashboard header area -->
    <header id="dashboardHeader">
       <div class="container-fluid">
@@ -42,7 +42,7 @@
             <div class="col-xl-3 col-lg-4 col-md-7">
                <div class="headerRightMenu text-right">
                   <ul>
-                     <li><a href="#" data-toggle="modal" data-target="#searchAreaModal">
+                     <li><a id="searchModalActions" href="#" data-toggle="modal" data-target="#searchAreaModal">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20.012" height="20" viewBox="0 0 20.012 20">
                            <path id="Shape_1333" data-name="Shape 1333" d="M1673.715,38.213l-4.933-4.951a7.881,7.881,0,0,0,1.963-5.191,8.374,8.374,0,0,0-16.738,0,8.235,8.235,0,0,0,8.369,8.075,8.489,8.489,0,0,0,4.795-1.461l4.971,4.988a1.12,1.12,0,0,0,1.543.029A1.029,1.029,0,0,0,1673.715,38.213ZM1662.376,22.1a5.972,5.972,0,1,1-6.186,5.969A6.087,6.087,0,0,1,1662.376,22.1Z" transform="translate(-1654.007 -19.996)" fill="#999"/>
                         </svg>
@@ -721,7 +721,16 @@
                         My Records
                      </a></li>
                      <li><a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22"><defs><clipPath id="a"><rect width="12" height="11" transform="translate(4.741 0.429)" fill="none"/></clipPath></defs><g transform="translate(-189 -137)"><circle cx="11" cy="11" r="11" transform="translate(189 137)" fill="#cb7be7"/><g transform="translate(189.259 142.571)" clip-path="url(#a)"><path d="M20.5.429H5.722c-.541,0-.981.32-.981.714v7.1c0,.394.44.714.981.714H20.5c.541,0,.981-.32.981-.714v-7.1C21.482.749,21.042.429,20.5.429Z"/><path d="M18.343,10.714H15.695V8.476H10.529v2.238H7.88c-.271,0-.49.16-.49.357s.22.357.49.357H18.343c.271,0,.49-.16.49-.357S18.614,10.714,18.343,10.714Z"/></g><path d="M197.14,154c-.271,0-.49-.159-.49-.356s.22-.357.49-.357h2.648v-1.762h-4.806c-.541,0-.981-.32-.981-.715v-7.095c0-.394.44-.715.981-.715H206v8.524h-1.046v1.762H206V154Z" fill="#fff"/></g></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                           <g id="Group_398" data-name="Group 398" transform="translate(-241 -2288)">
+                           <g id="jkbvdsjv" transform="translate(52 2151)">
+                              <circle id="Ellipse_47" data-name="Ellipse 47" cx="11" cy="11" r="11" transform="translate(189 137)" fill="#cb7be7"/>
+                              <g id="mytask" transform="translate(194 143.009)">
+                                 <path id="Path_1442" data-name="Path 1442" d="M10.927,0H.68A.682.682,0,0,0,0,.68V7.436a.682.682,0,0,0,.68.68H4.012V9.793H2.176a.34.34,0,0,0,0,.68H9.43a.34.34,0,1,0,0-.68H7.594V8.116h3.332a.682.682,0,0,0,.68-.68V.68A.682.682,0,0,0,10.927,0Z" fill="#fff"/>
+                              </g>
+                           </g>
+                           </g>
+                        </svg> 
                         My task
                      </a></li>
                      <li><a href="#">
@@ -1764,7 +1773,7 @@
          <div class="modal-body">
            <div class="searchModalContent">
               <div class="inputBox">
-                 <input type="text" placeholder="Search">
+                 <input id="seachContentInput" type="text" placeholder="Search" autofocus>
                  <span><i class="fal fa-search"></i></span>
               </div>
            </div>
@@ -1790,6 +1799,11 @@
    <script src="asset/js/Chart.min.js"></script>
    <script src="asset/js/utils.js"></script>
    <script src="asset/js/config/chartconfig.js"></script>
+   <script>
+      $('body').on('shown.bs.modal', '#searchAreaModal', function () {
+         $('#seachContentInput', this).focus();
+      })
+   </script>
 </body>
 
 </html>

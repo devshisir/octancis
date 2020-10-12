@@ -311,6 +311,11 @@
     #mainDashboardContentArea .dashbordContentContainer .leadBoxArea {
         margin-bottom: 10px;
     }
+    #searchAreaModal .modal-dialog {
+        width: 79%;
+        max-width: initial;
+        margin: 10.75rem auto;
+    }
 }
 
 
@@ -435,7 +440,11 @@
 #mainDashboardContentArea .dashbordContentContainer .customerTableBox .customerMainTableContent .table {
     width: 1200px;
 }
-
+#searchAreaModal .modal-dialog {
+    width: 75%;
+    max-width: initial;
+    margin: 7.75rem auto;
+}
 
 
 
@@ -761,7 +770,11 @@
 #mainDashboardContentArea .dashbordContentContainer .companyPerformanceBox .mainContainer .performaceMetterBox .svgMetter svg {
     height: 134px;
 }
-
+#searchAreaModal .modal-dialog {
+    width: 85%;
+    max-width: initial;
+    margin: 5.75rem auto;
+}
 
 
 
@@ -880,7 +893,11 @@
     #invoiceMainArea .invoiceFooter {
         padding: 0px 16px;
     }
-
+    #searchAreaModal .modal-dialog {
+        width: 90%;
+        max-width: initial;
+        margin: 4.75rem auto;
+    }
 
 
 

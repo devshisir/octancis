@@ -54,7 +54,9 @@ body::-webkit-scrollbar {
     padding-right: 10px !important;
 }
 
-
+#dashboardBody{
+    font-family: $he !important;
+}
 /*------------------------
 main code start here 
 -------------------------*/
@@ -77,8 +79,6 @@ main code start here
             margin: 0 auto;
             background: #fff;
             border-radius: 3px;
-
-            .logoare {}
 
             .info {
                 margin-top: 50px;
@@ -1395,7 +1395,7 @@ this is all invoice page style here
 
             h3 {
                 font-family: $he;
-                font-weight: 700;
+                font-weight: 500;
                 font-size: 14px;
                 color: #010101;
             }
@@ -1418,7 +1418,7 @@ this is all invoice page style here
                 .left {
                     h3 {
                         font-family: $he;
-                        font-weight: 700;
+                        font-weight: 500;
                         font-size: 14px;
                         color: #010101;
                     }
@@ -1442,7 +1442,7 @@ this is all invoice page style here
             .topTitle {
                 h3 {
                     font-family: $he;
-                    font-weight: 700;
+                    font-weight: 500;
                     font-size: 14px;
                     color: #010101;
                 }
@@ -1564,7 +1564,7 @@ this is all invoice page style here
             .topTtile {
                 h4 {
                     font-family: $he;
-                    font-weight: 700;
+                    font-weight: 500;
                     font-size: 14px;
                     color: #010101;
                 }
@@ -1587,7 +1587,7 @@ this is all invoice page style here
             .topTitle {
                 h4 {
                     font-family: $he;
-                    font-weight: 700;
+                    font-weight: 500;
                     font-size: 14px;
                     color: #010101;
                 }
@@ -1647,7 +1647,7 @@ this is all invoice page style here
                             border: 1px solid #E4E4E4;
                             border-radius: 4px;
                             padding: 9px 15px 9px 35px;
-                            font-family: $he;
+                            font-family: $he !important;
                             font-weight: 400;
                             font-size: 13px;
                             color: #6c6c6c;
@@ -1810,9 +1810,11 @@ this is all invoice page style here
                             font-weight: 500;
                             color: 000000;
                             font-size: 14px;
-                            border: 1px solid #E4E4E4;
                             border-radius: 4px;
-
+                            border: 1px solid transparent;
+                            i{
+                                color: #9DA0A4;
+                            }
                             &:hover {
                                 background: $mainColor;
                                 color: #fff;
@@ -1832,14 +1834,15 @@ this is all invoice page style here
                     .pageNumber {
                         input {
                             height: 34px;
-                            width: 38px;
+                            width: 34px;
                             border: none;
-                            background: #1E2859;
+                            background: #FBFBFB;
                             text-align: center;
-                            color: #fff;
                             font-weight: 600;
-                            font-family: $he;
+                            font-family: $he !important;
                             border-radius: 4px;
+                            border: 1px solid #E4E4E4;
+                            color: #000000;
                         }
                     }
                 }
@@ -2072,8 +2075,8 @@ this is all invoice page style here
                         input {
                             width: 100%;
                             padding: 17px 20px 17px 48px;
-                            font-weight: 600;
-                            font-family: $he;
+                            font-weight: 500;
+                            font-family: $he !important;
                             border: none;
                             border-radius: 4px;
                         }
