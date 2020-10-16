@@ -129,6 +129,19 @@
     #mainDashboardContentArea .dashbordContentContainer .hodPerformanceBox .chartBox {
         margin-top: 54px;
     }
+    #mainDashboardContentArea .dashbordContentContainer .overviewItemBox .dashboardOverViewItem .left span svg {
+        height: 37px;
+    }
+    #mainDashboardContentArea .dashbordContentContainer .overviewItemBox .dashboardOverViewItem {
+        margin-bottom: 21px;
+    }
+
+
+
+
+
+
+
 }
 @media (min-width: 1500px) and (max-width: 1709px) {
     #menuBar2Top .menuBar2TopContainer>ul>li {
@@ -316,6 +329,51 @@
         max-width: initial;
         margin: 10.75rem auto;
     }
+    #DashboardReporstArea .reportLeftPanel {
+        width: 104%;
+        padding-bottom: 75px;
+    }
+    #DashboardReporstArea .rightPanel {
+        height: 100%;
+        padding-left: 0px;
+    }
+    #DashboardReporstArea .reportLeftPanel nav ul li a {
+        font-size: 11px;
+        padding: 11px 11px;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer {
+        padding: 30px;
+        padding-bottom: 100px;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox {
+        padding: 20px;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .inputBoxSearchFilter .labelLeft {
+        font-size: 12px;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .inputCheckStatus {
+        padding-left: 11px;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .yearRadio{
+        padding-left: 11px;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .yearRadio .radionContainerYear{
+        flex-flow: wrap;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .yearRadio .radionContainerYear .radio {
+        margin-bottom: 9px;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .filterSearchAction .filterSearchActionButton button {
+        margin-left: 10px;
+    }
+    #topMenuBar3 .topMenuBar3Container{
+        overflow-x: scroll;
+    }
+    #topMenuBar3 .topMenuBar3Container ul{
+        width: 2000px;
+        padding-left: 10px;
+        
+    }
 }
 
 
@@ -445,12 +503,55 @@
     max-width: initial;
     margin: 7.75rem auto;
 }
-
-
-
-
-
-
+#mennubar2MobileMenu .menuMobileContainer .card .mobileMenuLink>ul li a.subCollaspeBtn:after{
+    background: transparent;
+    color: #232323;
+}
+#mennubar2MobileMenu .menuMobileContainer .card .mobileMenuLink>ul li a {
+    font-weight: 700;
+    font-size: 13px;
+}
+#mennubar2MobileMenu .menuMobileContainer .card .mobileMenuLink>ul li a.subCollaspeBtn[aria-expanded="true"]:after {
+    background: transparent;
+    color: #fff;
+}
+#DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox {
+    padding: 20px;
+}
+.selectBox2 .text-right {
+    text-align: left !important;
+    margin-bottom: 6px;
+}
+.yearRadio .text-right {
+    text-align: left !important;
+    margin-bottom: 6px;
+}
+.radionContainerYear.d-flex{
+    flex-wrap: wrap;
+}
+#DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .yearRadio .radionContainerYear .radio {
+    margin-bottom: 8px;
+}
+#DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .inputBoxSearchFilter .datePickerContainer label {
+    text-align: center !important;
+}
+/*-- mobile filter menu --*/
+#DashboardReporstArea .rightPanel {
+    padding-left: 0px;
+}
+#DashboardReporstArea .rightPanel .rightPanelContainer {
+    background: #fff;
+    height: 100%;
+    padding: 30px;
+}
+#topMenuBar3 .topMenuBar3Container{
+    overflow-x: scroll;
+}
+#topMenuBar3 .topMenuBar3Container ul{
+    width: 1500px;
+    padding-left: 10px;
+    
+}
 
 
 
@@ -679,9 +780,6 @@
 
 
 
-
-
-
 }
 
 /*-- Phone Landscape --*/
@@ -775,17 +873,91 @@
     max-width: initial;
     margin: 5.75rem auto;
 }
-
-
-
-
-
-
-
-
-
-
-
+#DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox {
+    padding: 20px;
+}
+.selectBox2 .text-right {
+    text-align: left !important;
+    margin-bottom: 6px;
+}
+.yearRadio .text-right {
+    text-align: left !important;
+    margin-bottom: 6px;
+}
+.radionContainerYear.d-flex{
+    flex-wrap: wrap;
+}
+#DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .yearRadio .radionContainerYear .radio {
+    margin-bottom: 8px;
+}
+#DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .inputBoxSearchFilter .datePickerContainer label {
+    text-align: left !important;
+    padding-left: 23px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+/*-- mobile filter menu --*/
+#DashboardReporstArea .rightPanel {
+    padding-left: 0px;
+}
+#DashboardReporstArea .rightPanel .rightPanelContainer {
+    background: #fff;
+    height: 100%;
+    padding: 30px;
+}
+#DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .inputBoxSearchFilter .labelLeft {
+    text-align: left !important;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+#DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .inputBoxSearchFilter .radioAction {
+    margin-right: 12px;
+    margin-left: 16px;
+}
+#DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .inputDate {
+    width: 91%;
+    margin: 0 auto;
+}
+#DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .inputBoxSearchFilter2 .selectBox2 label {
+    left: 0px;
+}
+#DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .inputBoxSearchFilter .datePickerContainer .datePickerSibgleItem .dateIcon {
+    right: 33px;
+    top: 50%;
+    transform: translateY(-3%);
+}
+.pl17{
+    padding-left: 17px !important;
+}
+.pl32{
+    padding-left: 32px !important;
+}
+#DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .inputBoxSearchFilter2 .selectBox2 select {
+    width: 95%;
+}
+.picodeLabel{
+    left: -13px !important;
+}
+#DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .filterSearchAction .filterSearchActionButton button {
+    margin-left: 26px;
+}
+#DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterResultBox .tableSearch table thead tr th {
+    font-size: 12px;
+}
+#DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterResultBox .tableSearch table tbody tr td {
+    font-size: 11px;
+}
+#DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterResultBox .tableSearch table tfoot tr td {
+    font-size: 11px;
+}
+#topMenuBar3 .topMenuBar3Container{
+    overflow-x: scroll;
+}
+#topMenuBar3 .topMenuBar3Container ul{
+    width: 1200px;
+    padding-left: 10px;
+    text-align: left;
+}
 
 }
 
@@ -898,13 +1070,172 @@
         max-width: initial;
         margin: 4.75rem auto;
     }
-
-
-
-
-
-
-
+    #DashboardReporstArea .rightPanel {
+        padding-left: 0px;
+    }
+    .mpl10{
+        padding-left: 10px !important;
+    }
+    .mpr10{
+        padding-right: 10px !important;
+    }
+    #DashboardReporstArea {
+        padding: 10px 0px;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer {
+        height: 100%;
+        padding: 15px;
+    }
+    .mobileLeftMenuContainer .right span {
+        height: 35px;
+        width: 35px;
+        line-height: 35px;
+        font-size: 13px;
+    }
+    .mobileLeftMenuContainer .left h4 {
+        font-size: 15px;
+    }
+    #reportsPlageLeftSidebarMobile {
+        width: 90%;
+    }
+    #reportsPlageLeftSidebarMobile .topPanelClose .content span{
+        height: 35px;
+        width: 35px;
+        line-height: 35px;
+        font-size: 13px;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .inputBoxSearchFilter .labelLeft {
+        font-size: 12px;
+        text-align: left !important;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox {
+        padding: 15px;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .inputBoxSearchFilter .radioAction {
+        margin-right: 0px;
+        margin-bottom: 8px;
+    }
+    .inputBoxSearchFilter .justify-content-around {
+        justify-content: space-between !important;
+        padding-left: 15px;
+        padding-right: 17px;
+        margin-top: 8px;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .inputBoxSearchFilter .radio__control {
+        width: 15px;
+        height: 15px;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .inputBoxSearchFilter input+.radio__control::before {
+        width: 7px;
+        height: 7px;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .inputBoxSearchFilter .radio__label {
+        font-size: 12px;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .inputBoxSearchFilter .datePickerContainer label {
+        font-size: 12px;
+        text-align: left !important;
+        margin-bottom: 7px;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .inputDate {
+        width: 90%;
+        margin: 0 auto;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .inputBoxSearchFilter .datePickerContainer .datePickerSibgleItem .dateIcon {
+        right: 23px;
+        top: 50%;
+        transform: translateY(-10%);
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .inputBoxSearchFilter .datePickerContainer .datePickerSibgleItem {
+        margin-bottom: 7px;
+    }
+    .selectBox2 .text-right {
+        text-align: left !important;
+        margin-bottom: 5px;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .inputBoxSearchFilter2 {
+        margin-top: 0px;
+    }
+    .mpl17{
+        padding-left: 16px !important;
+    }
+    .mpl19{
+        padding-left: 19px !important;
+    }
+    .mpl31{
+        padding-left: 31px !important;
+    }
+    .mpr13{
+        padding-right: 13px !important;
+    }
+    .mpr28{
+        padding-right: 28px !important;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .inputBoxSearchFilter2 .selectBox2 label {
+        font-size: 12px;
+        margin-left: 0px;
+        left: 0px;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .inputBoxSearchFilter2 .selectBox2 {
+        margin-bottom: 6px;
+    }
+    label.picodeLabel {
+        padding-left: 4px;
+    }
+    .statusCheckFilter {
+        margin-top: 10px;
+        padding-left: 7px;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .yearRadio .text-right{
+        text-align: left !important;
+        padding-left: 23px;
+    }
+    .radionContainerYear {
+        flex-wrap: wrap;
+        padding-left: 15px;
+        margin-top: 6px;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .yearRadio .radionContainerYear .radio__control {
+        width: 69px;
+        height: 29px;
+        font-size: 11px;
+        line-height: 29px;
+        margin-bottom: 7px;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .yearRadio {
+        margin-top: 10px;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .filterSearchAction .filterSearchActionButton button {
+        width: 90%;
+        height: 39px;
+        line-height: 39px;
+        outline: none;
+        margin: 0 auto;
+        display: table;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterResultBox .searhFilterResultBoxTop .left h4 {
+        font-size: 12px;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterResultBox .searhFilterResultBoxTop .right p {
+        font-size: 11px;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterResultBox .tableSearch{
+        overflow-x: scroll;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterResultBox .tableSearch table {
+        width: 500px;
+    }
+    #DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .jquery-datepicker.theme-light {
+        top: 16% !important;
+    }
+    #topMenuBar3 .topMenuBar3Container{
+        overflow-x: scroll;
+    }
+    #topMenuBar3 .topMenuBar3Container ul{
+        width: 900px;
+        padding-left: 10px;
+        text-align: left;
+    }
 
 
 
@@ -913,11 +1244,33 @@
 
 
 
+@media (min-width: 1263px) and (max-width: 1329px) {
+    #mainDashboardContentArea .dashbordContentContainer .overviewItemBox .dashboardOverViewItem .left span svg {
+        height: 41px;
+    }
+}
+@media (min-width: 1330px) and (max-width: 1455px) {
+    #mainDashboardContentArea .dashbordContentContainer .overviewItemBox .dashboardOverViewItem .left span svg {
+        height: 43px;
+    }
+}
 
-
-
-
-
+@media (min-width: 1456px) and (max-width: 1499px) {
+    #mainDashboardContentArea .dashbordContentContainer .overviewItemBox .dashboardOverViewItem .left span svg {
+        height: 43px;
+    }
+    #mainDashboardContentArea .dashbordContentContainer .manageMentPerformanceBox .chartBox #myChart3 {
+        height: 226px !important;
+    }
+}
+@media (min-width: 1500px) and (max-width: 1709px) {
+    #mainDashboardContentArea .dashbordContentContainer .overviewItemBox .dashboardOverViewItem .left span svg {
+        height: 45px;
+    }
+    #mainDashboardContentArea .dashbordContentContainer .overviewItemBox .dashboardOverViewItem {
+        margin-bottom: 25px;
+    }
+}
 
 
 

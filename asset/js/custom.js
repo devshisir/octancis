@@ -16,16 +16,20 @@ $(document).ready(function() {
 
 
 
+    $('#reportsLeftBtnToggle').on('click',function(){
+        $('#reportsPlageLeftSidebarMobile').toggleClass('show');
+    })
+
+    $('#reportLinkCloseToggle').on('click',function(){
+        $('#reportsPlageLeftSidebarMobile').removeClass('show');
+    })
 
 
 
-
-
-
-
-
-
-
+    $('#notificationsDropDown .notidrop').on('click',function(){
+        $('.menuMobileContainer #collapseExample.collapse').removeClass('show');
+        $("#mennubar2MobileMenu .mobileMenuToggle button").attr("aria-expanded","false");
+    })
 
 
     

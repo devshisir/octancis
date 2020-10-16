@@ -20,29 +20,29 @@
    <script src="asset/js/vendor/modernizr-3.6.0.min.js"></script>
 </head>
 
-<body>
+<body id="dashboardBody">
    <!-- start dashboard header area -->
    <header id="dashboardHeader">
       <div class="container-fluid">
          <div class="row align-items-center">
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-5">
                <div class="logoArea">
                   <a href="dashboard.html">
                      <img class="img-fluid" src="asset/img/dashboard/logo.png" alt="">
                   </a>
                </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-xl-6 col-lg-5 hide_md hide_mobile">
                <div class="middleLogo text-center">
                   <a href="index.html">
                      <img class="img-fluid" src="asset/img/dashboard/logo2.png" alt="">
                   </a>
                </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-xl-3 col-lg-4 col-md-7">
                <div class="headerRightMenu text-right">
                   <ul>
-                     <li><a href="#">
+                     <li><a id="searchModalActions" href="#" data-toggle="modal" data-target="#searchAreaModal">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20.012" height="20" viewBox="0 0 20.012 20">
                            <path id="Shape_1333" data-name="Shape 1333" d="M1673.715,38.213l-4.933-4.951a7.881,7.881,0,0,0,1.963-5.191,8.374,8.374,0,0,0-16.738,0,8.235,8.235,0,0,0,8.369,8.075,8.489,8.489,0,0,0,4.795-1.461l4.971,4.988a1.12,1.12,0,0,0,1.543.029A1.029,1.029,0,0,0,1673.715,38.213ZM1662.376,22.1a5.972,5.972,0,1,1-6.186,5.969A6.087,6.087,0,0,1,1662.376,22.1Z" transform="translate(-1654.007 -19.996)" fill="#999"/>
                         </svg>
@@ -76,7 +76,7 @@
                      </a></li>
                      <li>
                         <div class="btn-group" id="notificationsDropDown">
-                           <button type="button" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <button type="button" class="notidrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25">
                                  <g id="Group_399" data-name="Group 399" transform="translate(-1787 -16)">
                                  <path id="Color_Overlay" data-name="Color Overlay" d="M1793.642,37.857h-4.8A1.83,1.83,0,0,1,1787,36.024c0-.034,0-.067,0-.1a1.837,1.837,0,0,1,.64-1.293.841.841,0,0,1,.085-.063,7.067,7.067,0,0,0,1.444-1.732l0,0c.031-.052.061-.105.091-.158l.012-.022c.026-.047.051-.094.077-.141l.017-.033.068-.133c.007-.015.013-.031.021-.045.02-.041.04-.083.059-.124l.024-.055c.017-.039.035-.076.051-.115.007-.019.015-.038.022-.056.016-.04.032-.078.048-.117.008-.021.016-.041.023-.062l.043-.112.021-.061c.014-.039.028-.076.041-.115.006-.019.012-.038.018-.057.014-.041.026-.081.039-.122l.016-.057c.013-.04.024-.082.036-.123.005-.019.01-.038.014-.057.011-.041.022-.083.032-.124.005-.02.01-.04.014-.059.01-.041.02-.082.029-.123,0-.021.008-.042.013-.063.008-.04.017-.08.024-.121,0-.023.008-.046.013-.069.007-.039.014-.077.021-.116s.008-.053.012-.08l.016-.106c0-.028.006-.057.01-.085s.009-.068.013-.1,0-.048.007-.071l.011-.118.005-.077c0-.038.005-.075.007-.112s0-.088.005-.132c0-.019,0-.039,0-.058,0-.064,0-.127,0-.191V26.333A7.35,7.35,0,0,1,1797.335,19l.165,0h0l.164,0a7.351,7.351,0,0,1,7.186,7.331v2.923c0,.064,0,.127,0,.191,0,.019,0,.039,0,.058q0,.066.005.132c0,.037.005.074.008.112s0,.052.005.077.007.078.011.118c0,.023,0,.048.006.071s.008.067.013.1.006.059.011.087.01.068.014.1l.013.085c.006.038.013.076.02.114s.008.047.013.071.016.078.024.117l.013.067c.008.04.018.078.027.118.005.022.01.043.015.065.01.04.021.08.031.12.005.021.01.041.016.061.011.04.022.079.034.119.005.02.011.041.017.061.013.04.025.08.039.12l.018.059c.013.038.026.075.04.112.007.021.014.042.022.064s.027.072.041.108.016.044.025.067l.046.112c.008.021.016.041.025.061.015.037.032.074.049.111l.026.059c.018.039.036.077.055.115.008.018.016.036.025.054.02.041.041.08.061.121l.023.046.073.135.016.029c.03.053.059.106.091.158l0,0a7.057,7.057,0,0,0,1.444,1.732.816.816,0,0,1,.084.063,1.834,1.834,0,0,1,.64,1.293c0,.033,0,.067,0,.1a1.774,1.774,0,0,1-.022.278,1.838,1.838,0,0,1-1.816,1.554h-4.8a3.939,3.939,0,0,1-7.717,0Zm3.858,1.572a2.367,2.367,0,0,0,2.227-1.572h-4.454A2.366,2.366,0,0,0,1797.5,39.429Zm-5.775-13.1v2.923a8.6,8.6,0,0,1-2.695,6.252q-.171.163-.353.317l-.045.036a.257.257,0,0,0-.038.062.014.014,0,0,1,0,.005.018.018,0,0,0,0,.006.269.269,0,0,0-.015.089.255.255,0,0,0,.021.1.265.265,0,0,0,.241.16h17.325a.266.266,0,0,0,.252-.19.235.235,0,0,0,.011-.071.262.262,0,0,0-.015-.089s0,0,0-.006l0-.005a.243.243,0,0,0-.037-.062l-.044-.035h0q-.273-.231-.523-.481a8.6,8.6,0,0,1-2.524-5.969c0-.04,0-.079,0-.119V26.333a5.775,5.775,0,0,0-5.329-5.745.82.82,0,0,1-.187-.007l-.044-.005c-.071,0-.143,0-.215,0s-.143,0-.214,0l-.045.005a.817.817,0,0,1-.187.007A5.775,5.775,0,0,0,1791.724,26.333Z" fill="#999"/>
@@ -90,12 +90,12 @@
                            <div class="dropdown-menu dropdown-menu-left animate__animated animate__fadeIn">
                               <div class="notificationsTop">
                                  <div class="row align-items-center">
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6 col-6">
                                        <div class="left">
                                           <h3>Notifications <span>(12)</span></h3>
                                        </div>
                                     </div>
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6 col-6">
                                        <div class="right text-right">
                                           <ul>
                                              <li>
@@ -214,7 +214,7 @@
    <!-- end dashboard header area -->
    
    <!-- start menu bar 2 top -->
-   <section id="menuBar2Top">
+   <section id="menuBar2Top" class="hide_md hide_mobile">
       <div class="container-fluid">
          <div class="row">
             <div class="col-12">
@@ -434,32 +434,335 @@
       </div>
    </section>
    <!-- start menu bar 2 top -->
-      
+   <!-- start menubar 2 mobile menu -->
+   <section id="mennubar2MobileMenu" class="show_mobile">
+      <div class="container">
+         <div class="row align-items-center">
+            <div class="col-md-7 col-7">
+               <div class="logo2Area">
+                  <a href="index.html">
+                     <img class="img-fluid" src="asset/img/dashboard/logo2.png" alt="">
+                  </a>
+               </div>
+            </div>
+            <div class="col-md-5 col-5">
+               <div class="mobileMenuToggle text-right">
+                  <button type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                     <span class="line1"></span>
+                     <span class="line2"></span>
+                     <span class="line3"></span>
+                   </button>
+               </div>
+            </div>
+         </div>
+         <div class="menuMobileContainer">
+            <div class="row">
+               <div class="col-md-10 mx-auto">
+                  <div class="collapse" id="collapseExample">
+                     <div class="card card-body">
+                       <div class="mobileMenuLink" id="accordion">
+                        <ul>
+                           <li class="active">
+                              <a class="subCollaspeBtn" data-toggle="collapse" href="#sub1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="14.065" height="14.065" viewBox="0 0 14.065 14.065">
+                                    <g id="Group_398" data-name="Group 398" transform="translate(-1309 -1671)">
+                                    <g id="_01" data-name="01" transform="translate(1309 1671)">
+                                       <path id="Path_1441" data-name="Path 1441" d="M5.421,0h-4.4A1.027,1.027,0,0,0,0,1.026V3.663A1.027,1.027,0,0,0,1.026,4.689h4.4A1.027,1.027,0,0,0,6.447,3.663V1.026A1.027,1.027,0,0,0,5.421,0Z" fill="#7f7f7f"></path>
+                                       <path id="Path_1442" data-name="Path 1442" d="M5.421,213.33h-4.4A1.027,1.027,0,0,0,0,214.356v6.154a1.027,1.027,0,0,0,1.026,1.026h4.4a1.027,1.027,0,0,0,1.026-1.026v-6.154A1.027,1.027,0,0,0,5.421,213.33Z" transform="translate(0 -207.469)" fill="#7f7f7f"></path>
+                                       <path id="Path_1443" data-name="Path 1443" d="M282.751,341.33h-4.4a1.027,1.027,0,0,0-1.026,1.026v2.637a1.027,1.027,0,0,0,1.026,1.026h4.4a1.027,1.027,0,0,0,1.026-1.026v-2.637A1.027,1.027,0,0,0,282.751,341.33Z" transform="translate(-269.711 -331.953)" fill="#7f7f7f"></path>
+                                       <path id="Path_1444" data-name="Path 1444" d="M282.751,0h-4.4a1.027,1.027,0,0,0-1.026,1.026V7.179A1.027,1.027,0,0,0,278.356,8.2h4.4a1.027,1.027,0,0,0,1.026-1.026V1.026A1.027,1.027,0,0,0,282.751,0Z" transform="translate(-269.711)" fill="#7f7f7f"></path>
+                                    </g>
+                                    </g>
+                                 </svg>
+                                 <p>DECISION SCIENCE</p>
+                              </a>
+                              <div class="collapse multi-collapse" id="sub1" data-parent="#accordion">
+                                 <div class="card card-body">
+                                    <div class="subMenuLinkItem">
+                                       <ul>
+                                          <li><a class="active" href="#">Dashbord</a></li>
+                                          <li><a href="#">Order</a></li>
+                                          <li><a href="#">Vendor</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <a class="subCollaspeBtn" data-toggle="collapse" href="#sub2" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"> 
+                              <svg xmlns="http://www.w3.org/2000/svg" width="17.92" height="17.91" viewBox="0 0 15.92 15.91">
+                                 <g id="Group_399" data-name="Group 399" transform="translate(-1335.711 -1807.967)">
+                                 <g id="_02" data-name="02" transform="translate(1335.711 1807.967)">
+                                    <path id="Path_1445" data-name="Path 1445" d="M813.337,992.7a1.455,1.455,0,0,0,.972-.372l1.264.631a1.215,1.215,0,0,0-.006.126,1.456,1.456,0,1,0,2.792-.58l1.77-1.769a1.457,1.457,0,0,0,1.984-1.721l1.52-1.139a1.456,1.456,0,1,0-.694-1.241,1.483,1.483,0,0,0,.052.386l-1.52,1.139a1.456,1.456,0,0,0-2.1,1.82l-1.771,1.77a1.451,1.451,0,0,0-1.55.252l-1.264-.632c0-.043.006-.085.006-.128a1.456,1.456,0,1,0-1.456,1.457Z" transform="translate(-810.906 -985.183)" fill="#7f7f7f"></path>
+                                    <path id="Path_1446" data-name="Path 1446" d="M800.964,1118.607h-.38v-9.625a.571.571,0,0,0-.572-.571h-1.843a.572.572,0,0,0-.572.571v9.625h-.7v-6.86a.571.571,0,0,0-.572-.571h-1.843a.571.571,0,0,0-.572.571v6.86h-.7v-3.175a.573.573,0,0,0-.572-.572H790.8a.572.572,0,0,0-.572.572v3.175h-.7v-5.017a.573.573,0,0,0-.573-.573h-1.842a.574.574,0,0,0-.572.573v5.017h-.38a.572.572,0,0,0,0,1.144h14.8a.572.572,0,0,0,0-1.144Z" transform="translate(-785.603 -1103.841)" fill="#7f7f7f"></path>
+                                 </g>
+                                 </g>
+                              </svg>
+                              <p>SALES &amp; MARKETING</p>
+                              </a>
+                              <div class="collapse multi-collapse" id="sub2" data-parent="#accordion">
+                                 <div class="card card-body">
+                                    <div class="subMenuLinkItem">
+                                       <ul>
+                                          <li><a class="active" href="#">Dashbord</a></li>
+                                          <li><a href="#">Order</a></li>
+                                          <li><a href="#">Vendor</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <a class="subCollaspeBtn" data-toggle="collapse" href="#sub3" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"> 
+                              <svg xmlns="http://www.w3.org/2000/svg" width="17.926" height="15.719" viewBox="0 0 17.926 15.719">
+                                 <g id="Group_400" data-name="Group 400" transform="translate(-1368.074 -1808)">
+                                 <g id="_03" data-name="03" transform="translate(1368.074 1807.704)">
+                                    <circle id="Ellipse_47" data-name="Ellipse 47" cx="3" cy="3" r="3" transform="translate(5.926 0.296)" fill="#7f7f7f"></circle>
+                                    <circle id="Ellipse_48" data-name="Ellipse 48" cx="2" cy="2" r="2" transform="translate(12.926 2.296)" fill="#7f7f7f"></circle>
+                                    <circle id="Ellipse_49" data-name="Ellipse 49" cx="2" cy="2" r="2" transform="translate(0.926 2.296)" fill="#7f7f7f"></circle>
+                                    <path id="Path_1447" data-name="Path 1447" d="M4.7,241.049a3.114,3.114,0,0,0-2.321-.539A2.374,2.374,0,0,0,0,242.874V246.7a1.029,1.029,0,0,0,1.03,1.026c2.451,0,2.156.044,2.156-.105C3.186,244.908,2.865,242.921,4.7,241.049Z" transform="translate(0 -232.854)" fill="#7f7f7f"></path>
+                                    <path id="Path_1448" data-name="Path 1448" d="M125.773,239.856a5.192,5.192,0,0,0-4.009.949c-1.921,1.54-1.551,3.611-1.551,6.145a1.228,1.228,0,0,0,1.225,1.225c7.39,0,7.684.238,8.123-.732.144-.328.105-.224.105-3.364A4.245,4.245,0,0,0,125.773,239.856Z" transform="translate(-115.976 -232.186)" fill="#7f7f7f"></path>
+                                    <path id="Path_1449" data-name="Path 1449" d="M380.131,240.534a3.112,3.112,0,0,0-2.321.539c1.819,1.858,1.512,3.711,1.512,6.568,0,.151-.245.105,2.12.105a1.065,1.065,0,0,0,1.066-1.062V242.9A2.373,2.373,0,0,0,380.131,240.534Z" transform="translate(-364.582 -232.877)" fill="#7f7f7f"></path>
+                                 </g>
+                                 </g>
+                              </svg>
+                              <p>CRM</p>
+                              </a>
+                              <div class="collapse multi-collapse" id="sub3" data-parent="#accordion">
+                                 <div class="card card-body">
+                                    <div class="subMenuLinkItem">
+                                       <ul>
+                                          <li><a class="active" href="#">Dashbord</a></li>
+                                          <li><a href="#">Order</a></li>
+                                          <li><a href="#">Vendor</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <a class="subCollaspeBtn" data-toggle="collapse" href="#sub4" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"> 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16">
+                                    <path id="Color_Overlay" data-name="Color Overlay" d="M633.177,88A2.188,2.188,0,0,1,631,85.8V79.7l8.89,2.992a1.72,1.72,0,0,0,.61.113,1.617,1.617,0,0,0,.562-.1L650,79.7v6.1a2.188,2.188,0,0,1-2.177,2.2Zm7.133-6.432L631,78.431V76.6a2.188,2.188,0,0,1,2.177-2.2h4.156v-.8a1.593,1.593,0,0,1,1.583-1.6h3.167a1.593,1.593,0,0,1,1.583,1.6v.8h4.156A2.188,2.188,0,0,1,650,76.6v1.832l-9.31,3.136a.591.591,0,0,1-.381,0ZM638.916,74.4h3.167v-.8h-3.167Z" transform="translate(-631 -72)" fill="#7f7f7f"></path>
+                                 </svg> 
+                                 <p>PROJECTS</p>
+                              </a>
+                              <div class="collapse multi-collapse" id="sub4" data-parent="#accordion">
+                                 <div class="card card-body">
+                                    <div class="subMenuLinkItem">
+                                       <ul>
+                                          <li><a class="active" href="#">Dashbord</a></li>
+                                          <li><a href="#">Order</a></li>
+                                          <li><a href="#">Vendor</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <a class="subCollaspeBtn" data-toggle="collapse" href="#sub5" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"> 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="23" height="16" viewBox="0 0 23 16">
+                                    <g id="Vector_Smart_Object" data-name="Vector Smart Object" transform="translate(-802 -72)">
+                                    <g id="Vector_Smart_Object-2" data-name="Vector Smart Object" transform="translate(802 67.368)">
+                                       <g id="Group_43" data-name="Group 43">
+                                          <g id="Group_42" data-name="Group 42">
+                                          <path id="Path_122" data-name="Path 122" d="M18.975,16.337a2.157,2.157,0,0,0,0,4.295,2.157,2.157,0,0,0,0-4.295Zm0,2.779a.634.634,0,1,1,.575-.632A.606.606,0,0,1,18.975,19.116Z"></path>
+                                          <path id="Path_123" data-name="Path 123" d="M18.788,7.411H15.41a.484.484,0,0,0-.46.505v9.853a.484.484,0,0,0,.46.505H15.9a.474.474,0,0,0,.459-.428,2.624,2.624,0,0,1,5.237,0,.474.474,0,0,0,.459.428h.487a.484.484,0,0,0,.46-.505V12.842a.535.535,0,0,0-.107-.324L19.141,7.592A.445.445,0,0,0,18.788,7.411ZM15.87,11.453V8.926a.484.484,0,0,1,.46-.505h2.026a.445.445,0,0,1,.353.182l1.917,2.526a.511.511,0,0,1-.353.829H16.33A.484.484,0,0,1,15.87,11.453Z"></path>
+                                          <path id="Path_124" data-name="Path 124" d="M.46,18.274H1.638a.474.474,0,0,0,.459-.428,2.624,2.624,0,0,1,5.237,0,.474.474,0,0,0,.459.428H13.57a.484.484,0,0,0,.46-.505V5.137a.484.484,0,0,0-.46-.505H.46A.484.484,0,0,0,0,5.137V17.769A.484.484,0,0,0,.46,18.274Z"></path>
+                                          <path id="Path_125" data-name="Path 125" d="M4.715,16.337a2.157,2.157,0,0,0,0,4.295,2.157,2.157,0,0,0,0-4.295Zm0,2.779a.634.634,0,0,1,0-1.263.634.634,0,0,1,0,1.263Z"></path>
+                                          </g>
+                                       </g>
+                                    </g>
+                                    <path id="Color_Overlay" data-name="Color Overlay" d="M819.02,85.853A1.964,1.964,0,1,1,820.975,88,2.061,2.061,0,0,1,819.02,85.853Zm1.38,0a.578.578,0,1,0,.575-.632A.606.606,0,0,0,820.4,85.853Zm-15.639,0A1.963,1.963,0,1,1,806.715,88,2.06,2.06,0,0,1,804.76,85.853Zm1.38,0a.578.578,0,1,0,.575-.632A.606.606,0,0,0,806.14,85.853Zm3.652-.21a.472.472,0,0,1-.458-.428,2.624,2.624,0,0,0-5.237,0,.474.474,0,0,1-.459.428H802.46a.485.485,0,0,1-.46-.506V72.506a.485.485,0,0,1,.46-.506h13.11a.485.485,0,0,1,.46.506V85.137a.485.485,0,0,1-.46.506Zm14.26,0a.474.474,0,0,1-.459-.428,2.624,2.624,0,0,0-5.237,0,.474.474,0,0,1-.459.428h-.488a.484.484,0,0,1-.46-.5V75.284a.485.485,0,0,1,.46-.5h3.378a.445.445,0,0,1,.353.181l3.752,4.927a.535.535,0,0,1,.108.324v4.927a.484.484,0,0,1-.461.5Zm-6.183-9.347v2.526a.484.484,0,0,0,.46.506h3.943a.511.511,0,0,0,.354-.829l-1.917-2.526a.444.444,0,0,0-.353-.182H818.33A.484.484,0,0,0,817.87,76.295Z" fill="#7f7f7f"></path>
+                                    </g>
+                                 </svg>  
+                                 <p>SUPPLY CHAIN</p>
+                              </a>
+                              <div class="collapse multi-collapse" id="sub5" data-parent="#accordion">
+                                 <div class="card card-body">
+                                    <div class="subMenuLinkItem">
+                                       <ul>
+                                          <li><a class="active" href="#">Dashbord</a></li>
+                                          <li><a href="#">Order</a></li>
+                                          <li><a href="#">Vendor</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <a class="subCollaspeBtn" data-toggle="collapse" href="#sub6" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"> 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="19.467" height="17.01" viewBox="0 0 19.467 17.01">
+                                    <g id="Group_401" data-name="Group 401" transform="translate(-1406.052 -1805.61)">
+                                    <g id="_06" data-name="06" transform="translate(1406.05 1805.61)">
+                                       <path id="Path_1450" data-name="Path 1450" d="M48.772,257.158l-.006-.006a1.018,1.018,0,0,0-1.164-.187c-3.5,1.706-3.7,2.723-5.946,2.813h0c-.394.019-.916.017-1.31.008h0a.583.583,0,0,1-.556-.382.608.608,0,0,1,.579-.828h0c.454.01.9.007,1.219-.007H41.6a4.152,4.152,0,0,0,2.589-1.082,1.816,1.816,0,0,0-2.3-1.4,5.688,5.688,0,0,1-1.458.066,8.035,8.035,0,0,0-5.833,2.344l-4.932,4.038a.606.606,0,0,0,.429,1.032h6.023a.605.605,0,0,0,.561-.377c1.362-1.924,1.415-1.035,3.623-.986a8.058,8.058,0,0,0,6.765-2.48l1.712-1.712A.605.605,0,0,0,48.772,257.158Z" transform="translate(-29.48 -246.559)" fill="#7f7f7f"></path>
+                                       <path id="Path_1451" data-name="Path 1451" d="M139.605,116.271h13.314a.605.605,0,0,0,.605-.605v-1.575a2.421,2.421,0,1,0-4.841,0,2.421,2.421,0,0,0-4.841,0,2.421,2.421,0,1,0-4.841,0v1.575A.605.605,0,0,0,139.605,116.271Z" transform="translate(-134.579 -108.039)" fill="#7f7f7f"></path>
+                                       <circle id="Ellipse_50" data-name="Ellipse 50" cx="1.816" cy="1.816" r="1.816" transform="translate(4.946)" fill="#7f7f7f"></circle>
+                                       <circle id="Ellipse_51" data-name="Ellipse 51" cx="1.816" cy="1.816" r="1.816" transform="translate(9.787)" fill="#7f7f7f"></circle>
+                                       <circle id="Ellipse_52" data-name="Ellipse 52" cx="1.816" cy="1.816" r="1.816" transform="translate(14.628)" fill="#7f7f7f"></circle>
+                                    </g>
+                                    </g>
+                                 </svg>                                        
+                                 <p>HUMAN RESOURCES</p>
+                              </a>
+                              <div class="collapse multi-collapse" id="sub6" data-parent="#accordion">
+                                 <div class="card card-body">
+                                    <div class="subMenuLinkItem">
+                                       <ul>
+                                          <li><a class="active" href="#">Dashbord</a></li>
+                                          <li><a href="#">Order</a></li>
+                                          <li><a href="#">Vendor</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <a class="subCollaspeBtn" data-toggle="collapse" href="#sub7" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"> 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="19" height="15" viewBox="0 0 19 15">
+                                    <path id="Color_Overlay" data-name="Color Overlay" d="M1187.557,88a.549.549,0,1,1,0-1.1h17.887a.549.549,0,1,1,0,1.1Zm0-1.83a.549.549,0,1,1,0-1.1h17.887a.549.549,0,1,1,0,1.1Zm1.3-2.192A1.852,1.852,0,0,1,1187,82.142V74.836A1.852,1.852,0,0,1,1188.862,73h15.276A1.852,1.852,0,0,1,1206,74.836v7.306a1.852,1.852,0,0,1-1.862,1.836Zm1.457-8.7a.986.986,0,0,1-.909.9.7.7,0,0,0-.641.688v3.253a.7.7,0,0,0,.641.688.985.985,0,0,1,.909.9.7.7,0,0,0,.7.632h11.019a.7.7,0,0,0,.7-.632.984.984,0,0,1,.91-.9.7.7,0,0,0,.639-.688V76.863a.7.7,0,0,0-.639-.688.985.985,0,0,1-.91-.9.7.7,0,0,0-.7-.631h-11.019A.7.7,0,0,0,1190.319,75.278Zm8.9,5.956a3.8,3.8,0,0,0,0-5.489h2.466a2.081,2.081,0,0,0,1.479,1.458v2.572a2.081,2.081,0,0,0-1.479,1.459Zm-5.507-2.745a2.784,2.784,0,1,1,2.783,2.745A2.767,2.767,0,0,1,1193.717,78.489Zm-2.354,2.745a2.082,2.082,0,0,0-1.48-1.459V77.2a2.082,2.082,0,0,0,1.48-1.458h2.414a3.8,3.8,0,0,0,0,5.489Z" transform="translate(-1187 -73)" fill="#7f7f7f"></path>
+                                 </svg>                                                                
+                                 <p>PAYROLL</p>
+                              </a>
+                              <div class="collapse multi-collapse" id="sub7" data-parent="#accordion">
+                                 <div class="card card-body">
+                                    <div class="subMenuLinkItem">
+                                       <ul>
+                                          <li><a class="active" href="#">Dashbord</a></li>
+                                          <li><a href="#">Order</a></li>
+                                          <li><a href="#">Vendor</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <a class="subCollaspeBtn" data-toggle="collapse" href="#sub8" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"> 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path id="Color_Overlay" data-name="Color Overlay" d="M1367.988,88a.988.988,0,0,1-.988-.986V72.986a.987.987,0,0,1,.988-.986h11.436a.987.987,0,0,1,.988.986v.99a2.494,2.494,0,0,0-.563.421l-2.116,2.11c0-.015,0-.031,0-.046a.871.871,0,0,0-.872-.87h-6.314a.87.87,0,1,0,0,1.74h6.314l.047,0-1.536,1.532h-4.824a.87.87,0,1,0,0,1.74h3.081l-.652.649a2.442,2.442,0,0,0-.564.881h-1.865a.87.87,0,1,0,0,1.74h1.4l-.038.146a1.45,1.45,0,0,0,1.767,1.761l1.657-.425a2.439,2.439,0,0,0,1.117-.635l3.956-3.946v6.243a.988.988,0,0,1-.988.986Zm5.047-3.34a.4.4,0,0,1-.106-.386l.426-1.652a1.392,1.392,0,0,1,.364-.635l5.627-5.612,2,1.993-5.626,5.612a1.392,1.392,0,0,1-.637.362l-1.658.425a.38.38,0,0,1-.1.013A.4.4,0,0,1,1373.036,84.66Zm7.049-9.022.5-.5a1.411,1.411,0,0,1,2,1.993l-.507.5Z" transform="translate(-1367 -72)" fill="#7f7f7f"></path>
+                                 </svg>                                                                                        
+                                 <p>RECURRING EVENT</p>
+                              </a>
+                              <div class="collapse multi-collapse" id="sub8" data-parent="#accordion">
+                                 <div class="card card-body">
+                                    <div class="subMenuLinkItem">
+                                       <ul>
+                                          <li><a class="active" href="#">Dashbord</a></li>
+                                          <li><a href="#">Order</a></li>
+                                          <li><a href="#">Vendor</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <a class="subCollaspeBtn" data-toggle="collapse" href="#sub9" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"> 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16">
+                                    <path id="Color_Overlay" data-name="Color Overlay" d="M1563,86V83.334c0,1.1,3.358,2,7.5,2s7.5-.9,7.5-2V86c0,1.1-3.359,2-7.5,2S1563,87.1,1563,86Zm0-4V79.333c0,1.105,3.358,2,7.5,2s7.5-.895,7.5-2V82c0,1.105-3.359,2-7.5,2S1563,83.105,1563,82Zm0-4V75.334c0,1.1,3.358,2,7.5,2s7.5-.9,7.5-2V78c0,1.1-3.359,2-7.5,2S1563,79.1,1563,78Zm0-4c0-1.1,3.358-2,7.5-2s7.5.9,7.5,2-3.358,2-7.5,2S1563,75.105,1563,74Z" transform="translate(-1563 -72)" fill="#7f7f7f"></path>
+                                 </svg>                                           
+                                 <p>MASTER DATA</p>
+                              </a>
+                              <div class="collapse multi-collapse" id="sub9" data-parent="#accordion">
+                                 <div class="card card-body">
+                                    <div class="subMenuLinkItem">
+                                       <ul>
+                                          <li><a class="active" href="#">Dashbord</a></li>
+                                          <li><a href="#">Order</a></li>
+                                          <li><a href="#">Vendor</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <a class="subCollaspeBtn" data-toggle="collapse" href="#sub10" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">                 
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18.179" height="18.179" viewBox="0 0 18.179 18.179">
+                                 <g id="Group_402" data-name="Group 402" transform="translate(-1445.821 -1805.821)">
+                                 <g id="_10" data-name="10" transform="translate(1445.821 1805.821)">
+                                    <path id="Path_1452" data-name="Path 1452" d="M183.663,181a2.663,2.663,0,1,0,2.663,2.663A2.663,2.663,0,0,0,183.663,181Z" transform="translate(-174.574 -174.574)" fill="#7f7f7f"></path>
+                                    <path id="Path_1453" data-name="Path 1453" d="M18.179,10.591v-3L15.714,7.1a6.834,6.834,0,0,0-.536-1.29l1.375-2.063L14.43,1.625,12.367,3a6.833,6.833,0,0,0-1.289-.536L10.591,0h-3L7.1,2.464A6.833,6.833,0,0,0,5.811,3L3.748,1.625,1.625,3.749,3,5.812A6.833,6.833,0,0,0,2.464,7.1L0,7.588v3l2.464.486A6.833,6.833,0,0,0,3,12.368L1.625,14.431l2.124,2.124,2.063-1.375a6.834,6.834,0,0,0,1.289.535l.486,2.464h3l.486-2.464a6.833,6.833,0,0,0,1.29-.536l2.063,1.375,2.124-2.124-1.375-2.063a6.834,6.834,0,0,0,.535-1.289ZM9.089,12.817a3.728,3.728,0,1,1,3.728-3.728A3.728,3.728,0,0,1,9.089,12.817Z" fill="#7f7f7f"></path>
+                                 </g>
+                                 </g>
+                              </svg>                                                                                                                                     
+                              <p>CONFIGURATION</p>
+                              </a>
+                              <div class="collapse multi-collapse" id="sub10" data-parent="#accordion">
+                                 <div class="card card-body">
+                                    <div class="subMenuLinkItem">
+                                       <ul>
+                                          <li><a class="active" href="#">Dashbord</a></li>
+                                          <li><a href="#">Order</a></li>
+                                          <li><a href="#">Vendor</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <a class="subCollaspeBtn" data-toggle="collapse" href="#sub11" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">                 
+                              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                                 <path id="Color_Overlay" data-name="Color Overlay" d="M1780,151.563a7.446,7.446,0,0,1,7.438-7.438.354.354,0,0,1,.354.355v6.728h6.729a.355.355,0,0,1,.355.355,7.438,7.438,0,0,1-14.875,0Zm9.563-1.771a.355.355,0,0,1-.355-.354v-7.083a.355.355,0,0,1,.355-.355,7.446,7.446,0,0,1,7.438,7.438.354.354,0,0,1-.355.354Z" transform="translate(-1780 -142)" fill="#7f7f7f"></path>
+                              </svg>                                                                                                                                     
+                              <p>BUSINESS INSIGHTS</p>
+                              </a>
+                              <div class="collapse multi-collapse" id="sub11" data-parent="#accordion">
+                                 <div class="card card-body">
+                                    <div class="subMenuLinkItem">
+                                       <ul>
+                                          <li><a class="active" href="#">Business Insights</a></li>
+                                          <li><a href="#">Business Insights</a></li>
+                                          <li><a href="#">Business Insights</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+
+                        </ul>
+                       </div>
+                     </div>
+                   </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- end menubar 2 mobile menu -->
+
    <!-- start top menu bar 3 -->
    <section id="topMenuBar3">
-      <div class="container-fluid">
+      <div class="container-fluid mpl0 mpr0">
          <div class="row">
             <div class="col-12">
                <div class="topMenuBar3Container">
                   <ul>
                      <li><a href="#">
-                        <img class="img-fluid" src="asset/img/dashboard/icons/1.png" alt="icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><g transform="translate(-48 -137)"><circle cx="11" cy="11" r="11" transform="translate(48 137)" fill="#f9a35d"/><g transform="translate(54 141.477)"><path d="M9.118,2.835H5.057L4.248,1.58a.113.113,0,0,0-.1-.058H.882A1.058,1.058,0,0,0,0,2.686V10.36a1.058,1.058,0,0,0,.882,1.163H9.118A1.058,1.058,0,0,0,10,10.36V4A1.058,1.058,0,0,0,9.118,2.835Z"/></g><path d="M54.882,153A1.058,1.058,0,0,1,54,151.837v-7.673A1.058,1.058,0,0,1,54.882,143H58.15a.113.113,0,0,1,.1.058l.809,1.255h4.061A1.057,1.057,0,0,1,64,145.474v6.363A1.058,1.058,0,0,1,63.118,153Z" fill="#fff"/></g></svg>
                         My Records
                      </a></li>
                      <li><a href="#">
-                        <img class="img-fluid" src="asset/img/dashboard/icons/2.png" alt="icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                           <g id="Group_398" data-name="Group 398" transform="translate(-241 -2288)">
+                           <g id="jkbvdsjv" transform="translate(52 2151)">
+                              <circle id="Ellipse_47" data-name="Ellipse 47" cx="11" cy="11" r="11" transform="translate(189 137)" fill="#cb7be7"/>
+                              <g id="mytask" transform="translate(194 143.009)">
+                                 <path id="Path_1442" data-name="Path 1442" d="M10.927,0H.68A.682.682,0,0,0,0,.68V7.436a.682.682,0,0,0,.68.68H4.012V9.793H2.176a.34.34,0,0,0,0,.68H9.43a.34.34,0,1,0,0-.68H7.594V8.116h3.332a.682.682,0,0,0,.68-.68V.68A.682.682,0,0,0,10.927,0Z" fill="#fff"/>
+                              </g>
+                           </g>
+                           </g>
+                        </svg> 
                         My task
                      </a></li>
                      <li><a href="#">
-                        <img class="img-fluid" src="asset/img/dashboard/icons/3.png" alt="icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><g transform="translate(-313 -137)"><circle cx="11" cy="11" r="11" transform="translate(313 137)" fill="#5ac289"/><g transform="translate(319 141.669)"><path d="M10.777,8.76,6.887,1.168a1.568,1.568,0,0,0-2.774,0l-.006.012L.229,8.748a1.779,1.779,0,0,0-.015,1.719,1.582,1.582,0,0,0,1.4.864H9.362a1.615,1.615,0,0,0,1.424-.864A1.773,1.773,0,0,0,10.777,8.76ZM4.854,3.807a.646.646,0,1,1,1.29,0V6.543a.646.646,0,1,1-1.29,0V3.807ZM5.5,9.963a1.028,1.028,0,0,1,0-2.052,1.028,1.028,0,0,1,0,2.052Z"/></g><path d="M320.615,153a1.583,1.583,0,0,1-1.4-.865,1.777,1.777,0,0,1,.016-1.718l3.876-7.568.006-.013a1.568,1.568,0,0,1,2.775,0l3.89,7.592a1.773,1.773,0,0,1,.009,1.706,1.614,1.614,0,0,1-1.424.865Zm2.916-2.394a.97.97,0,1,0,.968-1.026A1,1,0,0,0,323.531,150.606Zm.323-5.13v2.736a.646.646,0,1,0,1.291,0v-2.736a.646.646,0,1,0-1.291,0Z" fill="#fff"/></g></svg>
                         My Issues
                      </a></li>
                      <li><a href="#">
-                        <img class="img-fluid" src="asset/img/dashboard/icons/4.png" alt="icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><g transform="translate(-449 -137)"><circle cx="11" cy="11" r="11" transform="translate(449 137)" fill="#ef7a7c"/><g transform="translate(453.023 140.502)"><path d="M4.051.5a.27.27,0,0,0-.279.26V4.051a.28.28,0,0,0,.558,0V.758A.27.27,0,0,0,4.051.5Zm5.86,0a.27.27,0,0,0-.279.26V4.051a.28.28,0,0,0,.558,0V.758A.27.27,0,0,0,9.911.5ZM2.1,2.361A1.082,1.082,0,0,0,.977,3.4V5.74h12V3.4a1.082,1.082,0,0,0-1.121-1.044H10.469V3.47a.755.755,0,0,1,.279.581.839.839,0,0,1-1.674,0,.755.755,0,0,1,.279-.581V2.361H4.6v1.1a.756.756,0,0,1,.283.585.81.81,0,0,1-.837.78.81.81,0,0,1-.837-.78.754.754,0,0,1,.275-.577V2.361ZM.977,6.628v4.826A1.082,1.082,0,0,0,2.1,12.5h9.759a1.083,1.083,0,0,0,1.121-1.044V6.628Z"/><rect width="8.899" height="2.686" transform="translate(2.558 2.358)"/></g><path d="M455.12,153A1.083,1.083,0,0,1,454,151.956V147.13h12v4.826A1.083,1.083,0,0,1,464.879,153ZM454,146.242v-2.335a1.083,1.083,0,0,1,1.121-1.044h.461v0H456.8v-1.6a.28.28,0,0,1,.558,0v1.6h5.3v-1.6a.28.28,0,0,1,.558,0v1.6h1.266v0h.4A1.083,1.083,0,0,1,466,143.906v2.335Z" fill="#fff"/></g></svg>
                         Calendar
                      </a></li>
                      <li><a href="#">
-                        <img class="img-fluid" src="asset/img/dashboard/icons/5.png" alt="icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><g transform="translate(-578 -137)"><circle cx="11" cy="11" r="11" transform="translate(578 137)" fill="#37aada"/><g transform="translate(583 142.909)"><path d="M1.152,3.557q.228.136,1.373.81T4.279,5.4l.285.173q.218.134.362.216t.348.185a2.2,2.2,0,0,0,.385.153,1.232,1.232,0,0,0,.335.051h.013a1.233,1.233,0,0,0,.335-.051,2.205,2.205,0,0,0,.385-.153q.2-.1.348-.185t.362-.216L7.721,5.4l3.134-1.847a2.982,2.982,0,0,0,.817-.7A1.352,1.352,0,0,0,12,2a.812.812,0,0,0-.318-.642,1.134,1.134,0,0,0-.753-.267H1.071a1.037,1.037,0,0,0-.794.3A1.036,1.036,0,0,0,0,2.125,1.222,1.222,0,0,0,.368,2.9,3.137,3.137,0,0,0,1.152,3.557Z"/><path d="M11.33,4.165Q9.134,5.426,8,6.125q-.382.239-.619.372a4.116,4.116,0,0,1-.633.273,2.222,2.222,0,0,1-.736.139H5.993a2.223,2.223,0,0,1-.737-.139A4.118,4.118,0,0,1,4.624,6.5Q4.386,6.364,4,6.125,3.1,5.563.676,4.165A3.453,3.453,0,0,1,0,3.67V8.182a.815.815,0,0,0,.315.642,1.131,1.131,0,0,0,.757.267h9.857a1.131,1.131,0,0,0,.757-.267A.815.815,0,0,0,12,8.182V3.67A3.586,3.586,0,0,1,11.33,4.165Z"/></g><path d="M584.072,152a1.13,1.13,0,0,1-.757-.267.815.815,0,0,1-.315-.642v-4.512a3.423,3.423,0,0,0,.677.495q2.423,1.4,3.327,1.96.382.238.62.372a4.085,4.085,0,0,0,.633.273,2.223,2.223,0,0,0,.736.139h.014a2.233,2.233,0,0,0,.737-.139,4.121,4.121,0,0,0,.633-.273q.238-.134.619-.372,1.138-.7,3.335-1.96a3.609,3.609,0,0,0,.67-.495v4.512a.814.814,0,0,1-.314.642,1.131,1.131,0,0,1-.757.267ZM589,149.091h-.007a1.233,1.233,0,0,1-.335-.051,2.228,2.228,0,0,1-.385-.154c-.136-.068-.252-.13-.348-.185s-.216-.127-.361-.216-.24-.147-.285-.173q-.609-.364-1.754-1.037t-1.372-.81a3.146,3.146,0,0,1-.784-.656,1.22,1.22,0,0,1-.368-.776A.987.987,0,0,1,584.071,144h9.858a1.135,1.135,0,0,1,.753.267.814.814,0,0,1,.318.642,1.35,1.35,0,0,1-.328.858,2.978,2.978,0,0,1-.817.7q-2.518,1.484-3.134,1.847c-.045.026-.14.084-.284.173s-.266.161-.362.216-.212.117-.348.185a2.2,2.2,0,0,1-.385.154,1.233,1.233,0,0,1-.335.051Z" fill="#fff"/></g></svg>
                         Send Email
                      </a></li>
                   </ul>
@@ -479,20 +782,30 @@
                <div class="dashbordContentContainer">
                   <div class="row">
                      <!-- start overview main box -->
-                     <div class="col-lg-3 pl6 pr6">
+                     <div class="col-xl-3 col-lg-6 col-md-6 pl6 pr6">
                         <div class="overviewItemBox">
                            <div class="dashboardOverViewItem">
                               <div class="row align-items-center">
-                                 <div class="col-lg-8">
+                                 <div class="col-lg-8 col-md-7 col-7">
                                     <div class="left">
                                        <span>
-                                          <img class="img-fluid" src="asset/img/dashboard/icons/6.png" alt="">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="58.5" height="58.5" viewBox="0 0 58.5 58.5">
+                                            <g id="Group_398" data-name="Group 398" transform="translate(-61.25 -242.25)">
+                                              <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" width="58.5" height="58.5" rx="20" transform="translate(61.25 242.25)" fill="#7033ff"/>
+                                              <g id="Vector_Smart_Object" data-name="Vector Smart Object">
+                                                <g id="Vector_Smart_Object-2" data-name="Vector Smart Object" transform="translate(79.571 260)">
+                                                  <path id="Path_329" data-name="Path 329" d="M19.137,6.535,20.673,4.99a.961.961,0,0,0,0-1.355.947.947,0,0,0-1.347,0L17.791,5.18a9.918,9.918,0,0,0-5.41-2.256V1.917h1.9a.958.958,0,0,0,0-1.917H8.571a.958.958,0,0,0,0,1.917h1.9V2.924a10.036,10.036,0,1,0,8.661,3.611Zm-4.28,11a.948.948,0,0,1-1.333-.192l-2.857-3.833a.96.96,0,0,1-.19-.575V7.667a.952.952,0,1,1,1.9,0v4.952L15.048,16.2A.962.962,0,0,1,14.857,17.537Z"/>
+                                                </g>
+                                                <path id="Color_Overlay" data-name="Color Overlay" d="M81,272.938a10.049,10.049,0,0,1,9.048-10.013v-1.007h-1.9a.959.959,0,0,1,0-1.917h5.714a.959.959,0,0,1,0,1.917H91.952v1.007a9.922,9.922,0,0,1,5.41,2.255l1.536-1.544a.946.946,0,0,1,1.346,0,.96.96,0,0,1,0,1.355l-1.536,1.545A10.025,10.025,0,1,1,81,272.938Zm9.048-5.271v5.271a.957.957,0,0,0,.191.575l2.857,3.833a.949.949,0,0,0,1.334.192.962.962,0,0,0,.19-1.342l-2.667-3.578v-4.952a.952.952,0,1,0-1.9,0Z" fill="#fff"/>
+                                              </g>
+                                            </g>
+                                          </svg>
                                        </span>
                                        <h4>50</h4>
                                        <h5>Overdue Leads</h5>
                                     </div>
                                  </div>
-                                 <div class="col-lg-4">
+                                 <div class="col-lg-4 col-md-5 col-5">
                                     <div class="right text-right">
                                        <p><i class="far fa-long-arrow-up"></i> 7.2%</p>
                                        <h5>than last week</h5>
@@ -502,16 +815,27 @@
                            </div>
                            <div class="dashboardOverViewItem">
                               <div class="row align-items-center">
-                                 <div class="col-lg-8">
+                                 <div class="col-lg-8 col-md-7 col-7">
                                     <div class="left">
                                        <span>
-                                          <img class="img-fluid" src="asset/img/dashboard/icons/7.png" alt="">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="58.5" height="58.5" viewBox="0 0 58.5 58.5">
+                                            <g id="Group_400" data-name="Group 400" transform="translate(-61.25 -325.25)">
+                                              <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" width="58.5" height="58.5" rx="20" transform="translate(61.25 325.25)" fill="#ff9066"/>
+                                              <g id="Vector_Smart_Object5_copy" data-name="Vector Smart Object5 copy">
+                                                <g id="Vector_Smart_Object5_copy-2" data-name="Vector Smart Object5 copy" transform="translate(77.833 341.288)">
+                                                  <path id="Path_331" data-name="Path 331" d="M22.167,3.658a2.924,2.924,0,0,0-2.9-2.946H6.07a2.924,2.924,0,0,0-2.9,2.946V22.766a2.924,2.924,0,0,0,2.9,2.946H19.264a2.924,2.924,0,0,0,2.9-2.946Zm-9.5,17.769A6.429,6.429,0,1,1,19,15,6.388,6.388,0,0,1,12.667,21.427Z"/>
+                                                  <path id="Path_332" data-name="Path 332" d="M14.514,17.945a1.045,1.045,0,0,1-.746-.314L11.92,15.756A1.074,1.074,0,0,1,11.611,15V12.32a1.056,1.056,0,1,1,2.111,0v2.235l1.538,1.561a1.081,1.081,0,0,1,0,1.515A1.044,1.044,0,0,1,14.514,17.945Z"/>
+                                                </g>
+                                                <path id="Color_Overlay" data-name="Color Overlay" d="M83.9,367a2.924,2.924,0,0,1-2.9-2.947V344.946A2.924,2.924,0,0,1,83.9,342H97.1a2.924,2.924,0,0,1,2.9,2.946v19.108A2.925,2.925,0,0,1,97.1,367Zm.264-10.714a6.334,6.334,0,1,0,6.333-6.428A6.387,6.387,0,0,0,84.166,356.287Zm7.434,2.632-1.847-1.875a1.074,1.074,0,0,1-.31-.758v-2.678a1.056,1.056,0,1,1,2.111,0v2.235l1.538,1.562a1.082,1.082,0,0,1,0,1.515,1.046,1.046,0,0,1-1.493,0Z" fill="#fff" stroke="#fff" stroke-width="1"/>
+                                              </g>
+                                            </g>
+                                          </svg>
                                        </span>
                                        <h4>45</h4>
                                        <h5>New Leads Due</h5>
                                     </div>
                                  </div>
-                                 <div class="col-lg-4">
+                                 <div class="col-lg-4 col-md-5 col-5">
                                     <div class="right text-right">
                                        <p><i class="far fa-long-arrow-up"></i> 7.2%</p>
                                        <h5>than last week</h5>
@@ -521,16 +845,28 @@
                            </div>
                            <div class="dashboardOverViewItem">
                               <div class="row align-items-center">
-                                 <div class="col-lg-8">
+                                 <div class="col-lg-8 col-md-7 col-7">
                                     <div class="left">
                                        <span>
-                                          <img class="img-fluid" src="asset/img/dashboard/icons/8.png" alt="">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="58.5" height="58.5" viewBox="0 0 58.5 58.5">
+                                            <g id="Group_401" data-name="Group 401" transform="translate(-61.25 -409.25)">
+                                              <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" width="58.5" height="58.5" rx="20" transform="translate(61.25 409.25)" fill="#ffcc40"/>
+                                              <g id="Vector_Smart_Object" data-name="Vector Smart Object">
+                                                <g id="Vector_Smart_Object-2" data-name="Vector Smart Object" transform="translate(78 425)">
+                                                  <path id="Path_335" data-name="Path 335" d="M15.167,5.417A5.417,5.417,0,1,1,9.75,0,5.417,5.417,0,0,1,15.167,5.417Z"/>
+                                                  <path id="Path_336" data-name="Path 336" d="M10.292,18.958A8.628,8.628,0,0,1,12.681,13H5.146A5.152,5.152,0,0,0,0,18.146v3.792a.813.813,0,0,0,.813.813H11.177A8.6,8.6,0,0,1,10.292,18.958Z"/>
+                                                  <path id="Path_337" data-name="Path 337" d="M18.958,11.917A7.042,7.042,0,1,0,26,18.958,7.05,7.05,0,0,0,18.958,11.917Zm2.391,9.432a1.082,1.082,0,0,1-1.532,0l-1.625-1.625a1.078,1.078,0,0,1-.317-.766V16.25a1.083,1.083,0,0,1,2.167,0v2.26l1.307,1.308A1.082,1.082,0,0,1,21.349,21.349Z"/>
+                                                </g>
+                                                <path id="Color_Overlay" data-name="Color Overlay" d="M89.917,443.958A7.042,7.042,0,1,1,96.959,451,7.05,7.05,0,0,1,89.917,443.958Zm5.958-2.708v2.708a1.076,1.076,0,0,0,.318.766l1.625,1.625a1.083,1.083,0,0,0,1.532-1.532l-1.307-1.308V441.25a1.084,1.084,0,0,0-2.167,0Zm-17.062,6.5a.813.813,0,0,1-.813-.813v-3.792A5.152,5.152,0,0,1,83.146,438h7.535a8.6,8.6,0,0,0-1.5,9.751Zm3.521-17.333a5.417,5.417,0,1,1,5.416,5.416A5.417,5.417,0,0,1,82.334,430.417Z" fill="#fff" stroke="#fff" stroke-width="1"/>
+                                              </g>
+                                            </g>
+                                          </svg>
                                        </span>
                                        <h4>23</h4>
                                        <h5>Followup Meet Due</h5>
                                     </div>
                                  </div>
-                                 <div class="col-lg-4">
+                                 <div class="col-lg-4 col-md-5 col-5">
                                     <div class="right text-right">
                                        <p class="down"><i class="far fa-long-arrow-down"></i> 4.2%</p>
                                        <h5>than last week</h5>
@@ -540,16 +876,27 @@
                            </div>
                            <div class="dashboardOverViewItem">
                               <div class="row align-items-center">
-                                 <div class="col-lg-8">
+                                 <div class="col-lg-8 col-md-7 col-7">
                                     <div class="left">
                                        <span>
-                                          <img class="img-fluid" src="asset/img/dashboard/icons/9.png" alt="">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="58.5" height="58.5" viewBox="0 0 58.5 58.5">
+                                            <g id="Group_398" data-name="Group 398" transform="translate(-61.25 -492.25)">
+                                              <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" width="58.5" height="58.5" rx="20" transform="translate(61.25 492.25)" fill="#7cde7a"/>
+                                              <g id="Vector_Smart_Object" data-name="Vector Smart Object">
+                                                <g id="Vector_Smart_Object-2" data-name="Vector Smart Object" transform="translate(78 510)">
+                                                  <path id="Path_341" data-name="Path 341" d="M8.021,16.846v4.436a.716.716,0,0,0,.473.682A.667.667,0,0,0,8.708,22a.678.678,0,0,0,.554-.293l2.487-3.531Z"/>
+                                                  <path id="Path_342" data-name="Path 342" d="M21.711.133a.664.664,0,0,0-.717-.052L.369,11.32A.726.726,0,0,0,0,12.011a.713.713,0,0,0,.463.625L6.2,14.681,18.409,3.786,8.96,15.665l9.609,3.427a.676.676,0,0,0,.222.038.669.669,0,0,0,.358-.1.723.723,0,0,0,.323-.507L21.993.824A.733.733,0,0,0,21.711.133Z"/>
+                                                </g>
+                                                <path id="Color_Overlay" data-name="Color Overlay" d="M86.494,531.965a.716.716,0,0,1-.473-.682v-4.436l3.728,1.329-2.487,3.532a.677.677,0,0,1-.553.293A.65.65,0,0,1,86.494,531.965Zm10.076-2.872-9.609-3.427,9.449-11.879L84.2,524.681l-5.734-2.045a.714.714,0,0,1-.463-.625.729.729,0,0,1,.367-.691l20.625-11.239a.664.664,0,0,1,.717.052.732.732,0,0,1,.281.69l-2.521,17.7a.721.721,0,0,1-.322.507.665.665,0,0,1-.357.1A.7.7,0,0,1,96.57,529.093Z" fill="#fff"/>
+                                              </g>
+                                            </g>
+                                          </svg>
                                        </span>
                                        <h4>08</h4>
                                        <h5>Quotations to be Sent</h5>
                                     </div>
                                  </div>
-                                 <div class="col-lg-4">
+                                 <div class="col-lg-4 col-md-5 col-5">
                                     <div class="right text-right">
                                        <p class="down"><i class="far fa-long-arrow-down"></i> 1.2%</p>
                                        <h5>than last week</h5>
@@ -561,26 +908,26 @@
                      </div>
                      <!-- end overview main box -->
                      <!-- strat performnce box area -->
-                     <div class="col-lg-3 pl6 pr6">
+                     <div class="col-xl-3 col-lg-6 col-md-6 pl6 pr6">
                         <div class="performanceBox">
                            <h3>Department Wise Performance</h3>
                            <div class="chrtContainer">
-                              <img class="img-fluid" src="asset/img/dashboard/chart/1.png" alt="">
+                              <canvas id="myChart"></canvas>
                            </div>
                         </div>
                      </div>
                      <!-- end performnce box area -->
                      <!-- strat orientation progress box area -->
-                     <div class="col-lg-3 pl6 pr6">
+                     <div class="col-xl-3 col-lg-6 col-md-6 pl6 pr6">
                         <div class="orientationBox">
                            <div class="topTitle">
                               <div class="row">
-                                 <div class="col-lg-8">
+                                 <div class="col-lg-8 col-md-8 col-8">
                                     <div class="left">
                                        <h3>Orientations Progress</h3>
                                     </div>
                                  </div>
-                                 <div class="col-lg-4">
+                                 <div class="col-lg-4 col-md-4 col-4">
                                     <div class="right text-right">
                                        <img class="img-fluid" src="asset/img/dashboard/avatar.png" alt="">
                                     </div>
@@ -588,19 +935,19 @@
                               </div>
                            </div>
                            <div class="chartBox text-center">
-                              <img class="img-fluid" src="asset/img/dashboard/chart/2.png" alt="">
+                              <canvas id="myChart2"></canvas>
                            </div>
                         </div>
                      </div>
                      <!-- end orientation progress box area -->
                      <!-- strat management performance box area -->
-                     <div class="col-lg-3 pl6 pr6">
+                     <div class="col-xl-3 col-lg-6 col-md-6 pl6 pr6">
                         <div class="manageMentPerformanceBox">
-                           <div class="topTitle text-center">
+                           <div class="topTitle">
                               <h3>Time Management of Performance of All Employees</h3>
                            </div>
                            <div class="chartBox text-center">
-                              <img class="img-fluid" src="asset/img/dashboard/chart/3.png" alt="">
+                              <canvas id="myChart3"></canvas>
                            </div>
                         </div>
                      </div>
@@ -612,20 +959,33 @@
                <div class="dashbordContentContainer mt-11">
                   <div class="row">
                      <!-- start leads box area -->
-                     <div class="col-lg-3 pl6 pr6">
+                     <div class="col-xl-3 col-lg-6 col-md-6 pl6 pr6">
                         <div class="leadBoxArea">
                            <div class="topPart">
                               <div class="row">
-                                 <div class="col-lg-7">
+                                 <div class="col-lg-7 col-md-7 col-7">
                                     <div class="left">
                                        <span>
-                                          <img class="img-fluid" src="asset/img/dashboard/icons/10.png" alt="">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="43.54" height="44.06" viewBox="0 0 43.54 44.06">
+                                            <g id="Group_399" data-name="Group 399" transform="translate(-77.37 -664.33)">
+                                              <ellipse id="bg_copy" data-name="bg copy" cx="21.77" cy="22.03" rx="21.77" ry="22.03" transform="translate(77.37 664.33)" fill="#1e2858"/>
+                                              <g id="Vector_Smart_Object" data-name="Vector Smart Object">
+                                                <g id="Vector_Smart_Object-2" data-name="Vector Smart Object" transform="translate(81.2 669.68)">
+                                                  <ellipse id="Ellipse_36" data-name="Ellipse 36" cx="2.4" cy="2.56" rx="2.4" ry="2.56" transform="translate(21.6 10.24)"/>
+                                                  <path id="Path_355" data-name="Path 355" d="M28.8,20.16v.64a.938.938,0,0,1-.9.96H22.8v-.32a5.491,5.491,0,0,0-2-4.288,3.127,3.127,0,0,1,1.7-.512h3A3.413,3.413,0,0,1,28.8,20.16Z"/>
+                                                  <ellipse id="Ellipse_37" data-name="Ellipse 37" cx="3.6" cy="3.84" rx="3.6" ry="3.84" transform="translate(10.8 8.32)"/>
+                                                  <path id="Path_356" data-name="Path 356" d="M17.7,17.92H11.1a3.418,3.418,0,0,0-3.3,3.52v1.92a.932.932,0,0,0,.9.96H20.1a.932.932,0,0,0,.9-.96V21.44A3.418,3.418,0,0,0,17.7,17.92Z"/>
+                                                </g>
+                                                <path id="Color_Overlay" data-name="Color Overlay" d="M89.9,694a.932.932,0,0,1-.9-.959V691.12a3.418,3.418,0,0,1,3.3-3.52h6.6a3.418,3.418,0,0,1,3.3,3.52v1.921a.932.932,0,0,1-.9.959Zm14.1-2.56v-.32a5.492,5.492,0,0,0-2-4.288,3.122,3.122,0,0,1,1.7-.512h3a3.413,3.413,0,0,1,3.3,3.52v.64a.938.938,0,0,1-.9.96Zm-12-9.6a3.608,3.608,0,1,1,3.6,3.84A3.726,3.726,0,0,1,92,681.84Zm10.8.64a2.4,2.4,0,1,1,2.4,2.56A2.484,2.484,0,0,1,102.8,682.48Z" fill="#fff"/>
+                                              </g>
+                                            </g>
+                                          </svg>
                                        </span>
                                        <h4>75</h4>
                                        <h5>Clients</h5>
                                     </div>
                                  </div>
-                                 <div class="col-lg-5">
+                                 <div class="col-lg-5 col-md-5 col-5">
                                     <div class="right text-right">
                                        <h4>100</h4>
                                        <h5>Total Leads</h5>
@@ -636,17 +996,17 @@
                            <div class="mainPart">
                               <div class="item">
                                  <div class="row">
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-4 col-md-4 col-4">
                                        <div class="left">
                                           <h4><span>10</span> Gujarat</h4>
                                        </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-4 col-md-4 col-4">
                                        <div class="middle text-center">
                                           <img class="img-fluid" src="asset/img/dashboard/icons/11.png" alt="">
                                        </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-4 col-md-4 col-4">
                                        <div class="right text-right">
                                           <h4><span>05</span> Convert</h4>
                                        </div>
@@ -655,17 +1015,17 @@
                               </div>
                               <div class="item">
                                  <div class="row">
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-4 col-md-4 col-4">
                                        <div class="left">
                                           <h4><span>35</span> Maharastra</h4>
                                        </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-4 col-md-4 col-4">
                                        <div class="middle text-center">
                                           <img class="img-fluid" src="asset/img/dashboard/icons/11.png" alt="">
                                        </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-4 col-md-4 col-4">
                                        <div class="right text-right">
                                           <h4><span>05</span> Convert</h4>
                                        </div>
@@ -674,17 +1034,17 @@
                               </div>
                               <div class="item">
                                  <div class="row">
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-4 col-md-4 col-4">
                                        <div class="left">
                                           <h4><span>28</span> New Delhi</h4>
                                        </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-4 col-md-4 col-4">
                                        <div class="middle text-center">
                                           <img class="img-fluid" src="asset/img/dashboard/icons/11.png" alt="">
                                        </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-4 col-md-4 col-4">
                                        <div class="right text-right">
                                           <h4><span>05</span> Convert</h4>
                                        </div>
@@ -693,17 +1053,17 @@
                               </div>
                               <div class="item">
                                  <div class="row">
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-4 col-md-4 col-4">
                                        <div class="left">
                                           <h4><span>25</span> Punjab</h4>
                                        </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-4 col-md-4 col-4">
                                        <div class="middle text-center">
                                           <img class="img-fluid" src="asset/img/dashboard/icons/11.png" alt="">
                                        </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-4 col-md-4 col-4">
                                        <div class="right text-right">
                                           <h4><span>05</span> Convert</h4>
                                        </div>
@@ -715,19 +1075,19 @@
                      </div>
                      <!-- end leads box area -->
                      <!-- start hod performance box -->
-                     <div class="col-lg-3 pl6 pr6">
+                     <div class="col-xl-3 col-lg-6 col-md-6 pl6 pr6">
                         <div class="hodPerformanceBox">
                            <div class="topTtile">
                               <h4>HOD Performance Trend</h4>
                            </div>
                            <div class="chartBox">
-                              <img class="img-fluid" src="asset/img/dashboard/chart/4.png" alt="">
+                              <canvas id="myChart4"></canvas>
                            </div>
                         </div>
                      </div>
                      <!-- end hod performance box -->
                      <!-- start performance of company -->
-                     <div class="col-lg-6 pl6 pr6">
+                     <div class="col-xl-6 col-lg-12 pl6 pr6">
                         <div class="companyPerformanceBox">
                            <div class="topTitle">
                               <h4>Performance of Company</h4>
@@ -736,7 +1096,7 @@
                               <div class="row">
                                  <div class="col-lg-11 mx-auto">
                                     <div class="row">
-                                       <div class="col-lg-4">
+                                       <div class="col-lg-4 col-md-4">
                                           <div class="performaceMetterBox text-center">
                                              <p>Sales</p>
                                              <div class="svgMetter">
@@ -888,7 +1248,7 @@
                                              <h4>Performance of this month</h4>
                                           </div>
                                        </div>
-                                       <div class="col-lg-4">
+                                       <div class="col-lg-4 col-md-4">
                                           <div class="performaceMetterBox text-center">
                                              <p>HR</p>
                                              <div class="svgMetter">
@@ -1040,7 +1400,7 @@
                                              <h4>Performance of this month</h4>
                                           </div>
                                        </div>
-                                       <div class="col-lg-4">
+                                       <div class="col-lg-4 col-md-4">
                                           <div class="performaceMetterBox text-center">
                                              <p>HOD</p>
                                              <div class="svgMetter">
@@ -1203,19 +1563,19 @@
                <!-- start bottom user table area -->
                <div class="dashbordContentContainer mt-11">
                   <div class="row">
-                     <div class="col-lg-9 offset-lg-3 pl6 pr6">
+                     <div class="col-xl-9 offset-xl-3 col-lg-12 pl6 pr6">
                         <div class="customerTableBox">
                            <div class="customerTableAreaTop">
                               <div class="row align-items-center">
-                                 <div class="col-lg-4">
+                                 <div class="col-lg-4 col-md-5">
                                     <div class="left">
                                        <div class="row align-items-center">
-                                          <div class="col-lg-3 pr0">
+                                          <div class="col-lg-3 col-md-4 col-4 pr0">
                                              <div class="info">
                                                 <h4>Customers</h4>
                                              </div>
                                           </div>
-                                          <div class="col-lg-8 pl0">
+                                          <div class="col-lg-8 col-md-8 col-8 pl0">
                                              <div class="searchBox">
                                                 <input type="text" placeholder="Search">
                                                 <span><i class="fal fa-search"></i></span>
@@ -1224,7 +1584,7 @@
                                        </div>
                                     </div>
                                  </div>
-                                 <div class="col-lg-8">
+                                 <div class="col-lg-8 col-md-7">
                                     <div class="right text-right">
                                        <ul>
                                           <li class="btn_sp"><a href="#"><i class="fa fa-plus"></i> ADD</a></li>
@@ -1245,12 +1605,16 @@
                                  </div>
                               </div>
                            </div>
-                           <div class="customerMainTableContent">
-                              <table class="table table-borderless">
+                           <div class="customerMainTableContent table-responsive-md">
+                              <table class="table table-borderless table-hover">
                                  <thead>
                                    <tr>
                                      <th style="padding-left: 25px;" scope="col">Sr.No</th>
-                                     <th scope="col">First Name <i class="fal fa-sort-alt"></i></th>
+                                     <th scope="col">First Name 
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14" viewBox="0 0 11 14">
+                                         <path id="Forma_1" data-name="Forma 1" d="M703.143,1100,700,1103.111h2.357v5.444h1.571v-5.444h2.357Zm5.5,10.889v-5.444h-1.571v5.444h-2.357l3.143,3.111,3.143-3.111Z" transform="translate(-700 -1100)" fill="#bcbcbc"/>
+                                       </svg>
+                                    </th>
                                      <th scope="col">Last Name</th>
                                      <th scope="col">Company</th>
                                      <th scope="col">Email</th>
@@ -1379,7 +1743,7 @@
                            <div class="customerTablePaginations text-right">
                               <ul>
                                  <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
-                                 <li class="pageNumber"><a href="#">1</a></li>
+                                 <li class="pageNumber"><input type="text" value="1"></li>
                                  <li><a href="#"><i class="fa fa-angle-right"></i> </a></li>
                                  <li>of 4</li>
                               </ul>
@@ -1400,15 +1764,15 @@
       <div class="container-fluid">
          <div class="row align-items-center">
             <div class="col-12">
-               <div class="row">
-                  <div class="col-lg-6">
+               <div class="row align-items-center">
+                  <div class="col-lg-6 col-md-6 col-7">
                      <div class="footerLogo">
                         <a href="dashboard.html">
                            <img class="img-fluid" src="asset/img/footer-logo.png" alt="">
                         </a>
                      </div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-lg-6 col-md-6 col-5">
                      <div class="footerCopyright text-right">
                         <p>© 2020 Octanics Software</p>
                      </div>
@@ -1419,6 +1783,25 @@
       </div>
    </footer>
    <!-- end dashboard footer area -->
+
+
+   <!-- start search area modal -->
+   <!-- Modal -->
+   <div class="modal fade" id="searchAreaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+     <div class="modal-dialog" role="document">
+       <div class="modal-content">
+         <div class="modal-body">
+           <div class="searchModalContent">
+              <div class="inputBox">
+                 <input id="seachContentInput" type="text" placeholder="Search" autofocus>
+                 <span><i class="fal fa-search"></i></span>
+              </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <!-- end search area modal -->
 
 
 
@@ -1433,6 +1816,14 @@
    <script src="asset/js/bootstrap.bundle.min.js"></script>
    <script src="asset/js/owl.carousel.min.js"></script>
    <script src="asset/js/custom.js"></script>
+   <script src="asset/js/Chart.min.js"></script>
+   <script src="asset/js/utils.js"></script>
+   <script src="asset/js/config/chartconfig.js"></script>
+   <script>
+      $('body').on('shown.bs.modal', '#searchAreaModal', function () {
+         $('#seachContentInput', this).focus();
+      })
+   </script>
 </body>
 
 </html>

@@ -265,14 +265,15 @@ var myChart = new Chart(ctx2, {
         },
         legend: {
             position: 'bottom',
-            fullWidth: true,
+            fullWidth: false,
             labels:{
-                fontColor : '#6C6C6C',
+                fontColor : '#232323',
                 fontFamily: "'Heebo', sans-serif",
-                fontStyle: 'bold',
-                fontSize: 11,
-                boxWidth: 8,
+                fontStyle: 'Medium',
+                fontSize: 12,
+                boxWidth: 7,
                 usePointStyle: true,
+                align: 'start',
             },
             
         },

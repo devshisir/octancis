@@ -67,12 +67,19 @@ main code start here
 #userLogin {
     min-height: 100vh;
     width: 100%;
-    background: rgb(87, 41, 133);
-    background: linear-gradient(-30deg, rgba(87, 41, 133, 1) 0%, rgba(36, 36, 95, 1) 35%);
-
+    // background: rgb(87, 41, 133);
+    // background: linear-gradient(-30deg, rgba(87, 41, 133, 1) 0%, rgba(36, 36, 95, 1) 35%);
+    background: rgb(36,36,96);
+    background: linear-gradient(90deg, rgba(36,36,96,1) 0%, rgba(86,41,132,1) 96%);
     .loginContainer {
         min-height: 100vh;
-
+        .logoare{
+            a{
+                img{
+                    width: 52%;
+                }
+            }
+        }
         .loginMainContainer {
             padding: 60px 70px;
             width: 525px;
@@ -108,7 +115,7 @@ main code start here
 
                             input {
                                 width: 100%;
-                                padding: 12px 30px 14px 45px;
+                                padding: 9px 30px 10px 45px;
                                 border: 1px solid #e4e4e4;
                                 font-size: 15px;
                                 color: #000;
@@ -165,7 +172,7 @@ main code start here
                             color: #fff;
                             font-weight: 600;
                             font-size: 15px;
-                            padding: 14px 0px;
+                            padding: 10px 0px;
                             outline: none;
                             transition: 0.4s;
 
@@ -701,7 +708,7 @@ this is all invoice page style here
                         overflow-y: scroll;
                         box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
                         animation-duration: 0.4s;
-
+                        z-index: 9999999999999999999;
                         .notificationsTop {
                             .left {
                                 h3 {
@@ -914,8 +921,6 @@ this is all invoice page style here
 
                 /*-- this is user dropdown area --*/
                 #userDropDow {
-                    margin-left: 10px;
-
                     >button {
                         border: none;
                         background-color: #fff;
@@ -1129,13 +1134,25 @@ this is all invoice page style here
                     opacity: 0;
                     visibility: hidden;
                     z-index: 999999999999;
-
+                    &:before {
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 0 12.5px 12px 12.5px;
+                        border-color: transparent transparent #ffffff transparent;
+                        position: absolute;
+                        top: -6px;
+                        left: -4px;
+                        right: 0;
+                        margin: auto;
+                        content: "";
+                    }
                     li {
                         display: block;
 
                         a {
                             font-family: $he;
-                            font-size: 14px;
+                            font-size: 13px;
                             color: #1E2858;
                             font-weight: 500;
                             display: block;
@@ -1157,19 +1174,7 @@ this is all invoice page style here
                                 transition: 0.4s;
                             }
 
-                            &:before {
-                                width: 0;
-                                height: 0;
-                                border-style: solid;
-                                border-width: 0 12.5px 12px 12.5px;
-                                border-color: transparent transparent #ffffff transparent;
-                                position: absolute;
-                                top: -6px;
-                                left: -4px;
-                                right: 0;
-                                margin: auto;
-                                content: "";
-                            }
+                            
 
                             &:hover {
                                 color: #6331AA;
@@ -1612,9 +1617,9 @@ this is all invoice page style here
 
                     h4 {
                         font-family: $he;
-                        font-weight: 400;
+                        font-weight: 500;
                         font-size: 10px;
-                        color: #6c6c6c;
+                        color: #232323;
                         margin-top: 20px;
                     }
                 }
@@ -1666,12 +1671,12 @@ this is all invoice page style here
                     ul {
                         li {
                             display: inline-block;
-                            margin-left: 10px;
+                            margin-left: 7px;
 
                             a {
                                 background: #fff;
                                 border: 1px solid #E4E4E4;
-                                padding: 10px 25px;
+                                padding: 8px 20px;
                                 font-family: $he;
                                 font-weight: 600;
                                 font-size: 13px;
@@ -2056,7 +2061,7 @@ this is all invoice page style here
 /*-- start search area modal --*/
 #searchAreaModal {
     background: rgba(0, 0, 0, 0.7);
-
+    z-index: 9999999999999999999999;
     .modal-dialog {
         width: 53%;
         max-width: initial;
@@ -2095,12 +2100,953 @@ this is all invoice page style here
 }
 
 
+/*-- start DashboardReporstArea --*/
+#DashboardReporstArea{
+    padding: 25px 0px;
+    background: #1E2859;
+    overflow-x: hidden;
+    .reportLeftPanel{
+        background: #fff;
+        width: 345px;
+        padding-bottom: 75px;
+        nav{
+            ul{
+                li{
+                    display: block;
+                    a{
+                        font-family: $he;
+                        font-size: 13px;
+                        color: #1e2858;
+                        font-weight: 600;
+                        display: block;
+                        padding: 17px 30px;
+                        border-bottom: 1px solid #E4E4E4;
+                        position: relative;
+                        transition: 0.4s;
+                        &:after{
+                            height: 0px;
+                            width: 3px;
+                            content: "";
+                            top: 0;
+                            bottom: 0;
+                            margin: auto;
+                            left: 0;
+                            position: absolute;
+                            background: #6331AA;
+                            transition: 0.4s;
+                        }
+                        &:hover{
+                            background: #FBFBFB;
+                            color: #6331aa;
+                            &:after{
+                                height: 21px;
+                            }
+                        }
+                    }
+                }
+                .active{
+                    a{
+                        background: #FBFBFB;
+                        color: #6331aa;
+                        &:after{
+                            height: 21px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .rightPanel{
+        height: 100%;
+        padding-left: 34px;
+        .rightPanelContainer{
+            background: #fff;
+            height: 100%;
+            padding: 46px 78px;
+            padding-bottom: 100px;
+            .searhFilterTop{
+                .title{
+                    h3{
+                        font-family: $he;
+                        font-weight: 700;
+                        font-size: 16px;
+                        color: #010101;
+                    }
+                }
+                .filterSearchBox{
+                    background: #F4F5F8;
+                    border-radius: 4px;
+                    padding: 30px 27px;
+                    margin-top: 15px;
+                    .inputBoxSearchFilter{
+                        .datePickerContainer{
+                            position: relative;
+                            label{
+                                font-family: $he;
+                                font-weight: 600;
+                                font-size: 13px;
+                                color: #000000;
+                                margin-bottom: 0px;
+                            }
+                            .datePickerSibgleItem{
+                                position: relative;
+                                .dateIcon{
+                                    position: absolute;
+                                    right: 10px;
+                                    top: 50%;
+                                    transform: translateY(-62%);
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                        .labelLeft{
+                            font-family: $he;
+                            font-weight: 600;
+                            font-size: 13px;
+                            color: #000000;
+                            padding-top: 0px;
+                        }
+                        .radioAction{
+                            margin-right: 25px;
+                        }
+                        .inputDate{
+                            input{
+                                border: 1px solid #e4e4e4;
+                                background: #fff;
+                                font-family: $he !important;
+                                font-size: 13px;
+                                color: #999999;
+                                font-weight: 400;
+                                border-radius: 4px;
+                                padding: 10px 0px 10px 10px;
+                                width: 100%;
+                            }
+                        }
+                        .radio {
+                            font-size: 2.25rem;
+                            color: #333;
+                            display: grid;
+                            grid-template-columns: min-content auto;
+                            grid-gap: 8px;
+                            cursor: pointer;
+                            margin-bottom: 0px;
+
+                            &:focus-within {
+                                .radio__label {
+                                    color: #000000;
+                                }
+                            }
+                        }
+
+                        .radio__label {
+                            line-height: 1;
+                            font-weight: 400;
+                            font-family: $he !important;
+                            font-size: 14px;
+                            transition: 180ms all ease-in-out;
+                            color: #999999;
+                        }
+
+                        .radio__input {
+                            display: flex;
+                            position: relative;
+                            top: -1px;
+
+                            input {
+                                opacity: 0;
+                                width: 0;
+                                height: 0;
+
+                                &:checked+.radio__control {}
+                            }
+                        }
+
+                        .radio__control {
+                            display: block;
+                            width: 19px;
+                            height: 19px;
+                            border-radius: 50%;
+                            border: 2px solid #6c6c6c;
+                            transform: translateY(-0.05em);
+                            display: grid;
+                            place-items: center;
+                        }
+
+                        input:checked+.radio__control {
+                            border-color: #1e2859;
+                        }
+
+                        input+.radio__control::before {
+                            content: "";
+                            width: 9px;
+                            height: 9px;
+                            border-radius: 50%;
+                            transition: 180ms transform ease-in-out;
+                            transform: scale(0);
+                            background: #1e2859;
+                        }
+
+                        input:checked+.radio__control::before {
+                            transform: scale(1);
+                        }
+                    }
+                    .jquery-datepicker.theme-light {
+                        position: absolute;
+                        top: 130% !important;
+                        transform: translateX(-50%) !important;
+                        cursor: pointer;
+                        width: 90% !important;
+                        left: 50% !important;
+                        right: 0;
+                        margin: auto;
+                        z-index: 99999999999999;
+                    }
+                    .jquery-datepicker.is-popup.tip-left::before, .jquery-datepicker.is-popup.tip-left::after {
+                        left: 20px;
+                        top: -10px;
+                        transform: rotate(177deg);
+                        display: none;
+                    }
+                    .jquery-datepicker .datepicker-box .box-row .box-cell {
+                        cursor: pointer !important;
+                    }
+                    .jquery-datepicker .datepicker-box .box-row.row-header .header-title{
+                        font-family: $he;
+                        font-weight: 600;
+                        font-size: 14px;
+                        color: #000000;
+                    }
+                    .jquery-datepicker .datepicker-box .box-row .box-cell{
+                        font-family: $he;
+                        font-weight: 500;
+                        font-size: 13px;
+                    }
+                    .inputDate{
+                        border: 1px solid #e4e4e4;
+                        background: #fff;
+                        font-family: $he !important;
+                        font-size: 13px;
+                        cursor: pointer;
+                        border-radius: 4px;
+                        padding: 10px;
+                        width: 170px;
+                    }
+                    .inputBoxSearchFilter2{
+                        margin-top: 15px;
+                        .selectBox2{
+                            margin-bottom: 15px;
+                            label{
+                                font-family: $he;
+                                font-weight: 600;
+                                font-size: 13px;
+                                color: #000000;
+                                margin-bottom: 0px;
+                                margin-left: 10px;
+                                position: relative;
+                                left: 6px;
+                            }
+                            select{
+                                width: 100%;
+                                border: 1px solid #e4e4e4;
+                                background: #fff;
+                                font-family: $he !important;
+                                font-size: 13px;
+                                cursor: pointer;
+                                border-radius: 4px;
+                                padding: 10px;
+                                color: #999999;
+                            }
+                            input{
+                                border: 1px solid #e4e4e4;
+                                background: #fff;
+                                font-family: "Heebo",sans-serif !important;
+                                font-size: 13px;
+                                cursor: pointer;
+                                border-radius: 4px;
+                                padding: 10px 13px;
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .statusCheckFilter{
+                        .inputCheckStatus{
+                            .labelStaus{
+                                font-family: $he;
+                                font-weight: 600;
+                                font-size: 13px;
+                                color: #000000;
+                                margin-bottom: 0px;
+                            }
+                            .span_pseudo,
+                        .chiller_cb span:before,
+                        .chiller_cb span:after {
+                            content: "";
+                            display: inline-block;
+                            background: #fff;
+                            width: 0;
+                            height: 0.2rem;
+                            position: absolute;
+                            transform-origin: 0% 0%;
+                        }
+
+                        .chiller_cb {
+                            position: relative;
+                            height: 2rem;
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        .chiller_cb input {
+                            display: none;
+                        }
+
+                        .chiller_cb input:checked~span {
+                            background: #1E2859;
+                            border-color: #1E2859;
+                        }
+
+                        .chiller_cb input:checked~span:before {
+                            width: 1rem;
+                            height: 0.15rem;
+                            transition: width 0.1s;
+                            transition-delay: 0.3s;
+                        }
+
+                        .chiller_cb input:checked~span:after {
+                            width: 0.4rem;
+                            height: 0.15rem;
+                            transition: width 0.1s;
+                            transition-delay: 0.2s;
+                        }
+
+                        .chiller_cb input:disabled~span {
+                            background: #ececec;
+                            border-color: #dcdcdc;
+                        }
+
+                        .chiller_cb input:disabled~label {
+                            color: #dcdcdc;
+                        }
+
+                        .chiller_cb input:disabled~label:hover {
+                            cursor: default;
+                        }
+
+                        .chiller_cb label {
+                            padding-left: 40px;
+                            position: relative;
+                            z-index: 2;
+                            cursor: pointer;
+                            margin-bottom: 0;
+                            color: #000;
+                            font-weight: 600;
+                            font-size: 13px;
+                            font-family: $he;
+                        }
+
+                        .chiller_cb span {
+                            display: inline-block;
+                            width: 22px;
+                            height: 22px;
+                            border: 2px solid #e4e4e4;
+                            background: #fff;
+                            border-radius: 4px;
+                            position: absolute;
+                            left: 0;
+                            transition: all 0.2s;
+                            z-index: 1;
+                            box-sizing: content-box;
+                        }
+
+                        .chiller_cb span:before {
+                            transform: rotate(-55deg);
+                            top: 1rem;
+                            left: 0.37rem;
+                        }
+
+                        .chiller_cb span:after {
+                            transform: rotate(35deg);
+                            bottom: 0.35rem;
+                            left: 0.2rem;
+                        }
+                        }
+                    }
+                    .yearRadio{
+                        margin-top: 20px;
+                        .labelYearLeft{
+                            font-family: $he !important;
+                            font-weight: 600;
+                            font-size: 13px;
+                            color: #000000;
+                            margin-bottom: 0px;
+                        }
+                        .radionContainerYear{
+                            .radio {
+                                font-size: 2.25rem;
+                                color: #333;
+                                display: grid;
+                                grid-template-columns: min-content auto;
+                                grid-gap: 8px;
+                                cursor: pointer;
+                                margin-bottom: 0px;
+    
+                                &:focus-within {
+                                    .radio__label {
+                                        color: #000000;
+                                    }
+                                }
+                            }
+    
+                            .radio__label {
+                                line-height: 1;
+                                font-weight: 400;
+                                font-family: $he !important;
+                                font-size: 14px;
+                                transition: 180ms all ease-in-out;
+                                color: #999999;
+                            }
+    
+                            .radio__input {
+                                display: flex;
+                                position: relative;
+                                top: -1px;
+    
+                                input {
+                                    opacity: 0;
+                                    width: 0;
+                                    height: 0;
+    
+                                    &:checked+.radio__control {}
+                                }
+                            }
+    
+                            .radio__control {
+                                display: block;
+                                width: 90px;
+                                height: 33px;
+                                border: 1px solid #E4E4E4;
+                                transform: translateY(-0.05em);
+                                background: #fff;
+                                border-radius: 4px;
+                                place-items: center;
+                                font-family: $he !important;
+                                font-size: 13px;
+                                font-weight: 400;
+                                text-align: center;
+                                line-height: 33px;
+                                color: #999999;
+                                transition: 0.4s;
+                            }
+    
+                            input:checked+.radio__control {
+                                background-color: #1e2859;
+                                color: #fff;
+                            }
+    
+                            input+.radio__control::before {
+                                content: "";
+                                width: 9px;
+                                height: 9px;
+                                border-radius: 50%;
+                                transition: 180ms transform ease-in-out;
+                                transform: scale(0);
+                                background: #1e2859;
+                            }
+    
+                            input:checked+.radio__control::before {
+                                transform: scale(1);
+                            }
+                        }
+                    }
+                    .filterSearchAction{
+                        margin-top: 20px;
+                        .filterSearchActionButton{
+                            button{
+                                width: 106px;
+                                height: 34px;
+                                line-height: 34px;
+                                text-align: center;
+                                background: #1E2859;
+                                border: none;
+                                font-family: $he !important;
+                                color: #fff;
+                                font-size: 13px;
+                                font-weight: 500;
+                                border-radius: 4px;
+                                outline: none;
+                                i{
+                                    margin-right: 4px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .searhFilterResultBox{
+                margin-top: 30px;
+                .searhFilterResultBoxTop{
+                    .left{
+                        h4{
+                           font-family: $he;
+                           font-size: 14px;
+                           font-weight: 700;
+                           color: #010101;
+                        }
+                    }
+                    .right{
+                        p{
+                            font-family: $he;
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: #010101;
+                        }
+                    }
+                }
+                .tableSearch{
+                    margin-top: 20px;
+                    border: 1px solid #E4E4E4;
+                    table{
+                        margin-bottom: 0px;
+                        thead{
+                            border-bottom: 1px solid #E4E4E4;
+                            tr{
+                                th{
+                                    font-family: $he;
+                                    font-size: 15px;
+                                    color: #1e2859;
+                                    font-weight: 500;
+                                    padding-top: 15px;
+                                    padding-bottom: 15px;
+                                }
+                            }
+                        }
+                        tbody{
+                            &:before{
+                                content: '';
+                                display: block;
+                                height: 15px;
+                            }
+                            &:after{
+                                content: '';
+                                display: block;
+                                height: 15px;
+                            }
+                            tr{
+                                &:hover{
+                                    background-color: #F9F9F9;
+                                }
+                                td{
+                                    font-family: $he;
+                                    font-size: 14px;
+                                    color: #000000;
+                                    font-weight: 400;
+                                    padding: 8px .75rem;
+                                }
+                            }
+                        }
+                        tfoot{
+                            background: #E4E4E4;
+                            tr{
+                                td{
+                                    font-family: $he;
+                                    font-size: 15px;
+                                    color: #000000;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*-- start mobileLeftMenuContainer --*/
+.mobileLeftMenuContainer{
+    margin-bottom: 20px;
+    .left{
+        h4{
+            font-family: $he;
+            font-weight: 600;
+            font-size: 18px;
+            color: #000000;
+        }
+    }
+    .right{
+        span{
+            height: 40px;
+            width: 40px;
+            display: inline-block;
+            background: #F4F5F8;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+    }
+}
+
+/*-- reportsPlageLeftSidebarMobile --*/
+#reportsPlageLeftSidebarMobile{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 345px;
+    background: #fff;
+    z-index: 9999999999999999;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    overflow-y: scroll;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    .topPanelClose{
+        padding: 10px 15px;
+        .content{
+            span{
+                height: 40px;
+                width: 40px;
+                display: inline-block;
+                background: #F4F5F8;
+                text-align: center;
+                line-height: 40px;
+                border-radius: 4px;
+                border: 1px solid #ddd;
+            }
+        }
+    }
+    nav{
+        ul{
+            li{
+                display: block;
+                a{
+                    font-family: $he;
+                    font-size: 12px;
+                    color: #1e2858;
+                    font-weight: 600;
+                    display: block;
+                    padding: 12px 15px;
+                    border-bottom: 1px solid #E4E4E4;
+                    position: relative;
+                    transition: 0.4s;
+                    &:after{
+                        height: 0px;
+                        width: 3px;
+                        content: "";
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                        left: 0;
+                        position: absolute;
+                        background: #6331AA;
+                        transition: 0.4s;
+                    }
+                    &:hover{
+                        background: #FBFBFB;
+                        color: #6331aa;
+                        &:after{
+                            height: 21px;
+                        }
+                    }
+                }
+            }
+            .active{
+                a{
+                    background: #FBFBFB;
+                    color: #6331aa;
+                    &:after{
+                        height: 21px;
+                    }
+                }
+            }
+        }
+    }
+}
+#reportsPlageLeftSidebarMobile.show{
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+}
+#reportsPlageLeftSidebarMobile::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 30px;
+}
+
+#reportsPlageLeftSidebarMobile::-moz-scrollbar {
+    width: 6px;
+    border-radius: 30px;
+}
+
+#reportsPlageLeftSidebarMobile::-o-scrollbar {
+    width: 6px;
+    border-radius: 30px;
+}
+
+#reportsPlageLeftSidebarMobile::-ms-scrollbar {
+    width: 6px;
+    border-radius: 30px;
+}
+
+#reportsPlageLeftSidebarMobile::-webkit-scrollbar-track {
+    box-shadow: none;
+}
+
+#reportsPlageLeftSidebarMobile::-moz-scrollbar-track {
+    box-shadow: none;
+}
+
+#reportsPlageLeftSidebarMobile::-o-scrollbar-track {
+    box-shadow: none;
+}
+
+#reportsPlageLeftSidebarMobile::-ms-scrollbar-track {
+    box-shadow: none;
+}
+
+#reportsPlageLeftSidebarMobile::-webkit-scrollbar-thumb {
+    background-color: #D1D1D1;
+    border-radius: 30px;
+    outline: none;
+}
+
+#reportsPlageLeftSidebarMobile::-moz-scrollbar-thumb {
+    background-color: #D1D1D1;
+    border-radius: 30px;
+    outline: none;
+}
+
+#reportsPlageLeftSidebarMobile::-o-scrollbar-thumb {
+    background-color: #D1D1D1;
+    border-radius: 30px;
+    outline: none;
+}
+
+#reportsPlageLeftSidebarMobile::-ms-scrollbar-thumb {
+    background-color: #D1D1D1;
+    border-radius: 30px;
+    outline: none;
+}
 
 
 
-
-
-
-.fake {
-    height: 400px;
+/*-- start email sms page style --*/
+#emailSmsPage{
+    padding: 20px 0px;
+    background: #fff;
+    background: #1E2859;
+    .emailSmsPageContainer{
+        background: #fff;
+        padding: 45px 75px;
+        padding-bottom: 200px;
+        .topTitle{
+            h3{
+                font-family: $he;
+                font-size: 16px;
+                font-weight: 700;
+                color: #010101;
+            }
+        }
+        .emailSmsPageMainContainer{
+            margin-top: 40px;
+            .emailSmsmTabBtnarea{
+                border-bottom: 1px solid #E4E4E4;
+                nav{
+                    .nav-tabs{
+                        display: inherit;
+                        border: none;
+                        a{
+                            display: inline-block;
+                            font-family: $he;
+                            font-weight: 600;
+                            font-size: 14px;
+                            color: #999999;
+                            text-transform: uppercase;
+                            border: none;
+                            padding: 0px;
+                            width: 41px;
+                            margin-right: 35px;
+                            padding-bottom: 20px;
+                            position: relative;
+                            &:after{
+                                width: 0px;
+                                left: 0;
+                                content: "";
+                                bottom: 0;
+                                position: absolute;
+                                height: 3px;
+                                background: #1e2859;
+                                transition: 0.4s;
+                                opacity: 0;
+                            }
+                        }
+                        .active{
+                            color: #1e2859;
+                            background: transparent;
+                            &:after{
+                                width: 100%;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+            .emailSmsmTabContainer{
+                margin-top: 40px;
+                .emailSmsTabContentContainer{
+                    .seclectOption{
+                        select{
+                            font-family: $he !important;
+                            font-size: 13px;
+                            color: #010101;
+                            font-weight: 400;
+                            width: 161px;
+                            height: 34px;
+                            line-height: 34px;
+                            border: 1px solid #e4e4e4;
+                            background: #fbfbfb;
+                            padding: 0px 4px 0px 10px;
+                            border-radius: 4px;
+                            cursor: pointer;
+                            option{
+                                font-family: $he !important;
+                                font-size: 13px;
+                                color: #010101;
+                            }
+                        }
+                    }
+                    .emailEditorForm{
+                        margin-top: 15px;
+                        padding-bottom: 60px;
+                        position: relative;
+                        .btn-group{
+                            margin: 0 !important;
+                        }
+                        .ql-toolbar.ql-theme.btn-toolbar.ql-snow{
+                            border: none !important;
+                            position: absolute !important;
+                            bottom: 0 !important;
+                            left: 0 !important;
+                            padding: 0px !important;
+                            svg{
+                                fill: #BCBCBC;
+                            }
+                            .btn{
+                                height: auto !important;
+                                padding: 0px;
+                                margin-right: 15px;
+                                outline: none;
+                            }
+                            .active{
+                                svg{
+                                    fill: #1E2859;
+                                }
+                            }
+                        }
+                        #document-full{
+                            width: 762px;
+                            height: 198px !important;
+                            background: #FBFBFB;
+                            border: 1px solid #e4e4e4;
+                            border-radius: 4px;
+                            .ql-editor{
+                                p{
+                                   font-family: $he !important;
+                                    font-size: 14px;
+                                    font-weight: 400; 
+                                    color: #010101;
+                                }
+                            }
+                        }
+                        textarea{
+                            width: 762px;
+                            height: 198px !important;
+                            background: #FBFBFB;
+                            border: 1px solid #e4e4e4;
+                            border-radius: 4px;
+                            padding: 24px;
+                            font-family: $he !important;
+                            font-size: 13px;
+                            color: #666666;
+                            resize: none;
+                        }
+                    }
+                    .smsEditorForm{
+                         padding-bottom: 0px !important;
+                    }
+                    .sendBtnEmailSms2{
+                        margin-top: 10px !important;
+                    }
+                    .sendBtnEmailSms{
+                        margin-top: 30px;
+                        .mainBtnEmailSms{
+                            button{
+                                outline: none;
+                                background: #1E2859;
+                                color: #fff;
+                                font-weight: 600;
+                                font-family: $he;
+                                font-size: 14px;
+                                border: none;
+                                width: 84px;
+                                height: 34px;
+                                line-height: 34px;
+                                text-align: center;
+                                border-radius: 4px;
+                                svg{
+                                    margin-right: 5px;
+                                    position: relative;
+                                    top: -1px;
+                                }
+                            }
+                        }
+                        .fileAttachLink{
+                            margin-left: -30px;
+                            ul{
+                                margin-top: -4px;
+                                li{
+                                    display: inline-block;
+                                    margin-right: 15px;
+                                    a{
+                                        i{
+                                            color: #BCBCBC;
+                                            transition: 0.4s;
+                                        }
+                                        svg{
+                                            path{
+                                                transition: 0.4s;
+                                            }
+                                        }
+                                        .fa-paperclip{
+                                            transform: rotate(-39deg);
+                                            position: relative;
+                                            top: 2px;
+                                        }
+                                        .fa-link{
+                                            position: relative;
+                                            top: 1px;
+                                        }
+                                        &:hover{
+                                            i{
+                                                color: #1E2859;
+                                            }
+                                            svg{
+                                                path{
+                                                    fill: #1E2859;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .emailSmsTabContentContainer2{
+                padding-bottom: 73px;
+            }
+        }
+    }
 }
