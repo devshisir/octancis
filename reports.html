@@ -14,6 +14,7 @@
    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
    <link rel="stylesheet" href="asset/css/fontawsome.css">
    <link rel="stylesheet" href="asset/css/jquery.datepicker2.css">
+   <link rel="stylesheet" href="asset/css/nice-select.css">
    <link rel="stylesheet" href="asset/css/animate.css">
    <link rel="stylesheet" href="asset/css/owl.carousel.min.css">
    <link rel="stylesheet" href="asset/css/style.css">
@@ -438,7 +439,7 @@
    </section>
    <!-- start menu bar 2 top -->
    <!-- start menubar 2 mobile menu -->
-   <section id="mennubar2MobileMenu" class="show_mobile">
+   <section id="mennubar2MobileMenu" class="show_mobile show_md">
       <div class="container">
          <div class="row align-items-center">
             <div class="col-md-7 col-7">
@@ -880,15 +881,15 @@
                               </div>
                               <div class="inputBoxSearchFilter">
                                  <div class="row">
-                                    <div class="col-xl-6 col-lg-11 col-md-11 datePickerContainer">
+                                    <div class="col-xl-8 col-lg-11 col-md-11 datePickerContainer">
                                        <div class="row">
                                           <div class="col-lg-6 col-md-6 col-12 datePickerSibgleItem">
                                              <div class="row align-items-center">
-                                                <label class="col-lg-5 col-md-5 text-right">
+                                                <label class="col-xl-3 col-lg-5 col-md-5 text-right">
                                                    Start Date
                                                 </label>
                                                 <input placeholder="Select Date" type="text" name="date"
-                                                   data-select="datepicker" class="col-lg-7 col-md-7 inputDate" readonly="">
+                                                   data-select="datepicker" class="col-xl-9 col-lg-7 col-md-7 inputDate" readonly="">
                                                 <span class="dateIcon">
                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.001" height="19"
                                                       viewBox="0 0 20.001 19">
@@ -901,11 +902,11 @@
                                           </div>
                                           <div class="col-lg-6 col-md-6 col-12 datePickerSibgleItem">
                                              <div class="row align-items-center">
-                                                <label class="col-lg-5 col-md-5 text-right">
+                                                <label class="col-xl-3 col-lg-5 col-md-5 text-right">
                                                    End Date
                                                 </label>
                                                 <input placeholder="Select Date" type="text" name="date"
-                                                   data-select="datepicker" class="col-lg-7 col-md-7 inputDate" readonly="">
+                                                   data-select="datepicker" class="col-xl-9 col-lg-7 col-md-7 inputDate" readonly="">
                                                 <span class="dateIcon">
                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.001" height="19"
                                                       viewBox="0 0 20.001 19">
@@ -922,7 +923,7 @@
                               </div>
                               <div class="inputBoxSearchFilter2">
                                  <div class="row">
-                                    <div class="col-xl-10 col-lg-11">
+                                    <div class="col-xl-8 col-lg-11">
                                        <div class="row">
                                           <div class="col-lg-6 col-md-6">
                                              <div class="selectBox2">
@@ -930,8 +931,8 @@
                                                    <div class="col-xl-2 col-lg-4 pr0 text-right">
                                                       <label>Employee</label>
                                                    </div>
-                                                   <div class="col-xl-10 col-lg-8 pr0 mpr13 mpl17" style="padding-left: 24px;">
-                                                      <select>
+                                                   <div class="col-xl-10 col-lg-8 pr0 mpl26 mmpl15 mmpr15" style="padding-left: 36px;">
+                                                      <select id="employeSelect">
                                                          <option selected="" class="labaleSelect">Select Employee</option>
                                                          <option>Employee Item</option>
                                                          <option>Employee Item</option>
@@ -949,10 +950,10 @@
                                           <div class="col-lg-6 col-md-6 pl0 pl17">
                                              <div class="selectBox2">
                                                 <div class="row align-items-center">
-                                                   <div class="col-xl-2 col-lg-4 pr0 mpl31 text-right">
+                                                   <div class="col-xl-3 col-lg-4 mpl31 text-right">
                                                       <label>Client</label>
                                                    </div>
-                                                   <div class="col-xl-10 col-lg-8 pr0 mpr13 mpl31" style="padding-left: 24px;">
+                                                   <div class="col-xl-9 col-lg-8 pr0 mpl26 mmpl33 mmpr15" style="padding-left: 14px;">
                                                       <select>
                                                          <option selected="" class="labaleSelect">Select Client</option>
                                                          <option>Client Item</option>
@@ -971,20 +972,20 @@
                                           <div class="col-lg-6 col-md-6">
                                              <div class="selectBox2">
                                                 <div class="row align-items-center">
-                                                   <div class="col-xl-2 col-lg-4 pr0 mpl19 text-right">
-                                                      <label>Department</label>
+                                                   <div class="col-xl-2 col-lg-4 pr0 text-right">
+                                                      <label>Depertment</label>
                                                    </div>
-                                                   <div class="col-xl-10 col-lg-8 pr0 pr0 mpr13 mpl17" style="padding-left: 24px;">
-                                                      <select>
-                                                         <option selected="" class="labaleSelect">Select Department</option>
-                                                         <option>Department Item</option>
-                                                         <option>Department Item</option>
-                                                         <option>Department Item</option>
-                                                         <option>Department Item</option>
-                                                         <option>Department Item</option>
-                                                         <option>Department Item</option>
-                                                         <option>Department Item</option>
-                                                         <option>Department Item</option>
+                                                   <div class="col-xl-10 col-lg-8 pr0 mpr13 mpl26 mmpl15 mmpr15" style="padding-left: 36px;">
+                                                      <select id="employeSelect">
+                                                         <option selected="" class="labaleSelect">Select Depertment</option>
+                                                         <option>Depertment Item</option>
+                                                         <option>Depertment Item</option>
+                                                         <option>Depertment Item</option>
+                                                         <option>Depertment Item</option>
+                                                         <option>Depertment Item</option>
+                                                         <option>Depertment Item</option>
+                                                         <option>Depertment Item</option>
+                                                         <option>Depertment Item</option>
                                                       </select>
                                                    </div>
                                                 </div>
@@ -993,10 +994,10 @@
                                           <div class="col-lg-6 col-md-6 pr0 pl32">
                                              <div class="selectBox2">
                                                 <div class="row align-items-center">
-                                                   <div class="col-xl-2 col-lg-4 text-right">
+                                                   <div class="col-xl-3 col-lg-4 text-right">
                                                       <label class="picodeLabel">Pincode</label>
                                                    </div>
-                                                   <div class="col-xl-10 col-lg-8 mpl19 mpr28" style="padding-left: 10px;">
+                                                   <div class="col-xl-9 col-lg-8 mpl10 mpr28 mmpl15 mmpr15" style="padding-left: 0px;">
                                                       <input type="text" placeholder="Enter Pincode">
                                                    </div>
                                                 </div>
@@ -1094,7 +1095,7 @@
                                     <div class="col-xl-1 col-lg-2"></div>
                                     <div class="col-xl-7 col-lg-9 pl6">
                                        <div class="filterSearchActionButton">
-                                          <button type="submit"><i class="fal fa-search"></i> Search</button>
+                                          <button type="submit"><i class="far fa-search"></i> Search</button>
                                        </div>
                                     </div>
                                  </div>
@@ -1112,7 +1113,7 @@
                               </div>
                               <div class="col-lg-6 col-sm-6 col-6">
                                  <div class="right text-right">
-                                    <p>Total no of records: 100</p>
+                                    <p>Total no of records: <span>100</span></p>
                                  </div>
                               </div>
                            </div>
@@ -1167,8 +1168,18 @@
                                     <td>21334.00</td>
                                  </tr>
                               </tfoot>
-                            </table>
+                            </table> 
                         </div>
+                        <div class="tableSearchPagination text-right">
+                            <div class="customerTablePaginations text-right">
+                              <ul>
+                                 <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                                 <li class="pageNumber"><input type="text" value="1"></li>
+                                 <li><a href="#"><i class="fa fa-angle-right"></i> </a></li>
+                                 <li>of 4</li>
+                              </ul>
+                           </div>
+                         </div>
                      </div>
                   </div>
                </div>
@@ -1272,10 +1283,18 @@
    <script src="asset/js/bootstrap.bundle.min.js"></script>
    <script src="asset/js/jquery.datepicker2.min.js"></script>
    <script src="asset/js/custom.js"></script>
+   <script src="asset/js/plugin/jquery.nice-select.min.js"></script>
    <script>
       $('body').on('shown.bs.modal', '#searchAreaModal', function () {
          $('#seachContentInput', this).focus();
       })
+   </script>
+   <!-- start select option ui plugin -->
+   <script>
+      $(document).ready(function() {
+          $('select').niceSelect();
+      });
+      
    </script>
 </body>
 

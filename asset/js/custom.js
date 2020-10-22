@@ -2,7 +2,7 @@ $(document).ready(function() {
     var school = $(window);
     var page = $('html, body');
 
-    
+
 
     $('.dropdown-menu').on('click',function(event){
         event.stopPropagation();
@@ -13,6 +13,12 @@ $(document).ready(function() {
        $('#notificationsDropDown .dropdown-menu').toggleClass('show');
        $("#notificationsDropDown button").attr("aria-expanded","false");
     })
+
+    $('#closeNotification2').on('click',function(event){
+       $('#notificationsdrop2Menu').toggleClass('show');
+       $("#mainnotificationBtntoggle").attr("aria-expanded","false");
+    })
+
 
 
 
@@ -32,5 +38,5 @@ $(document).ready(function() {
     })
 
 
-    
+
 });

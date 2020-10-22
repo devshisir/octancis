@@ -374,6 +374,37 @@
         padding-left: 10px;
         
     }
+    #comonComponentArea .comonComponentAreaContainer .btnComonGroup ul li {
+        margin-bottom: 11px;
+    }
+    #calederAppArae .calederAppAraeContainer {
+        padding: 30px;
+    }
+.fc-daygrid.fc-dayGridMonth-view.fc-view{
+    width: 1400px;
+}
+.fc-view-harness.fc-view-harness-active {
+    overflow-x: scroll;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -552,23 +583,58 @@
     padding-left: 10px;
     
 }
+#emailSmsPage .emailSmsPageContainer .emailSmsPageMainContainer .emailSmsmTabContainer .emailSmsTabContentContainer .emailEditorForm #document-full {
+    width: 100%;
+}
+#emailSmsPage .emailSmsPageContainer {
+    padding: 36px 51px;
+}
+#emailSmsPage .emailSmsPageContainer .emailSmsPageMainContainer .emailSmsmTabContainer .emailSmsTabContentContainer .sendBtnEmailSms .fileAttachLink {
+    margin-left: 0px;
+}
+#comonComponentArea .comonComponentAreaContainer {
+    padding: 0px 20px 100px 46px;
+}
+#comonComponentArea .comonComponentAreaContainer .btnComonGroup ul li {
+    margin-bottom: 15px;
+}
+#comonComponentArea .comonComponentAreaContainer .colorGroup {
+    padding-left: 0px;
+    margin-top: 30px;
+}
+#emailSmsPage .emailSmsPageContainer .emailSmsPageMainContainer .emailSmsmTabContainer .emailSmsTabContentContainer .emailEditorForm textarea {
+    width: 100%;
+}
+#topMenuBar3 .topMenuBar3Container {
+    padding-left: 0px;
+}
+#topMenuBar3 .topMenuBar3Container ul li a svg {
+    margin-right: 3px;
+    height: 18px;
+}
+#topMenuBar3 .topMenuBar3Container ul li a {
+    font-size: 11px;
+}
+#topMenuBar3 .topMenuBar3Container ul li {
+    margin-right: 15px;
+}
+#calederAppArae .calederAppAraeContainer {
+    padding: 20px 30px;
+    background: #fff;
+}
+/*#calederAppArae{
+    overflow-x: scroll;
+}
+#calederAppArae .calederAppAraeContainer {
+    width: 1000px;
+}*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.fc-daygrid.fc-dayGridMonth-view.fc-view{
+    width: 1230px;
+}
+.fc-view-harness.fc-view-harness-active {
+    overflow-x: scroll;
+}
 
 
 
@@ -784,6 +850,12 @@
 
 /*-- Phone Landscape --*/
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .mpl26{
+        padding-left: 26px !important;
+    }
+    .mpl10{
+        padding-left: 10px !important;
+    }
     #userLogin{
         padding: 20px 0px;
     }
@@ -958,6 +1030,132 @@
     padding-left: 10px;
     text-align: left;
 }
+#DashboardReporstArea .rightPanel .rightPanelContainer .searhFilterTop .filterSearchBox .inputBoxSearchFilter .datePickerContainer .datePickerSibgleItem {
+    position: relative;
+    padding-left: 18px;
+}
+#emailSmsPage .emailSmsPageContainer .emailSmsPageMainContainer .emailSmsmTabContainer .emailSmsTabContentContainer .emailEditorForm #document-full {
+    width: 100%;
+    height: 150px !important;
+}
+#emailSmsPage .emailSmsPageContainer {
+    background: #fff;
+    padding: 30px 45px;
+}
+#emailSmsPage .emailSmsPageContainer .emailSmsPageMainContainer .emailSmsmTabContainer .emailSmsTabContentContainer .sendBtnEmailSms .fileAttachLink {
+    margin-left: -13px;
+}
+#comonComponentArea .comonComponentAreaContainer {
+    background: #fff;
+    padding: 0px 25px 100px 38px;
+}
+#comonComponentArea .comonComponentAreaContainer .btnComonGroup ul li{
+    margin-bottom: 15px;
+}
+.cbtn{
+    font-size: 12px;
+}
+.cbtn svg {
+    margin-right: 4px;
+    height: 16px;
+}
+#comonComponentArea .comonComponentAreaContainer .colorGroup {
+    padding-left: 0px;
+    margin-top: 24px;
+}
+#alaertMessageArae {
+    width: 87%;
+}
+#alaertMessageArae .alertMessageItem .alert .alertDismisClose {
+    top: -14px;
+}
+#topMenuBar3 .topMenuBar3Container ul li a {
+    font-size: 11px;
+}
+#topMenuBar3 .topMenuBar3Container ul li {
+    margin: 0px 4px;
+}
+#calederAppArae .calederAppAraeContainer {
+    padding: 20px;
+}
+.fc-daygrid.fc-dayGridMonth-view.fc-view{
+    width: 1200px;
+}
+.fc-view-harness.fc-view-harness-active {
+    overflow-x: scroll;
+}
+.modal-open .modal {
+        z-index: 9999999999999999999999999;
+    }
+    #eventPopupModal .modal-dialog {
+        max-width: 90% !important;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .leftItem .itemBox {
+        margin-left: 10px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .topItemCheckBox {
+        display: flex;
+        justify-content: flex-end;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .topItemCheckBox .topItemCheckBoxItem .chiller_cb label {
+        padding-left: 40px;
+        font-size: 13px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .topItemCheckBox .topItemCheckBoxItem .chiller_cb span {
+        width: 18px;
+        height: 18px;
+        left: 8px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .topItemCheckBox .topItemCheckBoxItem .chiller_cb span::before {
+        top: 13px;
+        left: 7px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .topItemCheckBox .topItemCheckBoxItem .chiller_cb span::after {
+        bottom: 8px;
+        left: 4px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .leftItem .itemBox input {
+        width: 125px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .itemTitleEvent {
+        padding-left: 26px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .informationFildArea {
+        padding-left: 26px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .descriptionTextArae {
+        padding-left: 27px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .formButtonAction {
+        padding-left: 28px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .formActionbtn {
+        padding-left: 28px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .middleItem {
+        margin-top: 10px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .topItemCheckBox {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 59px;
+        margin-top: 9px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .informationFildArea .rightSelect .rightSelectItem {
+        margin-right: 20px;
+        margin-bottom: 16px;
+    }
+    .fc-view-harness.fc-view-harness-active{
+        overflow-x: scroll;
+    }
+    .fc-timegrid.fc-timeGridWeek-view.fc-view {
+        width: 1000px;
+    }
+
+
+
+
+
 
 }
 
@@ -965,6 +1163,15 @@
 
 /* Extra small Device. */
 @media (max-width: 575px) {
+    .mmpl15{
+        padding-left: 15px !important;
+    }
+    .mmpl33{
+        padding-left: 33px !important;
+    }
+    .mmpr15{
+        padding-right: 15px !important;
+    }
     .mpl0{
         padding-left: 0px !important;
     }
@@ -1236,6 +1443,255 @@
         padding-left: 10px;
         text-align: left;
     }
+    #topMenuBar3 .topMenuBar3Container ul li a svg {
+        margin-right: 3px;
+        height: 17px;
+    }
+    #topMenuBar3 .topMenuBar3Container ul li a {
+        font-size: 10px;
+    }
+#emailSmsPage .emailSmsPageContainer .emailSmsPageMainContainer .emailSmsmTabContainer .emailSmsTabContentContainer .emailEditorForm #document-full {
+    width: 100%;
+    height: 120px !important;
+}
+#emailSmsPage .emailSmsPageContainer {
+    background: #fff;
+    padding: 20px;
+    min-height: 610px;
+}
+#emailSmsPage .emailSmsPageContainer .topTitle h3 {
+    font-size: 12px;
+}
+#emailSmsPage .emailSmsPageContainer .emailSmsPageMainContainer .emailSmsmTabBtnarea nav .nav-tabs a{
+    font-size: 12px;
+}
+#emailSmsPage .emailSmsPageContainer .emailSmsPageMainContainer .emailSmsmTabContainer .emailSmsTabContentContainer .emailEditorForm .ql-toolbar.ql-theme.btn-toolbar.ql-snow svg {
+    height: 18px;
+}
+#emailSmsPage .emailSmsPageContainer .emailSmsPageMainContainer .emailSmsmTabContainer .emailSmsTabContentContainer .emailEditorForm .ql-toolbar.ql-theme.btn-toolbar.ql-snow .btn {
+    margin-right: 5px;
+}
+
+#emailSmsPage .emailSmsPageContainer .emailSmsPageMainContainer .emailSmsmTabContainer .emailSmsTabContentContainer .emailEditorForm {
+    padding-bottom: 35px;
+}
+#emailSmsPage .emailSmsPageContainer .emailSmsPageMainContainer .emailSmsmTabContainer .emailSmsTabContentContainer .sendBtnEmailSms .fileAttachLink {
+    margin-left: 0px;
+}
+#emailSmsPage .emailSmsPageContainer .emailSmsPageMainContainer .emailSmsmTabContainer {
+    margin-top: 28px;
+}
+#comonComponentArea .comonComponentAreaContainer {
+    padding: 20px 20px;
+}
+#emailSmsPage .emailSmsPageContainer {
+    min-height: auto;
+}
+#comonComponentArea .comonComponentAreaContainer .btnComonGroup ul li {
+    margin-right: 17px;
+    margin-bottom: 12px;
+}
+.cbtn svg {
+    margin-right: 4px;
+    height: 13px;
+}
+.cbtn {
+    font-size: 11px;
+}
+.garyIcon img {
+    height: 15px;
+}
+#comonComponentArea .comonComponentAreaContainer .iconBoxContainer .iocnItem ul li {
+    margin-right: 23px;
+    margin-bottom: 9px;
+}
+#comonComponentArea .comonComponentAreaContainer .iconBoxContainer .iocnItem2 ul li {
+    margin-right: 23px;
+    margin-bottom: 9px;
+}
+#comonComponentArea .comonComponentAreaContainer .colorGroup {
+    padding-left: 0px;
+    margin-top: 22px;
+}
+#comonComponentArea .comonComponentAreaContainer .colorGroup ul li {
+    height: 30px;
+    width: 30px;
+    margin-right: 3px;
+}
+#alaertMessageArae {
+    width: 90%;
+}
+#alaertMessageArae .alertMessageItem .alert {
+    font-size: 11px;
+    padding-right: 19px !important;
+}
+#alaertMessageArae .alertMessageItem .alert .alertDismisClose {
+    top: -22px;
+}
+#topMenuBar3 .topMenuBar3Container ul {
+    width: 1200px;
+}
+#calederAppArae .calederAppAraeContainer {
+    padding: 10px;
+    background: #fff;
+}
+
+.fc-daygrid.fc-dayGridMonth-view.fc-view{
+    width: 1200px;
+}
+.fc-view-harness.fc-view-harness-active {
+    overflow-x: scroll;
+}
+.fc .fc-toolbar {
+    flex-direction: column;
+}
+#calederAppArae .calederAppAraeContainer #calenderActive .fc-button-group {
+    margin-top: 16px;
+}
+.fc-view-harness.fc-view-harness-active{
+    overflow-x: scroll;
+}
+.fc-timegrid.fc-timeGridWeek-view.fc-view{
+    width: 1000px;
+}
+.fc-view-harness.fc-view-harness-active{
+    overflow-x: scroll;
+}
+.fc-timegrid.fc-timeGridDay-view.fc-view{
+    width: 500px;
+}
+
+.fc-timegrid.fc-timeGridDay-view.fc-view .fc-liquid-hack .fc-timegrid-axis-frame-liquid{
+    width: 100px;
+}
+.modal-open .modal {
+        z-index: 9999999999999999999999999;
+    }
+    #eventPopupModal .modal-dialog {
+        max-width: 90% !important;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .leftItem .itemBox {
+        margin-left: 10px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .topItemCheckBox {
+        display: flex;
+        justify-content: flex-end;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .topItemCheckBox .topItemCheckBoxItem .chiller_cb label {
+        padding-left: 40px;
+        font-size: 13px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .topItemCheckBox .topItemCheckBoxItem .chiller_cb span {
+        width: 18px;
+        height: 18px;
+        left: 8px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .topItemCheckBox .topItemCheckBoxItem .chiller_cb span::before {
+        top: 13px;
+        left: 7px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .topItemCheckBox .topItemCheckBoxItem .chiller_cb span::after {
+        bottom: 8px;
+        left: 4px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .leftItem .itemBox input {
+        width: 125px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .itemTitleEvent {
+        padding-left: 26px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .informationFildArea {
+        padding-left: 26px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .descriptionTextArae {
+        padding-left: 27px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .formButtonAction {
+        padding-left: 28px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .formActionbtn {
+        padding-left: 28px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .middleItem {
+        margin-top: 10px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .topItemCheckBox {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 59px;
+        margin-top: 9px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .informationFildArea .rightSelect .rightSelectItem {
+        margin-right: 20px;
+        margin-bottom: 16px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .leftItem {
+        flex-direction: column;
+    }
+
+    #eventPopupModal .modal-dialog .eventformArea .leftItem .itemBox {
+        width: 100%;
+    }
+#eventPopupModal .modal-dialog .eventformArea .leftItem .itemBox input {
+    width: 100%;
+    margin-bottom: 8px;
+    margin-top: 5px;
+}
+#eventPopupModal .modal-dialog .eventformArea {
+    background: #fff;
+    padding: 20px;
+}
+#eventPopupModal .modal-dialog .eventformArea .leftItem .itemBox.select1 .nice-select {
+    width: 100%;
+}
+#eventPopupModal .modal-dialog .eventformArea .leftItem .itemBox.select2 .nice-select {
+    width: 100%;
+    margin-top: 9px;
+}
+#eventPopupModal .modal-dialog {
+    max-width: 96% !important;
+}
+#eventPopupModal .modal-dialog .eventformArea .leftItem .itemBox .plusAddBtn {
+    margin-top: 10px;
+}
+#eventPopupModal .modal-dialog .eventformArea .itemTitleEvent {
+    padding-left: 0px;
+}
+#eventPopupModal .modal-dialog .eventformArea .informationFildArea {
+    padding-left: 0px;
+}
+#eventPopupModal .modal-dialog .eventformArea .descriptionTextArae {
+    padding-left: 0px;
+}
+#eventPopupModal .modal-dialog .eventformArea .formButtonAction {
+    padding-left: 0px;
+}
+#eventPopupModal .modal-dialog .eventformArea .formButtonAction .left button {
+    width: 133px;
+    height: 34px;
+    font-size: 11px;
+}
+#eventPopupModal .modal-dialog .eventformArea .formButtonAction .right button {
+    width: 110px;
+    height: 34px;
+    font-size: 11px;
+}
+
+#eventPopupModal .modal-dialog .eventformArea .formActionbtn {
+    padding-left: 0px;
+}
+#eventPopupModal .modal-dialog .eventformArea .formActionbtn ul li {
+    display: inline-block;
+    margin-right: 3px;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -1273,10 +1729,87 @@
 }
 
 
+@media (min-width: 992px) and (max-width: 1199px) {
+    #eventPopupModal .modal-dialog {
+        max-width: 90% !important;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .leftItem .itemBox {
+        margin-left: 10px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .topItemCheckBox {
+        display: flex;
+        justify-content: flex-end;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .topItemCheckBox .topItemCheckBoxItem .chiller_cb label {
+        padding-left: 40px;
+        font-size: 10px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .topItemCheckBox .topItemCheckBoxItem .chiller_cb span {
+        width: 18px;
+        height: 18px;
+        left: 8px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .topItemCheckBox .topItemCheckBoxItem .chiller_cb span::before {
+        top: 13px;
+        left: 7px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .topItemCheckBox .topItemCheckBoxItem .chiller_cb span::after {
+        bottom: 8px;
+        left: 4px;
+    }
+}
 
 
-
-
+@media (min-width: 768px) and (max-width: 991px) {
+    .modal-open .modal {
+        z-index: 9999999999999999999999999;
+    }
+    #eventPopupModal .modal-dialog {
+        max-width: 90% !important;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .leftItem .itemBox {
+        margin-left: 10px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .topItemCheckBox {
+        display: flex;
+        justify-content: flex-end;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .topItemCheckBox .topItemCheckBoxItem .chiller_cb label {
+        padding-left: 40px;
+        font-size: 13px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .topItemCheckBox .topItemCheckBoxItem .chiller_cb span {
+        width: 18px;
+        height: 18px;
+        left: 8px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .topItemCheckBox .topItemCheckBoxItem .chiller_cb span::before {
+        top: 13px;
+        left: 7px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .topItemCheckBox .topItemCheckBoxItem .chiller_cb span::after {
+        bottom: 8px;
+        left: 4px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .leftItem .itemBox input {
+        width: 125px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .itemTitleEvent {
+        padding-left: 26px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .informationFildArea {
+        padding-left: 26px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .descriptionTextArae {
+        padding-left: 27px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .formButtonAction {
+        padding-left: 28px;
+    }
+    #eventPopupModal .modal-dialog .eventformArea .formActionbtn {
+        padding-left: 28px;
+    }
+}
 
 
 
